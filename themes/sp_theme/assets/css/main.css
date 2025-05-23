@@ -1,3 +1,6 @@
+@import "tailwindcss";
+@source "hugo_stats.json";
+
 body {
   color: #222;
   font-family: sans-serif;
