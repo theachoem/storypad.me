@@ -1,0 +1,41 @@
+<section class="mt-8">
+    <div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center gap-6">
+        <h2 class="font-headline text-4xl">Got questions?</h2>
+
+        {{
+        $questions := slice
+        (dict
+        "question" `What is different from other journal app like day one or diary?`
+        "answer" `We're not here to copy Day One or Journey. StoryPad is built differently for people who think
+        differently.`)
+        (dict
+        "question" `Is it free?`
+        "answer" `All core features are free.`)
+        (dict
+        "question" `Can I use in multiple devices?`
+        "answer" `It store locally in device & very private folder. If you decide to backup it, it actually just backup
+        to your own google drive. Unlike other app, we don't have cloud,`)
+        (dict
+        "question" `Is my data safe?`
+        "answer" `Yes, if you backup to google drive, just click sync from one device, and on another device, click sync
+        will auto get the latest one. If the same diary written, it will keep the latest one.`)
+        }}
+
+        <div class="flex flex-col w-full">
+            {{ range $index, $element := $questions }}
+            <details class="bg-white text-black w-full group text-left p-4 border border-black border-t-0
+        {{ if eq $index 0 }}rounded-t-xl border-t-1{{ end }}
+        {{ if eq $index (sub (len $questions) 1) }}rounded-b-xl{{ end }}" {{ if eq $index 0 }}open{{ end }}>
+                <summary class="list-none cursor-pointer flex flex-row items-center justify-between gap-4">
+                    <span class="text-left">{{ add $index 1 }}. {{ .question }}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </summary>
+                <p class="mt-2 text-gray-700">{{ .answer }}</p>
+            </details>
+            {{ end }}
+        </div>
+    </div>
+</section>

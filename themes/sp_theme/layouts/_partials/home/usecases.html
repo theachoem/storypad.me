@@ -1,0 +1,46 @@
+<section>
+    <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center gap-4">
+        <h2 class="font-headline text-4xl">Why split your life into folders?</h2>
+        <p>
+            You don't live in categories, so why journal in them? StoryPad is designed
+            for how you actually live - with a unified, chronological flow that brings
+            everything together: thoughts, todos, memories, and more. Just write - we'll
+            handle the rest.
+        </p>
+
+        {{ $usecases := slice
+        (dict "title" "Journal Your Days?" "image" "morning_intension.jpg" "bg" "bg-red-100")
+        (dict "title" "Have an ideas / thoughts?" "image" "thought.jpg" "bg" "bg-orange-100")
+        (dict "title" "Reflect on Your Mental Health?" "image" "mental_health.jpg" "bg" "bg-amber-100")
+        (dict "title" "Organize Notes & To-Dos" "image" "todo.jpg" "bg" "bg-lime-100")
+        (dict "title" "Plan Your Next Trip?" "image" "trip.jpg" "bg" "bg-green-100")
+        (dict "title" "Write Your Stories?" "image" "story2.jpg" "bg" "bg-emerald-100")
+        (dict "title" "Pen a Novel or Poem?" "image" "poem.jpg" "bg" "bg-teal-100")
+        (dict "title" "Track Your Moods?" "image" "mood_tracker.jpg" "bg" "bg-yellow-100")
+        (dict "title" "All in a Timeline" "image" "home.jpg" "bg" "bg-cyan-100")
+        }}
+
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-6">
+            {{ range $usecases }}
+            <div class="border group relative items-center px-6 pt-6 rounded-lg {{ .bg }}">
+                <div
+                    class="h-[380px] border rounded-t-lg overflow-hidden rotate-2 group-hover:rotate-0 transition-all duration-300 scale-95 group-hover:scale-110 group-hover:-translate-y-10">
+                    <img src="/usecases/{{ .image }}" alt="{{ .title }}">
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 rounded-b-lg bg-white group-hover:bg-red-400 group-hover:text-white border-t border-t-black min-h-16 px-4 flex flex-row items-center justify-between">
+                    <span class="text-left">
+                        {{ .title }}
+                    </span>
+                    <span class="group-hover:rotate-45 transition-transform duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
