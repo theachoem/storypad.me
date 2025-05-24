@@ -1,7 +1,183 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+
+<section>
+  <div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center">
+    <img src="logo_120x120.png" alt="StoyPad logo_120x120.png" class="w-[120]" />
+
+    <h1 class="font-headline text-4xl">
+      Not another journal app.<br />
+      <span class="font-quicksand text-4xl font-bold text-red-400">A timeline for your life.</span>
+    </h1>
+
+    <p class="mt-4">
+      StoryPad lets you capture everything - notes, thoughts, emotions, workouts,
+      travels - on a single continuous timeline.<br>
+      <span class="line-through">No folders</span>.
+      <span class="line-through">No tabs</span>.
+      Just your life, beautifully organized.
+    </p>
+
+    <div class="flex flex-row gap-4 my-6">
+      <img src="app-store-button.png" alt="app-store-button.png" />
+      <img src="google-play-button.png" alt="google-play" />
+    </div>
+
+    <div class="relative mt-4 w-xl" style="max-width: 600px; width: 90vw;">
+      {{ partialCached "ipad.html" . }}
+    </div>
+  </div>
+</section>
+
+<div class="my-30"></div>
+
+<section>
+  <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center gap-4">
+    <h2 class="font-headline text-4xl">Why split your life into folders?</h2>
+    <p>
+      You don't live in categories, so why journal in them? StoryPad is designed
+      for how you actually live - with a unified, chronological flow that brings
+      everything together: thoughts, todos, memories, and more. Just write - we'll
+      handle the rest.
+    </p>
+
+    {{ $usecases := slice
+    (dict "title" "Journal Your Days?")
+    (dict "title" "Have an ideas / thoughts?")
+    (dict "title" "Reflect on Your Mental Health?")
+    (dict "title" "Track Your Moods?")
+    (dict "title" "Organize Notes & To-Dos")
+    (dict "title" "Plan Your Next Trip?")
+    (dict "title" "Write Your Stories?")
+    (dict "title" "Pen a Novel or Poem?")
+    }}
+
+    <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-6">
+      {{ range $usecases }}
+      <div class="border group relative items-center p-4 rounded-lg ">
+        <div class="h-[220px] border rounded-t-lg"></div>
+        <div
+          class="absolute bottom-0 left-0 right-0 rounded-b-lg bg-white group-hover:bg-red-400 group-hover:text-white border-t border-t-black min-h-16 p-2 flex flex-row items-center justify-between">
+          <span class="text-left">
+            {{ .title }}
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<div class="my-30"></div>
+
+<section>
+  <div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center gap-4">
+    <h2 class="font-headline text-4xl">
+      Your story. Your device. Your Google Drive.
+    </h2>
+    <p>
+      We don't own your data. In fact, we don't even see it. StoryPad backs up
+      directly to your private Google Drive - with no servers in between. No
+      compression. No tracking & fully open-source on GitHub for transparency.
+    </p>
+  </div>
+</section>
+
+<div class="my-30"></div>
+
+<section class="mt-8">
+  <div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center gap-4">
+    <h2 class="font-headline text-4xl">People Love StoryPad.</h2>
+    <class class="flex flex-row text-amber-400">
+      {{ range seq 1 5 }}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+        <path fill-rule="evenodd"
+          d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+          clip-rule="evenodd" />
+      </svg>
+      {{ end }}
+    </class>
+
+    {{
+    $reviews := slice
+    (dict
+    "name" "Shadowyartsdirty Po"
+    "review_date" "May 20, 2025, 15:08"
+    "review" `Great app, been using it for years. Love how the update handles multiple page files. Took a while to
+    adjust to new layout but worth it.1`)
+    (dict
+    "name" "Ballabh Agrawal"
+    "review_date" "May 5, 2025, 21:02"
+    "review" `Fabulous app to give a voice to your
+    creativity . Simple functions no hectic things just keep yourself the way you want .. Let your words flow .. Let
+    your stories speak ... And there is also an App lock feature using which you can maintain your privacy .. It has
+    helped me to tackle the billions of thoughts that come in my mind .. it's features are simple yet the best you can
+    highlight the text bold it tag your stories .. I strongly recommend this app . I don't have words to praise it.
+    Thanks♥`)
+    (dict
+    "name" "Caelum"
+    "review_date" "Mar 7, 2025, 21:43"
+    "review" `I love the app, and I highly recommend it for
+    those looking for a simple and easy place to write, organize, and save their notes. It's probably the most secure
+    app in terms of privacy, too. Keep up the good work! Translated from Spanish`
+    )
+    }}
+
+    <div class="flex flex-col gap-6 mt-3">
+      {{ range $reviews }}
+      <div>
+        <p class="underline text-red-400 text-base">{{ .name }}</p>
+        <p class="text-base my-2">{{ .review }}</p>
+        <p class="text-sm italic">{{ .review_date }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<div class="my-30"></div>
+
+<section class="mt-8">
+  <div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center gap-6">
+    <h2 class="font-headline text-4xl">Got questions?</h2>
+
+    {{
+    $questions := slice
+    (dict
+    "question" `What is different from other journal app like day one or diary?`
+    "answer" `What is different from other journal app like day one or diary?`)
+    (dict
+    "question" `Is it free?`
+    "answer" `Is it free?`)
+    (dict
+    "question" `Can I use in multiple devices?`
+    "answer" `Can I use in multiple devices?`)
+    (dict
+    "question" `Is my data safe?`
+    "answer" `Is my data safe?`)
+    }}
+
+    <div class="flex flex-col">
+      {{ range $index, $element := $questions }}
+      <details class="bg-white text-black open:bg-red-400 transition-colors open:text-white w-full text-left p-4 border border-black border-t-0
+      {{ if eq $index 0 }}rounded-t-xl border-t-1{{ end }}
+      {{ if eq $index (sub (len $questions) 1) }}rounded-b-xl{{ end }}">
+        <summary class="list-none cursor-pointer flex flex-row items-center justify-between gap-4">
+          <span class="text-left">{{ add $index 1 }}. {{ .question }}</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </summary>
+        <p>{{ .answer }}</p>
+      </details>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- {{ .Content }} -->
 {{ end }}
