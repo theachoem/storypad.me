@@ -1,0 +1,18 @@
+- question: "What is different from other journal app like Day One or Diary?"
+  answer: >
+    We're not here to copy Day One or Journey. StoryPad is built differently for people who think differently.
+
+- question: "Is it free?"
+  answer: >
+    All core features are free.
+
+- question: "Can I use in multiple devices?"
+  answer: >
+    It stores locally in the device & in a very private folder. If you decide to back it up,
+    it actually just backs up to your own Google Drive. Unlike other apps, we don't have a cloud.
+
+- question: "Is my data safe?"
+  answer: >
+    Yes. If you back up to Google Drive, just click sync from one device,
+    and on another device, click sync — it will automatically get the latest version.
+    If the same diary is written on both, it will keep the latest one.

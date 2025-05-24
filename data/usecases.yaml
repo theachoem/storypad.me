@@ -1,0 +1,35 @@
+- title: "Journal Your Days?"
+  image: "morning_intension.jpg"
+  bg: "bg-red-100"
+
+- title: "Have an ideas / thoughts?"
+  image: "thought.jpg"
+  bg: "bg-orange-100"
+
+- title: "Reflect on Your Mental Health?"
+  image: "mental_health.jpg"
+  bg: "bg-amber-100"
+
+- title: "Organize Notes & To-Dos"
+  image: "todo.jpg"
+  bg: "bg-lime-100"
+
+- title: "Plan Your Next Trip?"
+  image: "trip.jpg"
+  bg: "bg-green-100"
+
+- title: "Write Your Stories?"
+  image: "story2.jpg"
+  bg: "bg-emerald-100"
+
+- title: "Pen a Novel or Poem?"
+  image: "poem.jpg"
+  bg: "bg-teal-100"
+
+- title: "Track Your Moods?"
+  image: "mood_tracker.jpg"
+  bg: "bg-yellow-100"
+
+- title: "All in a Timeline"
+  image: "home.jpg"
+  bg: "bg-cyan-100"

@@ -5,7 +5,7 @@
   {{ partial "head.html" . }}
 </head>
 
-<body>
+<body class="dark:bg-neutral-900 dark:text-neutral-200">
   <header class="flex flex-row justify-between p-4 max-w-6xl mx-auto px-6">
     <h1>{{ site.Title }}</h1>
     <div class="flex flex-row gap-4">
@@ -17,8 +17,7 @@
     {{ block "main" . }}{{ end }}
   </main>
 
-  <hr class="mt-20 mb-8">
-  <footer>
+  <footer class="border-t pt-10 mt-20 border-t-neutral-300 dark:border-t-neutral-700">
     {{ partial "footer.html" . }}
   </footer>
 </body>
