@@ -25,3 +25,11 @@
 - question: "Is my data safe?"
   answer: >
     Absolutely. Only you can access your data. We don't store your stories, and we don't even keep your email. Everything is either on your device or your own Google Drive.
+
+- question: "Can I export locally?"
+  answer: >
+    Yes. You can back up all your stories locally to your device as a `.json` file. This means you always have a copy - even without internet. We're also working on support for exporting to `.txt` and `.md` (Markdown) formats soon, so you can easily move or read your stories anywhere.
+
+- question: "Can I preview my images if I export locally?"
+  answer: >
+    Yes, but since images are stored securely in your own Google Drive, you'll need to be logged into Google Drive to view them inside StoryPad. We're exploring options to make image previews easier, including exporting them in ZIP or other formats in the future.
