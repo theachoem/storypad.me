@@ -6,7 +6,7 @@
       {{ range $index, $element := site.Data.questions }}
       <details class="w-full group text-left p-4 border border-t-0 dark:border-neutral-500
         {{ if eq $index 0 }}rounded-t-xl border-t-1{{ end }}
-        {{ if eq $index (sub (len site.Data.questions) 1) }}rounded-b-xl{{ end }}" {{ if eq $index 0 }}open{{ end }}>
+        {{ if eq $index (sub (len site.Data.questions) 1) }}rounded-b-xl{{ end }}">
         <summary class="list-none cursor-pointer flex flex-row items-center justify-between gap-4">
           <span class="text-left">{{ add $index 1 }}. {{ .question }}</span>
           <span class="group-open:rotate-45 transition-transform duration-200 group-open:scale-110">
