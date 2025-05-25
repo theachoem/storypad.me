@@ -4,7 +4,7 @@
 
     <div class="flex flex-col w-full">
       {{ range $index, $element := site.Data.questions }}
-      <details class="w-full group text-left p-4 border border-t-0
+      <details class="w-full group text-left p-4 border border-t-0 dark:border-neutral-500
         {{ if eq $index 0 }}rounded-t-xl border-t-1{{ end }}
         {{ if eq $index (sub (len site.Data.questions) 1) }}rounded-b-xl{{ end }}" {{ if eq $index 0 }}open{{ end }}>
         <summary class="list-none cursor-pointer flex flex-row items-center justify-between gap-4">

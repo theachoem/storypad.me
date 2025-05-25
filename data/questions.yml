@@ -1,18 +1,27 @@
-- question: "What is different from other journal app like Day One or Diary?"
+- question: "Is it free to use?"
   answer: >
-    We're not here to copy Day One or Journey. StoryPad is built differently for people who think differently.
+    Yes! All the core features you use now will always be free, with no ads. We plan to offer premium features for paid users in the future, but core features will remain free & ad-free.
 
-- question: "Is it free?"
+- question: "What makes StoryPad different from other journal apps?"
   answer: >
-    All core features are free.
+    StoryPad isn't just for journaling. It's designed for daily life - whether you're journaling, writing a story, or reflecting on your day. We didn't copy other apps; we built it from the ground up to be flexible, minimal, and personal.
 
-- question: "Can I use in multiple devices?"
+- question: "Why are there multiple editors inside one entry?"
   answer: >
-    It stores locally in the device & in a very private folder. If you decide to back it up,
-    it actually just backs up to your own Google Drive. Unlike other apps, we don't have a cloud.
+    Each entry in StoryPad can have multiple pages. You can choose between two layouts: “list” for quick journaling with prompts, or “pages” for deeper writing like stories or poems. You can easily reorder or delete pages with this feature. We're also planning a grid layout and more customization for each page.
+
+- question: "Can I insert images?"
+  answer: >
+    Yes. You can add images without compression. Your photos keep their original quality, including metadata like the capture date & location.
+
+- question: "Does StoryPad support rich text editing?"
+  answer: >
+    Yes, it does! StoryPad offers a clean, powerful editor with rich text features like bold, italics, underline, text color, checklists, and images - all designed to help you write without distractions.
+
+- question: "Can I use it on multiple devices?"
+  answer: >
+    Yes. Your data is stored locally on each device for privacy. When you choose to back up or sync, StoryPad saves directly to your private Google Drive - no cloud servers or accounts involved. To sync between devices, just tap “sync” on one device, then tap “sync” on the other. StoryPad will automatically download the latest version of your stories. If you edit the same entry on both devices before syncing, it will keep the most recent version to avoid conflicts, so your data stays safe and up-to-date.
 
 - question: "Is my data safe?"
   answer: >
-    Yes. If you back up to Google Drive, just click sync from one device,
-    and on another device, click sync — it will automatically get the latest version.
-    If the same diary is written on both, it will keep the latest one.
+    Absolutely. Only you can access your data. We don't store your stories, and we don't even keep your email. Everything is either on your device or your own Google Drive.
