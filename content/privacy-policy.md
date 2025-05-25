@@ -1,10 +1,10 @@
 ---
 date: "2025-03-12"
 draft: false
-title: "Spooky Privacy Policy"
+title: "Privacy Policy"
 ---
 
-**Spooky** ("we," "us," or "our") is committed to safeguarding the privacy of our users ("user" or "you"). This Privacy Policy outlines how we collect, use, disclose, and protect your information when you access our mobile application (“App”). Please review this Privacy Policy carefully. **If you do not agree with the terms of this Privacy Policy, please refrain from accessing or using the App.**
+**StoryPad** ("we," "us," or "our") is committed to safeguarding the privacy of our users ("user" or "you"). This Privacy Policy outlines how we collect, use, disclose, and protect your information when you access our mobile application (“App”). Please review this Privacy Policy carefully. **If you do not agree with the terms of this Privacy Policy, please refrain from accessing or using the App.**
 
 We reserve the right to modify this Privacy Policy at any time and for any reason. Users are encouraged to periodically review this Privacy Policy to stay informed about updates. By continuing to use the App after the revised Privacy Policy has been posted, you acknowledge and accept the changes and agree to be bound by the updated terms.
 
@@ -18,8 +18,9 @@ As we do not collect personal information, there is no use, storage, or sharing 
 
 ### 2. Google Permissions
 
-If you choose to sign in using your Google account, the App may access basic account information such as your name, email address, and profile picture URL.  
-Additionally, the App may request access to your Google Drive account to read and write data within a specific folder created by the App. This folder is exclusively for application-specific data storage, accessible only by you.
+If you choose to sign in using your Google account, the App may access basic account information such as your name, email address, and profile picture URL, which will only be used within the App for display to you.
+
+Additionally, if you grant the App access to Google Drive, it will create a dedicated folder within your Drive for storing application-specific data, such as your uploaded images and stories. This folder is private and accessible only to you. StoryPad does not have access to your entire Google Drive or any other files outside of this designated folder. It is stored exclusively in your private Google Drive folder and is never uploaded or shared elsewhere. We do not have the ability to read or access your stored data in any way.
 
 ### 3. Google Analytics
 

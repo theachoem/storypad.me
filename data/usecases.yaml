@@ -1,35 +1,35 @@
 - title: "Journal Your Days?"
-  image: "morning_intention.jpg"
+  image: "usecases/morning_intention.jpg"
   scrollable: 'yes'
 
 - title: "Have an ideas / thoughts?"
-  image: "thought.jpg"
+  image: "usecases/thought.jpg"
 
 - title: "Reflect on Your Mental Health?"
-  image: "mental_health.jpg"
+  image: "usecases/mental_health.jpg"
 
 - title: "Organize Notes & To-Dos"
-  image: "todo.jpg"
+  image: "usecases/todo.jpg"
   scrollable: 'yes'
 
 - title: "Plan Your Next Trip?"
-  image: "trip.jpg"
+  image: "usecases/trip.jpg"
   scrollable: 'yes'
 
 - title: "Write Your Stories?"
   images:
-  - "story0.jpg"
-  - "story1.jpg"
-  - "story2.jpg"
-  - "story3.jpg"
+  - "usecases/story0.jpg"
+  - "usecases/story1.jpg"
+  - "usecases/story2.jpg"
+  - "usecases/story3.jpg"
 
 - title: "Pen a Novel or Poem?"
-  image: "poem.jpg"
+  image: "usecases/poem.jpg"
 
 - title: "Track Your Moods?"
-  image: "mood_tracker.jpg"
+  image: "usecases/mood_tracker.jpg"
   scrollable: 'yes'
 
 - title: "All in one Timeline"
-  image: "home.jpg"
+  image: "usecases/home.jpg"
   scrollable: 'yes'

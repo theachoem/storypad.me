@@ -1,23 +1,33 @@
 <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
-  <img src="logo_120x120.png" alt="StoyPad logo_120x120.png" class="w-[120]" />
-  <p class="text-xl">StoryPad</p>
-  <p class="text-neutral-500 dark:text-neutral-400">Make every day a story.</p>
+  {{ if .IsHome }}
+  <div onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="cursor-pointer">
+    <img src='{{ "logo_120x120.png" | relURL }}' alt="StoyPad logo_120x120.png" class="w-[120]" />
+    <p class="text-xl">StoryPad</p>
+  </div>
+  {{ else }}
+  <a href="/">
+    <img src='{{ "logo_120x120.png" | relURL }}' alt="StoyPad logo_120x120.png" class="w-[120]" />
+    <p class="text-xl">StoryPad</p>
+  </a>
+  {{ end }}
 
+  <p class="text-neutral-500 dark:text-neutral-400">Make every day a story.</p>
   <div class="flex flex-row gap-4 mt-4 mb-8">
     <a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172" target="_blank"
-      class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden">
-      <img src="app-store-button.png" alt="app-store-button.png" />
+      class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
+      <img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" />
     </a>
     <a href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank"
-      class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden">
-      <img src="google-play-button.png" alt="google-play" />
+      class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
+      <img src=' {{ "google-play-button.png" | relURL }}' alt="google-play" />
     </a>
   </div>
 
   <!-- https://simpleicons.org -->
   <p class="mb-2 text-neutral-500 dark:text-neutral-400">Join our community:</p>
   <div class="flex flex-row">
-    <a class="w-12 h-12 p-2" href="https://x.com/storypadapp" target="_blank">
+    <a class="w-12 h-12 p-2 text-neutral-600 hover:text-black dark:hover:text-white" href="https://x.com/storypadapp"
+      target="_blank">
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>X</title>
         <path
@@ -25,7 +35,8 @@
           fill="currentColor" />
       </svg>
     </a>
-    <a class="w-12 h-12 p-2" href="https://www.reddit.com/r/StoryPad" target="_blank">
+    <a class="w-12 h-12 p-2 text-neutral-600 hover:text-[#FF4500]" href="https://www.reddit.com/r/StoryPad"
+      target="_blank">
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>Reddit</title>
         <path
@@ -33,7 +44,8 @@
           fill="currentColor" />
       </svg>
     </a>
-    <a class="w-12 h-12 p-2" href="https://github.com/theachoem/storypad" target="_blank">
+    <a class="w-12 h-12 p-2 text-neutral-600 hover:text-[#171513] dark:hover:text-white"
+      href="https://github.com/theachoem/storypad" target="_blank">
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>GitHub</title>
         <path
@@ -41,6 +53,34 @@
           fill="currentColor" />
       </svg>
     </a>
+  </div>
+
+  <div class="flex flex-col gap-3 mt-8">
+    <div class="flex flex-row items-center justify-center gap-1 group">
+      <a href="https://github.com/theachoem/storypad" class="underline" target="_blank" rel="noopener noreferrer">Report
+        Issues, Request Features, or Contribute</a>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0 1 12 12.75Zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 0 1-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 0 0 2.248-2.354M12 12.75a2.25 2.25 0 0 1-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 0 0-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 0 1 .4-2.253M12 8.25a2.25 2.25 0 0 0-2.248 2.146M12 8.25a2.25 2.25 0 0 1 2.248 2.146M8.683 5a6.032 6.032 0 0 1-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0 1 15.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 0 0-.575-1.752M4.921 6a24.048 24.048 0 0 0-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 0 1-5.223 1.082" />
+      </svg>
+    </div>
+    <div class="flex flex-row items-center justify-center gap-1 group">
+      <a href="/contributions/localization" class="underline" rel="noopener noreferrer">Help with Translation</a>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+      </svg>
+    </div>
+    <div class="flex flex-row items-center justify-center gap-1 group">
+      <a href="/privacy-policy" class="underline" rel="noopener noreferrer">Privacy Policy</a>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+      </svg>
+    </div>
   </div>
 
   <p class="mt-4 p-8">Copyright 2021 - {{ now.Year }}. All rights reserved.</p>

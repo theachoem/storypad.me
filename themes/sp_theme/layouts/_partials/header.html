@@ -1,0 +1,14 @@
+<header class="sticky top-0 flex flex-row justify-between p-4 max-w-7xl mx-auto px-6">
+  {{ if .IsHome }}
+  <h1
+    onclick="if (window.scrollY === 0) { this.classList.remove('animate-shake-vertical'); void this.offsetWidth; this.classList.add('animate-shake-vertical'); } else { window.scrollTo({ top: 0, behavior: 'smooth' }); }"
+    class="cursor-pointer">{{ .Site.Title }}</h1>
+  {{ else }}
+  <a href='{{ "/" | relURL }}'>{{ .Site.Title }}</a>
+  {{ end }}
+  <div class="flex flex-row gap-4">
+    <a onclick="openStore()" class="cursor-pointer underline">
+      Download
+    </a>
+  </div>
+</header>

@@ -1,10 +1,12 @@
 {{ define "main" }}
 
-{{ partialCached "home/headline.html" . }}
-{{ partialCached "home/usecases.html" . }}
-{{ partialCached "home/backup.html" . }}
-{{ partialCached "home/reviews.html" . }}
-{{ partialCached "home/faq.html" . }}
+<div class="flex flex-col gap-30">
+  {{ partialCached "home/headline.html" . }}
+  {{ partialCached "home/usecases.html" . }}
+  {{ partialCached "home/backup.html" . }}
+  {{ partialCached "home/reviews.html" . }}
+  {{ partialCached "home/faq.html" . }}
+</div>
 
 {{ .Content }}
 {{ end }}

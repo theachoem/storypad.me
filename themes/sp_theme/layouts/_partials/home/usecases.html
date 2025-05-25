@@ -20,6 +20,8 @@
     "bg-purple-200 dark:bg-purple-950"
     -}}
 
+    {{ $usecasesLength := len site.Data.usecases }}
+
     <div class="
         /* Grid Layout */ grid grid-cols-[repeat(auto-fit,_320px)] justify-center gap-5
         /* Size & Spacing */ w-full mt-6">
@@ -48,7 +50,7 @@
           {{ $total := len .images }}
           <div class="flex overflow-y-hidden overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide">
             {{ range $i, $img := .images }}
-            <img src="/usecases/{{ $img }}" alt="{{ $element.title }}"
+            <img src='{{ $img | relURL }}' alt="{{ $element.title }}"
               class="snap-start flex-shrink-0 w-full h-auto backdrop-blur" {{/* Put backdrop blur fix the image blur
               issue */}} data-last="{{ if eq (add $i 1) $total }}yes{{else}}no{{end}}"
               onclick="this.dataset.last === 'yes' ? this.parentElement.scrollTo({ left: 0, behavior: 'smooth' }) : this.parentElement.scrollBy({ left: this.offsetWidth, behavior: 'smooth' })" />
@@ -58,10 +60,10 @@
           {{ else if .image }}
 
           {{ if eq .scrollable "yes" }}
-          <img src="/usecases/{{ .image }}" alt="{{ .title }}" class="w-full h-auto backdrop-blur"
+          <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
             onclick="this.parentElement.scrollTo({ top: this.parentElement.scrollTop + this.parentElement.clientHeight >= this.parentElement.scrollHeight - 50 ? 0 : this.parentElement.scrollTop + 240, behavior: 'smooth' });" />
           {{ else }}
-          <img src="/usecases/{{ .image }}" alt="{{ .title }}" class="w-full h-auto backdrop-blur"
+          <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
             onclick="this.classList.remove('animate-shake-vertical');void this.offsetWidth; this.classList.add('animate-shake-vertical');" />
           {{ end }}
 
@@ -118,6 +120,21 @@
         </div>
         {{ end }}
 
+
+        {{ if eq (add $index 1) $usecasesLength }}
+        <img src='{{ "emotions/flushed-face-64x64-1395564.png" | relURL }}' alt="Flushed face" class="
+            /* Pointer Events */ pointer-events-none
+            /* Style */ shadow-2xl rotate-0 group-hover:-rotate-6 [.group.active_&]:-rotate-6
+            /* Positioning */ absolute rounded-full top-8 -left-4 translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
+            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
+            /* Transition */ transition-all duration-300">
+        <img src='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.png" | relURL }}' alt="Smiling face" class="
+            /* Pointer Events */ pointer-events-none
+            /* Style */ shadow-2xl rotate-0 group-hover:rotate-12 [.group.active_&]:rotate-12
+            /* Positioning */ absolute rounded-full bottom-24 -right-4 -translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
+            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
+            /* Transition */ transition-all duration-300">
+        {{ end }}
       </div>
       {{ end }}
     </div>
