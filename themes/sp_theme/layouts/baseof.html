@@ -5,7 +5,7 @@
   {{ partial "head.html" . }}
 </head>
 
-<body class="dark:bg-neutral-900 dark:text-neutral-200">
+<body class="dark:bg-neutral-900 dark:text-neutral-300">
   <header class="flex flex-row justify-between p-4 max-w-6xl mx-auto px-6">
     <h1>{{ site.Title }}</h1>
     <div class="flex flex-row gap-4">
@@ -13,7 +13,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="flex flex-col gap-30">
     {{ block "main" . }}{{ end }}
   </main>
 

@@ -9,6 +9,26 @@
   --font-headline: "Shadows Into Light Two", sans-serif;
 }
 
+@utility scrollbar-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   font-family: var(--font-quicksand);
+}
+
+@keyframes shake-vertical {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-shake-vertical {
+  animation: shake-vertical 0.1s linear 0s 2;
 }
