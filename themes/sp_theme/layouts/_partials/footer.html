@@ -5,7 +5,7 @@
     <p class="text-xl">StoryPad</p>
   </div>
   {{ else }}
-  <a href="/">
+  <a href='{{ "/" | relURL }}'>
     <img src='{{ "logo_120x120.png" | relURL }}' alt="StoyPad logo_120x120.png" class="w-[120]" />
     <p class="text-xl">StoryPad</p>
   </a>
@@ -57,8 +57,8 @@
 
   <div class="flex flex-col gap-3 mt-8">
     <div class="flex flex-row items-center justify-center gap-1 group">
-      <a href="https://github.com/theachoem/storypad" class="underline" target="_blank" rel="noopener noreferrer">Report
-        Issues, Request Features, or Contribute</a>
+      <a href="https://github.com/theachoem/storypad" class="underline" target="_blank">Report Issues, Request Features,
+        or Contribute</a>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -66,7 +66,7 @@
       </svg>
     </div>
     <div class="flex flex-row items-center justify-center gap-1 group">
-      <a href="/contributions/localization" class="underline" rel="noopener noreferrer">Help with Translation</a>
+      <a href='{{ "/contributions/localization" | relURL }}' class="underline">Help with Translation</a>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
         <path stroke-linecap="round" stroke-linejoin="round"
@@ -74,7 +74,7 @@
       </svg>
     </div>
     <div class="flex flex-row items-center justify-center gap-1 group">
-      <a href="/privacy-policy" class="underline" rel="noopener noreferrer">Privacy Policy</a>
+      <a href='{{ "/privacy-policy" | relURL }}' class="underline">Privacy Policy</a>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
         class="size-5 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-0 duration-200">
         <path stroke-linecap="round" stroke-linejoin="round"
