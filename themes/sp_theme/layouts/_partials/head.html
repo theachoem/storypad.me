@@ -9,6 +9,7 @@
 <meta property="og:description" content="{{ .Description }}">
 <meta property="og:image" content='{{ "/og_1200x630.jpg" | relURL }}'>
 <meta property="og:url" content="https://www.storypad.me">
+<meta property="og:type" content="website" />
 
 <meta name="twitter:title"
   content='{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}'>
