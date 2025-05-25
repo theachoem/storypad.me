@@ -23,6 +23,9 @@ enableRobotsTXT = true
     source = 'hugo_stats.json'
     target = 'assets/notwatching/hugo_stats.json'
 
+[minify]
+  minifyOutput = true
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
