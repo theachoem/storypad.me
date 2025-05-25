@@ -1,9 +1,9 @@
 <section>
   <div class="
-      /* Size & Spacing */ max-w-6xl mx-auto px-6
+      /* Size & Spacing */ mx-auto
       /* Layout */ flex flex-col items-center text-center gap-4">
-    <h2 class="font-headline text-4xl">Why split your life into folders?</h2>
-    <p class="max-w-2xl">
+    <h2 class="font-headline text-4xl px-6">Why split your life into folders?</h2>
+    <p class="max-w-2xl px-6">
       You don't live in categories, so why journal in them? StoryPad is designed
       for how you actually live - with a unified, chronological flow that brings
       everything together: thoughts, todos, memories, and more. Just write - we'll
@@ -23,8 +23,9 @@
     {{ $usecasesLength := len site.Data.usecases }}
 
     <div class="
-        /* Grid Layout */ grid grid-cols-[repeat(auto-fit,_320px)] justify-center gap-5
-        /* Size & Spacing */ w-full mt-6">
+        /* Grid Layout (phone) */ flex flex-row overflow-y-scroll gap-5 scrollbar-hidden px-6
+        /* Grid Layout */ lg:grid lg:grid-cols-[repeat(auto-fit,_320px)] lg:justify-center lg:mt-10 lg:overflow-visible lg:max-w-6xl lg:px-0
+        /* Size & Spacing */ w-full">
       {{ range $index, $element := site.Data.usecases }}
       {{ $bg_color := index $classes (mod $index (len $classes)) }}
 
@@ -33,8 +34,8 @@
         onmouseover="document.querySelectorAll('.home-usecase-card').forEach(c => c !== this && c.classList.remove('active'));"
         class="
         /* Positioning */ relative
-        /* Size */ w-[320px] h-[420px]
-        /* Layout */ group items-center px-6 pt-6
+        /* Size */ min-w-[320px] w-[320px] h-[420px]
+        /* Layout */ group items-center px-6 pt-6 mt-10 lg:mt-0
         /* Style */ border rounded-lg {{ $bg_color }} cursor-pointer border-black dark:border-neutral-500
         /* Custom class */ home-usecase-card">
 
