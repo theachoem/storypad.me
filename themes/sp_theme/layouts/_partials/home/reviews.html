@@ -15,7 +15,8 @@
       {{ range site.Data.reviews }}
       <div>
         <a class="underline text-red-400 text-base"
-          href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank">{{ .name
+          href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank"
+          rel="noopener noreferrer">{{ .name
           }}</a>
         <p class="text-base my-2">{{ .review }}</p>
         <p class="text-sm italic text-neutral-500">{{ .review_date }}</p>
