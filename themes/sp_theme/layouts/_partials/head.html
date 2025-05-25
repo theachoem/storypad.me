@@ -9,3 +9,23 @@
 <link rel="icon" type="image/png" sizes="32x32" href='{{ "/favicon-32x32.png" | relURL }}'>
 <link rel="icon" type="image/png" sizes="16x16" href='{{ "/favicon-16x16.png" | relURL }}'>
 <link rel="manifest" href='{{ "/site.webmanifest" | relURL }}'>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAxAvjEPhP78ERk7nToih5bkK9wUetXGDA",
+    authDomain: "tc-write-story.firebaseapp.com",
+    projectId: "tc-write-story",
+    storageBucket: "tc-write-story.appspot.com",
+    messagingSenderId: "315543702519",
+    appId: "1:315543702519:web:3c1c02aab9ff9aa974fcf2",
+    measurementId: "G-PX27L3Y3PJ"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
