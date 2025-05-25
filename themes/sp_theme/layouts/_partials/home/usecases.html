@@ -59,7 +59,7 @@
 
           {{ if eq .scrollable "yes" }}
           <img src="/usecases/{{ .image }}" alt="{{ .title }}" class="w-full h-auto backdrop-blur"
-            onclick="this.parentElement.scrollTo({ top: this.parentElement.scrollTop !== 0 ? 0 : this.parentElement.offsetHeight, behavior: 'smooth' });" />
+            onclick="this.parentElement.scrollTo({ top: this.parentElement.scrollTop !== 0 ? 0 : this.offsetHeight, behavior: 'smooth' });" />
           {{ else }}
           <img src="/usecases/{{ .image }}" alt="{{ .title }}" class="w-full h-auto backdrop-blur"
             onclick="this.classList.remove('animate-shake-vertical');void this.offsetWidth; this.classList.add('animate-shake-vertical');" />
