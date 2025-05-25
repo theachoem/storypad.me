@@ -1,6 +1,9 @@
 <section>
 	<div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center">
-		<img src='{{ "logo_120x120.png" | relURL }}' alt="StoyPad logo_120x120.png" class="w-[120]" />
+		<picture>
+			<source srcset='{{ "logo_200x200.webp" | relURL }}' type="image/webp" />
+			<img src='{{ "logo_200x200.png" | relURL }}' alt="StoyPad logo_200x200" class="w-[120px] h-[120px]" />
+		</picture>
 		<h2 class="font-headline text-4xl">
 			Not another journal app.<br />
 			<span class="font-quicksand text-4xl font-bold text-red-400">A timeline for your life.</span>
@@ -18,16 +21,25 @@
 			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172" target="_blank"
 				rel="noopener noreferrer"
 				class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" />
+				<picture>
+					<source srcset='{{ "app-store-button.webp" | relURL }}' type="image/webp" />
+					<img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" class="h-[48px]" />
+				</picture>
 			</a>
 			<a href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank"
 				rel="noopener noreferrer"
 				class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<img src='{{ "google-play-button.png" | relURL }}' alt="google-play" />
+				<picture>
+					<source srcset='{{ "google-play-button.webp" | relURL }}' type="image/webp" />
+					<img src='{{ "google-play-button.png" | relURL }}' alt="google-play" class="h-[48px]" />
+				</picture>
 			</a>
 		</div>
 
-		<img src='{{ "cover.png" | relURL }}' alt="cover.png" class="cursor-pointer"
-			onclick="this.classList.remove('animate-shake-vertical');void this.offsetWidth; this.classList.add('animate-shake-vertical');">
+		<picture>
+			<source srcset='{{ "cover.webp" | relURL }}' type="image/webp" />
+			<img src='{{ "cover.png" | relURL }}' alt="cover.png" class="cursor-pointer"
+				onclick="this.classList.remove('animate-shake-vertical'); void this.offsetWidth; this.classList.add('animate-shake-vertical');" />
+		</picture>
 	</div>
 </section>
