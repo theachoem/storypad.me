@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'StoryPad'
 theme = 'sp_theme'
 
+enableRobotsTXT = true
+
 [build]
   [build.buildStats]
     enable = true
