@@ -6,9 +6,9 @@
   answer: >
     StoryPad isn't just for journaling. It's designed for daily life - whether you're journaling, writing a story, or reflecting on your day. We didn't copy other apps; we built it from the ground up to be flexible, minimal, and personal.
 
-- question: "Why are there multiple editors inside one entry?"
+- question: "Why are there multiple editors inside one note / entry?"
   answer: >
-    Each entry in StoryPad can have multiple pages. You can choose between two layouts: “list” for quick journaling with prompts, or “pages” for deeper writing like stories or poems. You can easily reorder or delete pages with this feature. We're also planning a grid layout and more customization for each page.
+    Each note in StoryPad can have multiple pages. You can choose between two layouts: “list” for quick journaling with prompts, or “pages” for deeper writing like stories or poems. With multi-page support, you can easily reorder or delete pages, and build a more structured story.
 
 - question: "Does StoryPad support rich text editing?"
   answer: >
