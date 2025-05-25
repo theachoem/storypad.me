@@ -7,13 +7,13 @@
 <meta property="og:title"
   content='{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}'>
 <meta property="og:description" content="{{ .Description }}">
-<meta property="og:image" content="https://your-website.com/og-image.png">
+<meta property="og:image" content='{{ "/og_1200x630.jpg" | relURL }}'>
 <meta property="og:url" content="https://www.storypad.me">
 
 <meta name="twitter:title"
   content='{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}'>
 <meta name="twitter:description" content="{{ .Description }}">
-<meta name="twitter:url" content="https://your-website.com/twitter-image.png">
+<meta name="twitter:url" content='{{ "/og_twitter_1200x675.jpg" | relURL }}'>
 <meta name="twitter:card" content="summary">
 
 {{ partialCached "head/css.html" . }}
