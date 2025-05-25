@@ -23,7 +23,7 @@
     {{ $usecasesLength := len site.Data.usecases }}
 
     <div class="
-        /* Grid Layout (phone) */ flex flex-row overflow-y-scroll gap-5 scrollbar-hidden px-6 snap-x
+        /* Grid Layout (phone) */ flex flex-row overflow-y-scroll gap-5 scrollbar-hidden px-6
         /* Grid Layout */ lg:grid lg:grid-cols-[repeat(auto-fit,_320px)] lg:justify-center lg:mt-10 lg:overflow-visible lg:max-w-6xl lg:px-0
         /* Size & Spacing */ w-full">
       {{ range $index, $element := site.Data.usecases }}
@@ -33,7 +33,7 @@
         onclick="if (!window.matchMedia('(hover: hover)').matches) { document.querySelectorAll('.home-usecase-card').forEach(c => c !== this && c.classList.remove('active')); this.classList.toggle('active'); }"
         onmouseover="document.querySelectorAll('.home-usecase-card').forEach(c => c !== this && c.classList.remove('active'));"
         class="
-        /* Positioning */ relative snap-center
+        /* Positioning */ relative
         /* Size */ min-w-[320px] w-[320px] h-[420px]
         /* Layout */ group items-center px-6 pt-6 mt-10 lg:mt-0
         /* Style */ border rounded-lg {{ $bg_color }} cursor-pointer border-black dark:border-neutral-500
