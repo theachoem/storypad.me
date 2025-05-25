@@ -7,7 +7,7 @@
       onclick="if (window.scrollY === 0) { this.classList.remove('animate-shake-vertical'); void this.offsetWidth; this.classList.add('animate-shake-vertical'); } else { window.scrollTo({ top: 0, behavior: 'smooth' }); }"
       class="cursor-pointer">{{ .Site.Title }}</h1>
     {{ else }}
-    <a href='{{ "/" | relURL }}'>{{ .Site.Title }}</a>
+    <h1><a href='{{ "/" | relURL }}'>{{ .Site.Title }}</a></h1>
     {{ end }}
 
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
