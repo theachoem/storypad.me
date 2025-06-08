@@ -55,6 +55,8 @@ Your life story doesn’t have to be a book. It could be a collection of short s
 
 ## How StoryPad Brings Your Story to Life
 
+![og_1200x630.jpg](https://storypad.me/og_1200x630.jpg)
+
 If you’re ready to start writing your life story, my app, **StoryPad**, is the perfect tool to make it simple and special. StoryPad lets you capture your entire life-memories, emotions, travels, and more-on one continuous timeline. No folders, no clutter, just your story, beautifully organized. It’s like a digital notebook that’s all about you.
 
 ### Why StoryPad Rocks for Writing Your Life Story
@@ -62,7 +64,7 @@ If you’re ready to start writing your life story, my app, **StoryPad**, is the
 - **Timeline-Based Writing**: Your story flows like a river, not a pile of notes. See how your memories and emotions connect over time, making it easy to build a cohesive narrative.
 - **Rich Editor**: Write with freedom using bold, italics, checklists, images, or text colors. It’s clean and distraction-free, so you can focus on your words.
 - **Track Your Emotions**: Choose from over 45 emotions to capture exactly how you felt-whether it was thrill, sorrow, or hope. This adds depth to your story, like when I tagged “bittersweet” on a memory of my last family trip.
-- **Look Back Anytime**: Revisit old entries and see how far you’ve come. Tag memories (like “childhood” or “travel”) for quick searches, perfect for piecing together your story.
+- **Look Back Anytime**: Revisit old entries and see how far you’ve come. Tag memories (like “Childhood 🪴” or “Travel 🧳”) for quick searches, perfect for piecing together your story.
 - **Personalized Vibes**: Pick from 20+ color themes and 1,300+ Google Fonts to make your StoryPad feel like home-all free.
 - **Privacy First**: Your stories sync directly to your Google Drive, so only you can access them. No third-party servers, just your data, safe and sound.
 - **Easy Backups**: One-tap Google Drive sync keeps your story secure across devices. Plus, offline backups mean you’re never locked out.
