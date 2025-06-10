@@ -46,27 +46,7 @@ Writing’s like hitting the reset button for your brain. It helps you make sens
 
 ![og_1200x630.jpg](https://storypad.me/og_1200x630.jpg)
 
-Now, let me tell you about something I’m stoked about-my app, **StoryPad**. It’s designed to make writing, whether diary or journal, feel like second nature. StoryPad lets you capture everything-notes, emotions, workouts, travels-on one continuous timeline. No folders, no tabs, just your life, beautifully organized. It’s all about you and your story, without the hassle.
-
-### What Makes StoryPad Stand Out?
-
-- **Timeline-Based Writing**: Your life unfolds like a story, not a pile of entries. See how your thoughts and experiences connect over time, all in one seamless flow.
-- **Rich Editor**: Write freely with a clean, powerful editor. Add bold, italics, checklists, images, or even change text colors to make your entries pop, no distractions.
-- **Track Your Emotions**: Choose from over 45 unique emotions to nail how you’re feeling-whether it’s joy, anxiety, or something in between. It’s way more than just “happy” or “sad.”
-- **Look Back Anytime**: Revisit past entries and see how long it’s been since you wrote. Tag your stories for easy searching, so you can find that one memory fast.
-- **Make It Yours**: Pick from 20+ dynamic color themes (including classic black and white) and over 1,300 Google Fonts to customize your experience-all free.
-- **Your Privacy, Our Priority**: Your stories sync directly to your Google Drive, so only you have access. No cloud or third-party servers, keeping your data safe and our costs low.
-- **One-Tap Google Drive Backup**: Secure your stories with Google Drive for peace of mind. Access them across devices while staying in full control.
-- **Offline Access**: Save a local copy of your stories, so you can read or write even without Wi-Fi.
-
-### Why You’ll Love StoryPad
-
-- **Clear Your Mind**: Log your day or unpack your thoughts to feel lighter and more focused.
-- **Capture Memories**: Save life’s moments-big or small-on a timeline you can revisit anytime.
-- **Spark Creativity**: Mix text, images, and emotions to tell your story in a way that’s uniquely you.
-- **Fit Your Life**: StoryPad’s simple, mobile-friendly design lets you write anywhere, even on your busiest days.
-
-Ready to write your life story? Hit the download button below to get StoryPad and start capturing your moments. It’s a private, beautiful way to tell the story that’s uniquely yours.
+Curious how StoryPad can help you? Visit [storypad.me](https://storypad.me) for a quick 2-minute pitch that shows why StoryPad is the perfect tool to tell your story.
 
 ## Final Thoughts
 

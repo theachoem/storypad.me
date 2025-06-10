@@ -53,31 +53,11 @@ Writing your life story can stir up big feelings-joy, regret, or even grief. Tha
 
 Your life story doesn’t have to be a book. It could be a collection of short stories, a letter to your kids, or even a mix of words and photos. There’s no “right” way. I’ve got bits of my story scattered across journals, some just a few lines, others pages long. What matters is that it feels true to you.
 
-## How StoryPad Brings Your Story to Life
+## Meet StoryPad: Your Life, Your Story
 
 ![og_1200x630.jpg](https://storypad.me/og_1200x630.jpg)
 
-If you’re ready to start writing your life story, my app, **StoryPad**, is the perfect tool to make it simple and special. StoryPad lets you capture your entire life-memories, emotions, travels, and more-on one continuous timeline. No folders, no clutter, just your story, beautifully organized. It’s like a digital notebook that’s all about you.
-
-### Why StoryPad Rocks for Writing Your Life Story
-
-- **Timeline-Based Writing**: Your story flows like a river, not a pile of notes. See how your memories and emotions connect over time, making it easy to build a cohesive narrative.
-- **Rich Editor**: Write with freedom using bold, italics, checklists, images, or text colors. It’s clean and distraction-free, so you can focus on your words.
-- **Track Your Emotions**: Choose from over 45 emotions to capture exactly how you felt-whether it was thrill, sorrow, or hope. This adds depth to your story, like when I tagged “bittersweet” on a memory of my last family trip.
-- **Look Back Anytime**: Revisit old entries and see how far you’ve come. Tag memories (like “Childhood 🪴” or “Travel 🧳”) for quick searches, perfect for piecing together your story.
-- **Personalized Vibes**: Pick from 20+ color themes and 1,300+ Google Fonts to make your StoryPad feel like home-all free.
-- **Privacy First**: Your stories sync directly to your Google Drive, so only you can access them. No third-party servers, just your data, safe and sound.
-- **Easy Backups**: One-tap Google Drive sync keeps your story secure across devices. Plus, offline backups mean you’re never locked out.
-- **Write Anywhere**: With offline access and a mobile-friendly design, you can add to your story anytime, whether you’re on a bus or in bed.
-
-### How StoryPad Helps You
-
-- **Tell It Your Way**: Use the timeline to organize key moments or the rich editor to add details and emotions, making your story vivid and real.
-- **Stay Motivated**: The app’s intuitive design and emotion tracking keep you writing, even on busy days.
-- **Keep It Safe**: With Google Drive sync and offline backups, your life story is protected for years to come.
-- **Make It Personal**: Customize fonts and themes to match your style, turning your story into something you love to revisit.
-
-Ready to write your life story? Hit the download button below to get StoryPad and start capturing your moments. It’s a private, beautiful way to tell the story that’s uniquely yours.
+Curious how StoryPad can help you? Visit [storypad.me](https://storypad.me) for a quick 2-minute pitch that shows why StoryPad is the perfect tool to tell your story.
 
 ## Final Thoughts
 

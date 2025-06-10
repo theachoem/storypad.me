@@ -18,22 +18,11 @@ On X, people often say they stop journaling because it feels like a chore or the
 5. **Set Reminders**: A nudge helps. I set a phone alert for 9 p.m., and X users share how reminders keep them on track.
 6. **Reward Yourself**: Celebrate streaks. I treat myself to a snack after a week of writing. X threads are full of people rewarding themselves with stickers or coffee.
 
-## How StoryPad Keeps You Going
+## Meet StoryPad: Your Life, Your Story
 
 ![og_1200x630.jpg](https://storypad.me/og_1200x630.jpg)
 
-**StoryPad**, is designed to make journaling a habit you’ll actually stick with. Here’s how it helps:
-
-- **Timeline-Based Writing**: Your entries flow on one seamless timeline, so you see your progress build, motivating you to keep going.
-- **Rich Editor**: Write quick notes or detailed entries with bold, italics, or images-whatever feels right, no pressure.
-- **Track Emotions**: Log from 45+ emotions to make each entry meaningful, even if it’s just one word. It’s quick and keeps you hooked.
-- **Look Back and Stay Motivated**: Revisit entries to see your streak grow. Tag them (like “Morning Thoughts 💭”) for easy organization.
-- **Personalized and Fun**: Choose from 20+ color themes and 1,300+ Google Fonts to make journaling _your_ thing, free.
-- **Private and Secure**: Syncs to your Google Drive, so your words are safe, giving you confidence to write honestly.
-- **Write Anywhere, Anytime**: Offline access and Google Drive backups mean you can journal on a whim, no excuses.
-- **Easy to Use**: The clean design makes writing feel effortless, even on your busiest days.
-
-Ready to build a journaling habit? Hit the download button below to get StoryPad and make writing your story a daily win.
+Curious how StoryPad can help you? Visit [storypad.me](https://storypad.me) for a quick 2-minute pitch that shows why StoryPad is the perfect tool to tell your story.
 
 ## Final Thoughts
 
