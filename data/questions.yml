@@ -29,3 +29,7 @@
 - question: "Can I preview my images if I export locally?"
   answer: >
     Yes, but since images are stored securely in your own Google Drive, you'll need to be logged into Google Drive to view them inside StoryPad. We're exploring options to make image previews easier, including exporting them in ZIP or other formats in the future.
+
+- question: "Is StoryPad open source?"
+  answer: >
+    Yes! StoryPad is open source, which means how it keeps your data is fully transparent. While many apps keep things hidden, StoryPad is open - so you always know your data is safe and private. You can visit our GitHub to learn more.
