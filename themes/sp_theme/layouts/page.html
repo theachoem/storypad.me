@@ -6,7 +6,7 @@
   {{ $dateHuman := .Date | time.Format ":date_long" }}
   <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
 
-  <article class="prose mt-5 dark:prose-invert break-words">
+  <article class="prose mt-5 dark:prose-invert break-words !max-w-none">
     {{ .Content }}
   </article>
 </div>
