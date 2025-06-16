@@ -48,6 +48,10 @@ StoryPad lets you write and capture everything - notes, thoughts, emotions, work
 • Light & dark mode
 • Customize fonts and layouts to match your mood and style
 
+📤 Export & Share Anywhere
+• Back up or import your stories offline
+• Share your words in text or markdown, whether it’s on X, Facebook, or just with a friend
+
 🌍 Accessible for All
 • Available in 20+ languages
 • Open-source for full transparency
