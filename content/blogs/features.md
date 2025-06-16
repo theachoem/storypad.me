@@ -1,5 +1,5 @@
 ---
-title: "StoryPad Features"
+title: "StoryPad Key Features"
 date: "2025-06-16"
 ---
 
