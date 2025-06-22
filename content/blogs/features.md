@@ -3,7 +3,7 @@ title: "StoryPad Key Features"
 date: "2025-06-16"
 ---
 
-StoryPad lets you write and capture everything - notes, thoughts, emotions, workouts, travels - on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized. Your story flows like life does: naturally. And best of all? It’s FREE with unlimited journaling.
+StoryPad is a journal app that lets you write and capture everything - notes, thoughts, emotions, workouts, travels, stories, novels, or poems — on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized. Your story flows like life does: naturally. And best of all? It’s FREE with unlimited journaling.
 
 == KEY FEATURES ==
 
@@ -66,5 +66,10 @@ StoryPad lets you write and capture everything - notes, thoughts, emotions, work
 - Available in 20+ languages
 - Open-source for full transparency
 
-== Make every day a story - with StoryPad ==
-👉 Download now on iOS & Android
+== Make every day a story - with StoryPad == 👉 Download now on iOS & Android
+
+Android: [https://play.google.com/store/apps/details?id=com.tc.writestory](https://play.google.com/store/apps/details?id=com.tc.writestory)
+
+IOS: [https://apps.apple.com/us/app/storypad-my-diary-journal/id6744032172?platform=iphone](https://apps.apple.com/us/app/storypad-my-diary-journal/id6744032172?platform=iphone)
+
+Website: [https://storypad.me](https://storypad.me)
