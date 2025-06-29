@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.tc.writestory",
+      "sha256_cert_fingerprints": [
+        "8B:E1:64:60:D4:AB:6E:FB:86:C3:CC:12:D0:28:CD:68:61:12:A2:16:C0:F3:FF:7A:75:66:FF:63:72:1C:6D:3B"
+      ]
+    }
+  }
+]

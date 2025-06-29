@@ -15,11 +15,11 @@ StoryPad is a journal app that lets you write and capture everything - notes, th
 - Text alignment, indentation, links
 - Support for 1300+ Google Fonts, adjustable font size & weight
 
-📄 Multi-Page Entries
+🕓 Throwback Memories
+Revisit what you wrote on this exact day - 1, 2, or even 3 years ago.
+Reflect on how far you've come and respond to your past self, right from your timeline.
 
-- Add multiple pages inside 1 entry
-- With multiple layouts to fit your writing style
-- Great for journaling prompts, novels, long-form writing, and daily notes
+📌 Throwbacks appear only if you've written something on this day in a previous year or a few years ago.
 
 📸 Photo Memories
 
@@ -31,6 +31,12 @@ StoryPad is a journal app that lets you write and capture everything - notes, th
 
 - Select from 45+ emotions to express how you feel
 - Track your mental well-being over time with mood history and calendar view
+
+📄 Multi-Page Entries
+
+- Add multiple pages inside 1 entry
+- With multiple layouts to fit your writing style
+- Great for journaling prompts, novels, long-form writing, and daily notes
 
 🔖 Tags, Stars & Search
 
@@ -59,7 +65,7 @@ StoryPad is a journal app that lets you write and capture everything - notes, th
 📤 Export & Share Anywhere
 
 - Back up or import your stories offline
-- Share your words in text or markdown, whether it’s on X, Facebook, or just with a friend
+- Share your words in text or markdown, whether it's on X, Facebook, or just with a friend
 
 🌍 Accessible for All
 
