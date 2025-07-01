@@ -1,36 +1,80 @@
 ---
-date: "2025-03-12"
+date: "2025-07-01"
 draft: false
 title: "Privacy Policy"
 ---
 
-**StoryPad** ("we," "us," or "our") is committed to safeguarding the privacy of our users ("user" or "you"). This Privacy Policy outlines how we collect, use, disclose, and protect your information when you access our mobile application (“App”). Please review this Privacy Policy carefully. **If you do not agree with the terms of this Privacy Policy, please refrain from accessing or using the App.**
+Welcome to StoryPad (“we,” “our,” or “us”). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect information when you use our app, available at [storypad.me](http://storypad.me/).
 
-We reserve the right to modify this Privacy Policy at any time and for any reason. Users are encouraged to periodically review this Privacy Policy to stay informed about updates. By continuing to use the App after the revised Privacy Policy has been posted, you acknowledge and accept the changes and agree to be bound by the updated terms.
+## 1. Information We Collect
 
-## Collection and Use of Your Information
+**No Personal Data Stored on Our Servers.**
 
-### 1. No Collection of Personal Data
+StoryPad is designed to respect your privacy. We do **not** collect or store your personal information on our servers. All your journal entries, images, and nickname are stored locally on your device and backed up **directly** to your Google Drive account using Google’s API. We do not have access to this data at any time.
 
-We do not collect any personal information, which includes but is not limited to your real name, address, email address, telephone number, geographical location, or any data stored on your device that could be used to identify you or other individuals.
+**Nickname**  
+You may provide a nickname for display purposes within the app. This nickname is stored locally on your device and also synced to your Google Drive backup.
 
-As we do not collect personal information, there is no use, storage, or sharing of such data in any capacity.
+**Anonymous Analytics and Crash Reports**  
+We collect anonymous app usage analytics and crash reports through Firebase Analytics to help us improve the app’s performance and user experience. These analytics do **not** include any personally identifiable information.
 
-### 2. Google Permissions
+## 2. How We Use Your Information
 
-If you choose to sign in using your Google account, the App may access basic account information such as your name, email address, and profile picture URL, which will only be used within the App for display to you.
+- To enable you to create, view, and manage your entries and data within the app.
+- To back up your journal entries, images, and nickname directly to your Google Drive account for safekeeping.
+- To display your chosen nickname in the app interface.
+- To collect anonymous usage data and crash reports that help us improve app stability and performance.
 
-Additionally, if you grant the App access to Google Drive, it will create a dedicated folder within your Drive for storing application-specific data, such as your uploaded images and stories. This folder is private and accessible only to you. StoryPad does not have access to your entire Google Drive or any other files outside of this designated folder. It is stored exclusively in your private Google Drive folder and is never uploaded or shared elsewhere. We do not have the ability to read or access your stored data in any way.
+## 3. Google Drive Backup and SSO
 
-### 3. Google Analytics
+Your data backups and authentication are handled directly through Google Drive and Google Single Sign-On (SSO). We do not store or manage your Google account credentials or personal data.
 
-We utilize Google Analytics to collect and analyze aggregated data about how the App is used. This helps us better understand user behavior, improve functionality, and enhance your overall experience.
+Your app data is stored in a private, app-specific folder within your Google Drive. This folder is not visible in the standard Google Drive interface to ensure your backups remain secure and separate from your other files.
 
-Important Note: Only non-identifiable data is transmitted to Google Analytics. The information collected does not include personal data and cannot be used to identify you in any way.
+For more information about this type of storage, please see Google’s documentation: [Google Drive AppData Folder.](https://developers.google.com/workspace/drive/api/guides/appdata)
 
-## Your Consent
+Please also review Google’s privacy policy for information about how Google collects and processes data when you use their services: [Google Privacy Policy.](https://policies.google.com/privacy)
 
-By using this App, you consent to the terms of this Privacy Policy.
+## 4. In-App Purchases
 
-Juniorise
-Phnom Penh, Cambodia
+StoryPad offers optional one-time in-app purchases (such as add-ons like relax sounds or template). Payments are processed securely through the Google Play Store using RevenueCat, a third-party service that helps us manage purchases and restore them across your devices.
+
+We do **not** collect, store, or access your credit card details or other billing information. To link purchases across your devices, we generate an anonymous identifier by hashing your Google Drive backup email address with a secret key stored in the app. This hash cannot be reversed to reveal your original email.
+
+For details on how these services handle your data, please see:
+
+- [Google Privacy Policy](https://policies.google.com/privacy)
+- [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy)
+- [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
+
+## 5. Cookies and Tracking Technologies
+
+We use Google Analytics for anonymous usage tracking. This helps us understand how the app is used but does not identify individual users.
+
+## 6. Data Security
+
+We prioritize the security of your data by:
+
+- Storing your data locally on your device.
+- Backing up data only directly to your Google Drive account, using secure Google APIs.
+- Using secure Firebase services for anonymous analytics and crash reporting.
+
+We also recommend that you use secure, trusted networks and keep your device’s software up to date to further protect your data.
+
+## 7. Children’s Privacy
+
+StoryPad is not intended for children under 13 years old. We do not knowingly collect personal information from children under 13.
+
+## 8. Your Rights and Choices
+
+You control your journal entries, images, and nickname through the StoryPad app. You can delete or modify your data at any time within the app.
+
+Currently, StoryPad does not provide an option to opt out of anonymous analytics and crash reporting.
+
+## 9. Contact Us
+
+If you have any questions about this Privacy Policy or your data privacy, please contact us at:
+
+**Email:** thea@storypad.me
+**Company:** StoryPad
+**Location:** Phnom Penh, Cambodia
