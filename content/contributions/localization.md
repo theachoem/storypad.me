@@ -3,8 +3,6 @@ title: "Localization"
 date: "2025-02-27"
 ---
 
-# Localization
-
 Our app currently supports the following languages, with translations provided by Google Translate:
 
 > Arabic, German, English, Spanish (Latin America), Spanish (Spain), French, Hindi, Indonesian, Italian, Japanese, Khmer, Korean, Polish, Portuguese, Thai, Vietnamese & Chinese (Simplified).

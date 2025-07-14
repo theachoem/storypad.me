@@ -3,8 +3,6 @@ title: Migrate from Spooky to StoryPad
 date: "2025-02-27"
 ---
 
-## Migration Steps
-
 ### Step 1: Export Data from Spooky
 
 1. Open **Spooky**.
@@ -20,4 +18,6 @@ date: "2025-02-27"
 4. Click **Import**, select the backup file you exported from Spooky, and click **Restore**.
 5. Wait for the process to complete. Once done, your data will be available in StoryPad.
 
-[Why Are We Making This Change?](/wiki/different-between-storypad-and-spooky)
+---
+
+> [Why Are We Making This Change?](/wiki/different-between-storypad-and-spooky)
