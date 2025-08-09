@@ -17,7 +17,9 @@ If your language is not listed, or you spot any translation glitches, feel free 
 3. If you see any translation errors or feel a translation can be better, add your suggestions!
 4. We’ll review the updates and apply them in the app with the next release.
 
-> If you're contributing a large number of changes or a new language, please make a copy of the sheet, update it, and share the link in a comment on the original sheet.
+> **Important:**  
+> If you’d like to contribute a lot of changes or adding a new language, it really helps us if you make a copy (duplicate) of the sheet, add your updates there, then email your sheet link to [thea@storypad.me](mailto:thea@storypad.me) with a quick note about your changes or the language you added.  
+> This makes it much easier (and faster!) for us to review and include your contributions.
 
 ## 🙌 Contributors
 
