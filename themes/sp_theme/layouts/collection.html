@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold mb-6">{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="prose mb-10 dark:prose-invert">{{ . }}</div>
+  {{ end }}
+
+  <ul class="space-y-3">
+    {{ range .Pages.ByDate.Reverse }}
+    <li>
+      <a href="{{ .RelPermalink }}" class="text-lg font-semibold hover:text-blue-600">
+        {{ .Title }}
+      </a>
+      <time class="ml-2 text-sm text-gray-500" datetime="{{ .Date.Format " 2006-01-02" }}">
+        {{ .Date.Format "Jan 2, 2006" }}
+      </time>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+
+{{ end }}

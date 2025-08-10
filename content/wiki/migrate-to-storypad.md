@@ -1,6 +1,17 @@
 ---
 title: Migrate from Spooky to StoryPad
 date: "2025-02-27"
+keywords:
+  - spooky
+  - storypad
+  - diary app
+  - journal app
+  - export
+  - import
+  - migrate
+  - Android diary
+  - offline backup
+  - journal migration
 ---
 
 ### Step 1: Export Data from Spooky

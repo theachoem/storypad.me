@@ -2,6 +2,19 @@
 date: "2025-03-12"
 draft: false
 title: "Spooky Privacy Policy"
+keywords:
+  - storypad
+  - timeline diary
+  - digital journal
+  - open source journal
+  - personal timeline
+  - online writing platform
+  - life log
+  - creative journaling
+  - organize memories
+  - daily notes
+  - story sharing
+  - private journal
 ---
 
 **Spooky** ("we," "us," or "our") is committed to safeguarding the privacy of our users ("user" or "you"). This Privacy Policy outlines how we collect, use, disclose, and protect your information when you access our mobile application (“App”). Please review this Privacy Policy carefully. **If you do not agree with the terms of this Privacy Policy, please refrain from accessing or using the App.**

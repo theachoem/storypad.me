@@ -1,6 +1,19 @@
 ---
 title: What's the Difference Between StoryPad & Spooky?
 date: "2025-02-27"
+keywords:
+  - storypad
+  - spooky
+  - storypad vs spooky
+  - migrate to storypad
+  - spooky discontinued
+  - storypad features
+  - spooky google play
+  - journal app migration
+  - digital diary comparison
+  - open source journal
+  - simple journal app
+  - advanced journal app
 ---
 
 Spooky was originally created as a more advanced replacement for **StoryPad**, but after two years, we've realized that **StoryPad’s simplicity is its greatest strength**. To maintain this clean and user-friendly experience, we have decided to focus our development efforts on **StoryPad** moving forward.

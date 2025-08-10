@@ -1,6 +1,19 @@
 ---
 title: "Sharing my open-source diary app with 80k+ downloads: 5 years of learning & mindset changes (Flutter)"
 date: "2025-03-02"
+keywords:
+  - storypad
+  - timeline diary
+  - digital journal
+  - open source journal
+  - personal timeline
+  - online writing platform
+  - life log
+  - creative journaling
+  - organize memories
+  - daily notes
+  - story sharing
+  - private journal
 ---
 
 Hi everyone, today I want to introduce my open-source diary app with 80k+ downloads & share my experience in learning & making the app for the last 5 years.

@@ -1,6 +1,19 @@
 ---
 title: "Localization"
 date: "2025-02-27"
+keywords:
+  - storypad
+  - timeline diary
+  - digital journal
+  - open source journal
+  - personal timeline
+  - online writing platform
+  - life log
+  - creative journaling
+  - organize memories
+  - daily notes
+  - story sharing
+  - private journal
 ---
 
 Our app currently supports the following languages, with translations provided by Google Translate:
