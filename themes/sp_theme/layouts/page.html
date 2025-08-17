@@ -1,14 +1,121 @@
 {{ define "main" }}
 
 <div class="max-w-7xl mx-auto px-6">
-  <h1 class="text-2xl">{{ .Title }}</h1>
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  <div class="mb-6">
+    <nav class="flex items-center gap-2 text-sm text-neutral-600 dark:text-neutral-400 mb-4">
+      <a href="{{ "/" | relURL }}" class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">Home</a>
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+      {{ if eq .Section "changelogs" }}
+      <a href="{{ "/changelogs" | relURL }}" class="hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors">Changelogs</a>
+      <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+      </svg>
+      {{ end }}
+      <span class="text-neutral-500 dark:text-neutral-500">{{ .Title }}</span>
+    </nav>
 
-  <article class="prose mt-5 dark:prose-invert break-words !max-w-none">
+    <div class="
+      /* Layout */ p-6 border rounded-lg mb-8
+      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm">
+      <h1 class="text-3xl font-bold mb-3 text-neutral-900 dark:text-neutral-100">{{ .Title }}</h1>
+      
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <div class="flex items-center gap-4 text-sm">
+        <time class="
+          /* Layout */ inline-flex items-center gap-2 px-3 py-1 rounded-full
+          /* Style */ bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-400 font-medium"
+          datetime="{{ $dateMachine }}">
+          <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+          </svg>
+          {{ $dateHuman }}
+        </time>
+        
+        {{ if eq .Section "changelogs" }}
+        <a href="{{ "/changelogs" | relURL }}" class="
+          /* Layout */ inline-flex items-center gap-1
+          /* Style */ text-neutral-500 dark:text-neutral-500 hover:text-blue-600 dark:hover:text-blue-400
+          /* Transition */ transition-colors duration-200">
+          <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+          </svg>
+          Back to all changelogs
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <article class="
+    /* Layout */ prose prose-lg max-w-none dark:prose-invert
+    /* Content styling */ prose-headings:text-neutral-900 dark:prose-headings:text-neutral-100
+    /* Links */ prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline
+    /* Code */ prose-code:text-blue-600 dark:prose-code:text-blue-400 prose-code:bg-neutral-100 dark:prose-code:bg-neutral-800 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+    /* Blockquotes */ prose-blockquote:border-l-blue-500 dark:prose-blockquote:border-l-blue-400
+    /* Lists */ prose-li:text-neutral-700 dark:prose-li:text-neutral-300">
     {{ .Content }}
   </article>
+
+  <!-- Navigation to other changelog versions (only for changelog pages) -->
+  {{ if eq .Section "changelogs" }}
+  {{ $currentSection := .Section }}
+  {{ $pages := where site.RegularPages "Section" $currentSection }}
+  {{ $pages = $pages.ByDate.Reverse }}
+  {{ $currentIndex := 0 }}
+  {{ range $i, $page := $pages }}
+    {{ if eq .RelPermalink $.RelPermalink }}{{ $currentIndex = $i }}{{ end }}
+  {{ end }}
+  
+  {{ $prevPage := index $pages (add $currentIndex 1) }}
+  {{ $nextPage := index $pages (sub $currentIndex 1) }}
+  
+  {{ if or $prevPage $nextPage }}
+  <div class="
+    /* Layout */ flex flex-col sm:flex-row gap-4 justify-between mt-12 pt-8
+    /* Style */ border-t border-neutral-200 dark:border-neutral-700">
+    {{ if $prevPage }}
+    <a href="{{ $prevPage.RelPermalink }}" class="
+      /* Layout */ flex-1 p-4 border rounded-lg
+      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm
+      /* Hover */ hover:shadow-md hover:border-neutral-300 dark:hover:border-neutral-600
+      /* Transition */ transition-all duration-200 group">
+      <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-500 mb-1">
+        <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+        </svg>
+        Previous Version
+      </div>
+      <div class="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        {{ $prevPage.Title }}
+      </div>
+    </a>
+    {{ else }}
+    <div class="flex-1"></div>
+    {{ end }}
+    
+    {{ if $nextPage }}
+    <a href="{{ $nextPage.RelPermalink }}" class="
+      /* Layout */ flex-1 p-4 border rounded-lg text-right
+      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm
+      /* Hover */ hover:shadow-md hover:border-neutral-300 dark:hover:border-neutral-600
+      /* Transition */ transition-all duration-200 group">
+      <div class="flex items-center justify-end gap-2 text-sm text-neutral-500 dark:text-neutral-500 mb-1">
+        Next Version
+        <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+        </svg>
+      </div>
+      <div class="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        {{ $nextPage.Title }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
 </div>
 
 {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
