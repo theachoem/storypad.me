@@ -94,6 +94,24 @@ This website is built with:
 
 The built site will be available in the `public/` directory.
 
+## Pull Request Previews
+
+This repository includes automated PR preview builds! When you open a pull request, GitHub Actions will automatically:
+
+1. **Build the Hugo site** with your changes
+2. **Package the preview** as a downloadable artifact
+3. **Comment on your PR** with download instructions
+
+### How to Access PR Previews
+
+1. Open or update a pull request targeting the `develop` branch
+2. Wait for the "PR Preview - Build Hugo Site" workflow to complete
+3. Go to the Actions tab and find your PR's build
+4. Download the `pr-preview-[PR#]` artifact
+5. Extract the archive and open `index.html` in your browser
+
+This makes it easy to review visual changes and test website functionality before merging!
+
 ## Project Structure
 
 ```
