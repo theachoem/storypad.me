@@ -16,21 +16,6 @@
     {{ partial "footer.html" . }}
   </footer>
 
-  <script>
-    function openStore() {
-      const ua = navigator.userAgent || navigator.vendor || window.opera;
-      const isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
-      const isMac = navigator.platform.toUpperCase().indexOf(' MAC') >= 0;
-
-      const isAppleDevice = isIOS || isMac;
-
-      const url = isAppleDevice
-        ? 'https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone'
-        : 'https://play.google.com/store/apps/details?id=com.tc.writestory';
-
-      window.open(url, '_blank');
-    }
-  </script>
 </body>
 
 </html>

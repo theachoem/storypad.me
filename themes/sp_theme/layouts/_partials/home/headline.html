@@ -39,7 +39,7 @@
 		<picture>
 			<source srcset='{{ "cover.webp" | relURL }}' type="image/webp" />
 			<img src='{{ "cover.png" | relURL }}' alt="cover.png" class="cursor-pointer"
-				onclick="this.classList.remove('animate-shake-vertical'); void this.offsetWidth; this.classList.add('animate-shake-vertical');" />
+				data-action="shake-animation" />
 		</picture>
 	</div>
 </section>
