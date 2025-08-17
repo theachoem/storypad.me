@@ -1,6 +1,6 @@
 <div class="max-w-4xl mx-auto px-6 flex flex-col items-center text-center">
   {{ if .IsHome }}
-  <div onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="cursor-pointer">
+  <div data-action="scroll-to-top" class="cursor-pointer">
     <picture>
       <source srcset='{{ "logo_200x200.webp" | relURL }}' type="image/webp" />
       <img src='{{ "logo_200x200.png" | relURL }}' alt="StoyPad logo_200x200" class="w-[120px] h-[120px]" />
@@ -72,7 +72,7 @@
 
 
     <a class="w-12 h-12 p-2 text-neutral-600 hover:text-[#171513] dark:hover:text-white" href="javascript:void(0);"
-      onclick="openEmail()">
+      data-action="open-email">
       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <title>Gmail</title>
         <path
@@ -119,65 +119,3 @@
 
   <p class="mt-4 p-8">Copyright 2021 - {{ now.Year }}. All rights reserved.</p>
 </div>
-
-<!-- 
-<script>
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-  if (isIOS) {
-    const playButtons = document.querySelectorAll('.google-play-button');
-    playButtons.forEach(button => {
-      button.style.display = 'none';
-    });
-  }
-</script> -->
-
-<script>
-  function openEmail() {
-    const to = "thea@storypad.me";
-    const subject = "Feedback / Support Request";
-    const body = `Hi Thea,
-
-I'd like to:
-- Report a bug 🐞
-- Request a feature ✨
-- Share a suggestion 💡
-- Ask for support 🙋‍♀️
-
-(Please fill in your message here.)
-
-Thanks!`;
-
-    const gmailWebURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    const mailtoURL = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-    const ua = navigator.userAgent.toLowerCase();
-
-    if (/android/.test(ua)) {
-      // Android Gmail app intent
-      const gmailIntentURL = `intent:mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}#Intent;scheme=mailto;package=com.google.android.gm;end`;
-      window.location.href = gmailIntentURL;
-    } else if (/iphone|ipad|ipod/.test(ua)) {
-      // iOS Gmail app scheme fallback to mailto
-      const gmailIOSURL = `googlegmail://co?to=${encodeURIComponent(to)}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-      window.location.href = gmailIOSURL;
-      setTimeout(() => {
-        window.location.href = mailtoURL;
-      }, 1500);
-    } else if (/windows/.test(ua) || /linux/.test(ua) || /macintosh/.test(ua)) {
-      // Desktop OS: open Gmail web or fallback to mailto
-      const newWindow = window.open(gmailWebURL, "_blank");
-      if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
-        window.location.href = mailtoURL;
-      }
-    } else if (ua.includes("chrome")) {
-      // Chrome desktop: open Gmail web or fallback to mailto
-      const newWindow = window.open(gmailWebURL, "_blank");
-      if (!newWindow || newWindow.closed || typeof newWindow.closed === "undefined") {
-        window.location.href = mailtoURL;
-      }
-    } else {
-      // Default fallback
-      window.location.href = mailtoURL;
-    }
-  }
-</script>

@@ -32,8 +32,7 @@
       {{ $bg_color := index $classes (mod $index (len $classes)) }}
 
       <div
-        onclick="if (!window.matchMedia('(hover: hover)').matches) { document.querySelectorAll('.home-usecase-card').forEach(c => c !== this && c.classList.remove('active')); this.classList.toggle('active'); }"
-        onmouseover="document.querySelectorAll('.home-usecase-card').forEach(c => c !== this && c.classList.remove('active'));"
+        data-action="toggle-active"
         class="
         /* Positioning */ relative
         /* Size */ min-w-[320px] w-[320px] h-[420px]
@@ -56,7 +55,7 @@
             <img src='{{ $img | relURL }}' alt="{{ $element.title }}"
               class="snap-start flex-shrink-0 w-full h-auto backdrop-blur" {{/* Put backdrop blur fix the image blur
               issue */}} data-last="{{ if eq (add $i 1) $total }}yes{{else}}no{{end}}"
-              onclick="this.dataset.last === 'yes' ? this.parentElement.scrollTo({ left: 0, behavior: 'smooth' }) : this.parentElement.scrollBy({ left: this.offsetWidth, behavior: 'smooth' })" />
+              data-action="carousel-scroll" />
             {{ end }}
           </div>
 
@@ -64,10 +63,10 @@
 
           {{ if eq .scrollable "yes" }}
           <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
-            onclick="this.parentElement.scrollTo({ top: this.parentElement.scrollTop + this.parentElement.clientHeight >= this.parentElement.scrollHeight - 50 ? 0 : this.parentElement.scrollTop + 240, behavior: 'smooth' });" />
+            data-action="scroll-container" />
           {{ else }}
           <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
-            onclick="this.classList.remove('animate-shake-vertical');void this.offsetWidth; this.classList.add('animate-shake-vertical');" />
+            data-action="shake-animation" />
           {{ end }}
 
           {{ end }}
