@@ -96,21 +96,28 @@ The built site will be available in the `public/` directory.
 
 ## Pull Request Previews
 
-This repository includes automated PR preview builds! When you open a pull request, GitHub Actions will automatically:
+This repository includes automated PR preview deployments! When you open a pull request, GitHub Actions will automatically:
 
 1. **Build the Hugo site** with your changes
-2. **Package the preview** as a downloadable artifact
-3. **Comment on your PR** with download instructions
+2. **Deploy a live preview** to a unique URL
+3. **Comment on your PR** with a direct preview link
 
 ### How to Access PR Previews
 
 1. Open or update a pull request targeting the `develop` branch
-2. Wait for the "PR Preview - Build Hugo Site" workflow to complete
-3. Go to the Actions tab and find your PR's build
-4. Download the `pr-preview-[PR#]` artifact
-5. Extract the archive and open `index.html` in your browser
+2. Wait for the "PR Preview - Deploy Preview Site" workflow to complete
+3. Click the **👀 View Preview** link in the automated comment
+4. Browse your changes live in the browser!
 
-This makes it easy to review visual changes and test website functionality before merging!
+Each PR gets its own unique preview URL that updates automatically when you push new commits. This makes it easy to review visual changes and test website functionality before merging!
+
+### Setup Requirements
+
+To enable PR previews, repository maintainers need to configure:
+- `NETLIFY_AUTH_TOKEN`: Netlify authentication token
+- `NETLIFY_SITE_ID`: Netlify site identifier
+
+> **Note**: PR previews require repository secrets to be configured. Contributors can still open PRs, but previews will only work once maintainers set up the deployment credentials.
 
 ## Project Structure
 

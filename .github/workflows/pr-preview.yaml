@@ -1,5 +1,5 @@
-# Build Hugo preview for Pull Requests
-name: PR Preview - Build Hugo Site
+# Deploy Hugo preview for Pull Requests
+name: PR Preview - Deploy Preview Site
 
 on:
   pull_request:
@@ -23,8 +23,8 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job for PR preview
-  build-preview:
+  # Build and deploy job for PR preview
+  deploy-preview:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.147.5
@@ -67,7 +67,6 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://storypad.me" \
             --cacheDir "${{ runner.temp }}/hugo_cache" \
             --environment preview
       
@@ -79,24 +78,18 @@ jobs:
             ${{ runner.temp }}/hugo_cache
           key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       
-      - name: Package preview site
-        run: |
-          cd public
-          tar -czf ../pr-preview-${{ github.event.number }}.tar.gz .
-          cd ..
-          echo "Preview site packaged successfully"
-          echo "Total files in preview: $(find public -type f | wc -l)"
-          echo "Preview package size: $(du -h pr-preview-${{ github.event.number }}.tar.gz | cut -f1)"
-      
-      - name: Upload preview artifact
-        uses: actions/upload-artifact@v4
+      - name: Deploy to Netlify
+        uses: nwtgck/actions-netlify@v3.0
         with:
-          name: pr-preview-${{ github.event.number }}
-          path: |
-            pr-preview-${{ github.event.number }}.tar.gz
-            public/
-          retention-days: 30
-          compression-level: 6
+          publish-dir: './public'
+          production-branch: develop
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-message: "Preview for PR #${{ github.event.number }} - ${{ github.event.pull_request.title }}"
+          alias: pr-${{ github.event.number }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        id: netlify
       
       - name: Comment on PR (Success)
         if: success()
@@ -118,21 +111,19 @@ jobs:
             const prNumber = context.issue.number;
             const runId = context.runId;
             const sha = context.sha.substring(0, 7);
+            const previewUrl = "${{ steps.netlify.outputs.deploy-url }}";
             
             const commentBody = `🚀 **PR Preview Ready**
 
-            A preview build has been generated for this pull request!
+            A live preview has been deployed for this pull request!
+
+            **🔗 [👀 View Preview](${previewUrl})**
 
             **📦 Preview Details:**
             - **PR:** #${prNumber}
             - **Commit:** \`${sha}\`
+            - **Preview URL:** ${previewUrl}
             - **Build:** [View logs](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId})
-
-            **📥 How to view the preview:**
-            1. Go to the [Actions tab](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId})
-            2. Scroll down to "Artifacts" section
-            3. Download \`pr-preview-${prNumber}\`
-            4. Extract the archive and open \`index.html\` in your browser
 
             **🔄 This comment will be updated when new commits are pushed to this PR.**
 
@@ -180,7 +171,7 @@ jobs:
             
             const commentBody = `❌ **PR Preview Failed**
 
-            The preview build failed for this pull request.
+            The preview deployment failed for this pull request.
 
             **🔍 Debug Information:**
             - **PR:** #${prNumber}
@@ -189,8 +180,8 @@ jobs:
 
             **🛠️ Next Steps:**
             1. Check the [build logs](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${runId}) for error details
-            2. Fix any Hugo build errors in your changes
-            3. Push a new commit to trigger a new preview build
+            2. Fix any Hugo build errors or deployment issues in your changes
+            3. Push a new commit to trigger a new preview deployment
 
             **🔄 This comment will be updated when new commits are pushed to this PR.**
 
