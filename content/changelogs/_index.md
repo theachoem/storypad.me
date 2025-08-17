@@ -1,5 +1,5 @@
 ---
-title: StoryPad Changelogs
+title: Changelogs
 date: "2025-08-10"
 layout: collection
 draft: false

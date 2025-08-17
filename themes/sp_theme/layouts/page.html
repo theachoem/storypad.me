@@ -17,16 +17,16 @@
     </nav>
 
     <div class="
-      /* Layout */ p-6 border rounded-lg mb-8
-      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm">
+      /* Layout */ p-4 border rounded-lg mb-8
+      /* Style */ border-neutral-200 dark:border-neutral-700">
       <h1 class="text-3xl font-bold mb-3 text-neutral-900 dark:text-neutral-100">{{ .Title }}</h1>
       
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
       <div class="flex items-center gap-4 text-sm">
         <time class="
-          /* Layout */ inline-flex items-center gap-2 px-3 py-1 rounded-full
-          /* Style */ bg-neutral-100 dark:bg-neutral-700 text-neutral-600 dark:text-neutral-400 font-medium"
+          /* Layout */ inline-flex items-center gap-2 px-3 py-1 rounded-full border
+          /* Style */ border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400 font-medium"
           datetime="{{ $dateMachine }}">
           <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -79,8 +79,8 @@
     {{ if $prevPage }}
     <a href="{{ $prevPage.RelPermalink }}" class="
       /* Layout */ flex-1 p-4 border rounded-lg
-      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm
-      /* Hover */ hover:shadow-md hover:border-neutral-300 dark:hover:border-neutral-600
+      /* Style */ border-neutral-200 dark:border-neutral-700
+      /* Hover */ hover:border-neutral-300 dark:hover:border-neutral-600
       /* Transition */ transition-all duration-200 group">
       <div class="flex items-center gap-2 text-sm text-neutral-500 dark:text-neutral-500 mb-1">
         <svg class="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,8 +99,8 @@
     {{ if $nextPage }}
     <a href="{{ $nextPage.RelPermalink }}" class="
       /* Layout */ flex-1 p-4 border rounded-lg text-right
-      /* Style */ bg-white dark:bg-neutral-800 border-neutral-200 dark:border-neutral-700 shadow-sm
-      /* Hover */ hover:shadow-md hover:border-neutral-300 dark:hover:border-neutral-600
+      /* Style */ border-neutral-200 dark:border-neutral-700
+      /* Hover */ hover:border-neutral-300 dark:hover:border-neutral-600
       /* Transition */ transition-all duration-200 group">
       <div class="flex items-center justify-end gap-2 text-sm text-neutral-500 dark:text-neutral-500 mb-1">
         Next Version
