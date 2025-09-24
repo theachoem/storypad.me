@@ -1,0 +1,19 @@
+- name: "Relaxing Sounds"
+  description: "Set the mood before you write or read."
+  price: "$0.99"
+  icon: "🎵"
+  benefits:
+    - "Choose from curated ambient sounds"
+    - "Focus better while writing"
+    - "Create the perfect atmosphere"
+    - "Lifetime purchase - no subscriptions"
+
+- name: "Templates"
+  description: "Create your own daily writing templates."
+  price: "$0.99"
+  icon: "📝"
+  benefits:
+    - "Design custom daily templates"
+    - "Streamline your writing routine"
+    - "Personalize your journaling experience"
+    - "Lifetime purchase - no subscriptions"
