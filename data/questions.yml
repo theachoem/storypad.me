@@ -1,10 +1,10 @@
 - question: "Is StoryPad free to use?"
   answer: >
-    Yes! All the core features you use now will always be free, with no ads. We plan to offer premium features for paid users in the future, but core features will remain free & ad-free.
+    Yes! All the core features you use now will always be free, with no ads. There are optional add-on features you can unlock for a one-time purchase, but the main journaling experience will always remain free and ad-free.
 
-- question: "What makes StoryPad different from other journal apps?"
+- question: "What makes StoryPad different from other diary / journal apps?"
   answer: >
-    StoryPad isn't just for journaling. It's designed for daily life - whether you're journaling, writing a story, or reflecting on your day. We didn't copy other apps; we built it from the ground up to be flexible, minimal, and personal.
+    StoryPad is built differently. It's not just a diary or journal - it's a flexible, personal space for writing, storytelling, and reflecting on your day. Being open source, it stands apart from major apps, giving you full transparency and control over your data. Designed from the ground up, StoryPad lets you record your life your way, without compromises.
 
 - question: "Why are there multiple editors inside one note / entry?"
   answer: >
@@ -24,11 +24,11 @@
 
 - question: "Can I export locally?"
   answer: >
-    Yes. You can back up all your stories locally to your device as a `.json` file. This means you always have a copy - even without internet. We're also working on support for exporting to `.txt` and `.md` (Markdown) formats soon, so you can easily move or read your stories anywhere.
+    Yes. You can back up all your stories locally to your device as a .json file. This means you always have a copy - even without internet.
 
 - question: "Can I preview my images if I export locally?"
   answer: >
-    Yes, but since images are stored securely in your own Google Drive, you'll need to be logged into Google Drive to view them inside StoryPad. We're exploring options to make image previews easier, including exporting them in ZIP or other formats in the future.
+    Yes, but since images are stored securely in your own Google Drive, you'll need to be logged into Google Drive to view them inside StoryPad.
 
 - question: "Is StoryPad open source?"
   answer: >
