@@ -18,7 +18,7 @@ keywords:
 
 Our app currently supports the following languages, with translations provided by Google Translate:
 
-> Arabic, German, English, Spanish (Latin America), Spanish (Spain), French, Hindi, Indonesian, Italian, Japanese, Khmer, Korean, Polish, Portuguese, Vietnamese & Chinese (Simplified).
+> Arabic, German, English, Spanish (Latin America), Spanish (Spain), French, Hindi, Indonesian, Italian, Japanese, Khmer, Korean, Polish, Portuguese, Vietnamese, Chinese (Simplified) & Russian.
 
 If your language is not listed, or you spot any translation glitches, feel free to suggest improvements in our Google Sheet below:
 [Google Sheet](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?usp=sharing)
@@ -43,3 +43,4 @@ Thank you for helping us make StoryPad better for users around the world!
 | Seavleng Hong | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABfzS65Lw) | km           |
 | iljinjung     | [PR #355](https://github.com/theachoem/storypad/pull/355) [PR #349](https://github.com/theachoem/storypad/pull/349)       | ja-JP, ko-KR |
 | Nord Maier    | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABnpBt0Iw) | zh-CN        |
+| ZloyWolf      | [PR #504](https://github.com/theachoem/storypad/pull/504)                                                                 | ru-RU        |
