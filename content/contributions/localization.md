@@ -41,6 +41,7 @@ Thank you for helping us make StoryPad better for users around the world!
 | Name          | Reference                                                                                                                 | Languages    |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------ |
 | Seavleng Hong | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABfzS65Lw) | km           |
-| iljinjung     | [PR #355](https://github.com/theachoem/storypad/pull/355) [PR #349](https://github.com/theachoem/storypad/pull/349)       | ja-JP, ko-KR |
+| iljinjung     | [#355](https://github.com/theachoem/storypad/pull/355) [#349](https://github.com/theachoem/storypad/pull/349)             | ja-JP, ko-KR |
 | Nord Maier    | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABnpBt0Iw) | zh-CN        |
-| ZloyWolf      | [PR #504](https://github.com/theachoem/storypad/pull/504)                                                                 | ru-RU        |
+| ZloyWolf      | [#504](https://github.com/theachoem/storypad/pull/504)                                                                    | ru-RU        |
+| Hu Yubo       | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABtDIyuDg) | zh-CN        |
