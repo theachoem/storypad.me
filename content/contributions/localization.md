@@ -1,6 +1,7 @@
 ---
 title: "Localization"
 date: "2025-02-27"
+draft: false
 keywords:
   - storypad
   - timeline diary

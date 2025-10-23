@@ -1,6 +1,7 @@
 ---
 title: "How to Write Your Life Story: A Simple Guide to Telling It Your Way"
 date: "2025-06-08"
+draft: false
 ---
 
 I’ve always thought everyone’s got a story worth telling-your life, with all its ups, downs, and in-betweens, is like a book only you can write. But sitting down to write your life story? That can feel overwhelming. Where do you start? What’s worth including? Over the years, I’ve jotted down bits of my own story-some in old notebooks, some on my phone-and I’ve learned it’s less about perfection and more about just getting it out.

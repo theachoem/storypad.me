@@ -1,6 +1,7 @@
 ---
 title: "Lessons Learned: Why `Purchases.getProducts` Returned Empty in RevenueCat"
 date: "2025-09-25"
+draft: false
 keywords:
   - revenuecat
   - flutter

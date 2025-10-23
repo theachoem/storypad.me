@@ -1,4 +1,5 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://storypad.me'
+
 languageCode = 'en-us'
 title = 'StoryPad'
 theme = 'sp_theme'

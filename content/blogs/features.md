@@ -1,6 +1,7 @@
 ---
 title: "StoryPad Key Features"
 date: "2025-06-16"
+draft: false
 ---
 
 StoryPad is a journal app that lets you write and capture everything - notes, thoughts, emotions, workouts, travels, stories, novels, or poems — on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized. Your story flows like life does: naturally.
