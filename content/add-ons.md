@@ -9,7 +9,7 @@ StoryPad is built with love to help you capture your story, and we're committed 
 
 Each add-on is a **one-time purchase** — buy once, keep forever. No subscriptions. No hidden fees. Just simple tools to enhance your journaling experience.
 
-## 🎵 Relaxing Sounds — $0.99
+## 🎵 Relaxing Sounds — $1.99
 
 Set the perfect mood before you write or read.
 
@@ -25,7 +25,7 @@ Perfect for those moments when you want to disconnect from the noise and connect
 
 ---
 
-## 📝 Templates — $0.99
+## 📝 Templates — $1.99
 
 Create your own daily writing templates.
 
@@ -41,7 +41,7 @@ Perfect if you're building a habit, tracking progress, or just want a little str
 
 ---
 
-## 📅 Period Calendar — $0.99
+## 📅 Period Calendar — $1.99
 
 Track your cycle with ease, right in your journal.
 
@@ -62,7 +62,7 @@ Perfect for maintaining a consistent record of your cycle while keeping all your
 
 StoryPad doesn't run ads. We don't sell your data. We don't have a subscription model. These add-ons are our way of keeping the app sustainable while giving you tools that genuinely enhance your experience.
 
-Every purchase — even just $0.99 — helps us:
+Every purchase — even just $1.99 — helps us:
 
 - Keep the app free and accessible
 - Continue building features you've asked for
