@@ -3,9 +3,7 @@
   <div class="flex flex-row justify-between p-4 max-w-7xl mx-auto px-6">
     <div class="flex flex-row gap-2 items-center group">
       {{ if .IsHome }}
-      <h1
-        data-action="scroll-to-top"
-        class="cursor-pointer">{{ .Site.Title }}</h1>
+      <h1 data-action="scroll-to-top" class="cursor-pointer">{{ .Site.Title }}</h1>
       {{ else }}
       <h1><a href='{{ "/" | relURL }}'>{{ .Site.Title }}</a></h1>
       {{ end }}

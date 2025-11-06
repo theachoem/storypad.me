@@ -1,0 +1,117 @@
+{{ define "main" }}
+
+<div class="max-w-7xl mx-auto px-6">
+  <h1 class="text-3xl font-bold mb-12 text-neutral-900 dark:text-neutral-100">{{ .Title }}</h1>
+
+  <!-- Pages grouped by section -->
+  <div class="space-y-12">
+    {{ $sections := slice "blogs" "changelogs" "wiki" "contributions" "engineering" }}
+
+    {{ range $sections }}
+    {{ $section := . }}
+    {{ $sectionPages := (where $.Site.AllPages "Section" $section) }}
+    {{ $sectionPages = (where $sectionPages "Draft" false) }}
+    {{ $sectionPages = (where $sectionPages "Kind" "page") }}
+
+    {{ if $sectionPages }}
+    <div>
+      <h2 class="text-lg font-semibold mb-4 text-neutral-900 dark:text-neutral-100 capitalize">
+        {{ humanize $section }}
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ range sort $sectionPages "Title" }}
+        {{ if and .Title .RelPermalink }}
+        <a href="{{ .RelPermalink }}" class="block">
+          <article class="
+            /* Layout */ p-4 border rounded-lg h-full flex flex-col
+            /* Style */ border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900
+            /* Hover */ hover:border-blue-400 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-neutral-800
+            /* Transition */ transition-all duration-200
+            /* Interactive */ group cursor-pointer">
+            <div class="flex flex-col gap-2 flex-1">
+              <h3
+                class="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                {{ .Title }}
+              </h3>
+              {{ with .Summary }}
+              <p class="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2 flex-1">
+                {{ . | plainify | truncate 100 }}
+              </p>
+              {{ end }}
+            </div>
+            {{ if .Date }}
+            <time
+              class="
+              /* Layout */ text-xs mt-3 pt-2 border-t
+              /* Style */ border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400
+              /* Transition */ group-hover:border-neutral-300 dark:group-hover:border-neutral-600 transition-colors duration-200"
+              datetime="{{ .Date.Format " 2006-01-02" }}">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            {{ end }}
+          </article>
+        </a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+    <!-- Root level pages (not in any section) -->
+    {{ $rootPages := (where $.Site.AllPages "Section" "") }}
+    {{ $rootPages = (where $rootPages "Draft" false) }}
+    {{ $rootPages = (where $rootPages "Kind" "page") }}
+    {{ $rootPages = (where $rootPages "Title" "!=" "Add-ons") }}
+    {{ $rootPages = (where $rootPages "Title" "!=" "Categories") }}
+    {{ $rootPages = (where $rootPages "Title" "!=" "Tags") }}
+
+    {{ if $rootPages }}
+    <div>
+      <h2 class="text-lg font-semibold mb-4 text-neutral-900 dark:text-neutral-100">
+        Pages
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ range sort $rootPages "Title" }}
+        {{ if and .Title .RelPermalink }}
+        <a href="{{ .RelPermalink }}" class="block">
+          <article class="
+            /* Layout */ p-4 border rounded-lg h-full flex flex-col
+            /* Style */ border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900
+            /* Hover */ hover:border-blue-400 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-neutral-800
+            /* Transition */ transition-all duration-200
+            /* Interactive */ group cursor-pointer">
+            <div class="flex flex-col gap-2 flex-1">
+              <h3
+                class="font-semibold text-neutral-900 dark:text-neutral-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                {{ .Title }}
+              </h3>
+              {{ with .Summary }}
+              <p class="text-sm text-neutral-600 dark:text-neutral-400 line-clamp-2 flex-1">
+                {{ . | plainify | truncate 100 }}
+              </p>
+              {{ end }}
+            </div>
+            {{ if .Date }}
+            <time
+              class="
+              /* Layout */ text-xs mt-3 pt-2 border-t
+              /* Style */ border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-400
+              /* Transition */ group-hover:border-neutral-300 dark:group-hover:border-neutral-600 transition-colors duration-200"
+              datetime="{{ .Date.Format " 2006-01-02" }}">
+              {{ .Date.Format "Jan 2, 2006" }}
+            </time>
+            {{ end }}
+          </article>
+        </a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}
