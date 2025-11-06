@@ -5,6 +5,14 @@ title = 'StoryPad'
 theme = 'sp_theme'
 
 enableRobotsTXT = true
+removePathAccents = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[permalinks]
+  page = "/:slug/"
+  section = "/:section/:slug/"
 
 [build]
   [build.buildStats]
