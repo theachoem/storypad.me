@@ -1,35 +1,41 @@
 - question: "Is StoryPad free to use?"
-  answer: >
+  answer: |-
     Yes! All the core features you use now will always be free, with no ads. There are optional add-on features you can unlock for a one-time purchase, but the main journaling experience will always remain free and ad-free.
 
 - question: "What makes StoryPad different from other diary / journal apps?"
-  answer: >
-    StoryPad is built differently. It's not just a diary or journal - it's a flexible, personal space for writing, storytelling, and reflecting on your day. Being open source, it stands apart from major apps, giving you full transparency and control over your data. Designed from the ground up, StoryPad lets you record your life your way, without compromises.
+  answer: |-
+    StoryPad is built differently. It's not just a diary or journal - it's a flexible, personal space for writing, storytelling, and reflecting on your day.
+
+    Being open source, it stands apart from major apps, giving you full transparency and control over your data. Designed from the ground up, StoryPad lets you record your life your way, without compromises.
 
 - question: "Why are there multiple editors inside one note / entry?"
-  answer: >
-    Each note in StoryPad can have multiple pages. You can choose between two layouts: “list” for quick journaling with prompts, or “pages” for deeper writing like stories or poems. With multi-page support, you can easily reorder or delete pages, and build a more structured story.
+  answer: |-
+    Each note in StoryPad can have multiple pages. You can choose between two layouts: “list” for quick journaling with prompts, or “pages” for deeper writing like stories or poems.
+
+    With multi-page support, you can easily reorder or delete pages, and build a more structured story.
 
 - question: "Does StoryPad support rich text editing?"
-  answer: >
+  answer: |-
     Yes, it does! StoryPad offers a clean, powerful editor with rich text features like bold, italics, underline, text color, checklists, and images - all designed to help you write without distractions.
 
 - question: "Can I insert images?"
-  answer: >
+  answer: |-
     Yes. You can add images without compression. Your photos keep their original quality, including metadata like the capture date & location.
 
 - question: "Can I use it on multiple devices?"
-  answer: >
-    Yes. Your data is stored locally on each device for privacy. When you choose to back up or sync, StoryPad saves directly to your private Google Drive - no cloud servers or accounts involved. To sync between devices, just tap “sync” on one device, then tap “sync” on the other. StoryPad will automatically download the latest version of your stories. If you edit the same entry on both devices before syncing, it will keep the most recent version to avoid conflicts.
+  answer: |-
+    Yes. Your data is stored locally on each device for privacy. When you choose to back up or sync, StoryPad saves directly to your private Google Drive - no cloud servers or accounts involved.
+
+    To sync between devices, just tap “sync” on one device, then tap “sync” on the other. StoryPad will automatically download the latest version of your stories. If you edit the same entry on both devices before syncing, it will keep the most recent version to avoid conflicts.
 
 - question: "Can I export locally?"
-  answer: >
+  answer: |-
     Yes. You can back up all your stories locally to your device as a .json file. This means you always have a copy - even without internet.
 
 - question: "Can I preview my images if I export locally?"
-  answer: >
+  answer: |-
     Yes, but since images are stored securely in your own Google Drive, you'll need to be logged into Google Drive to view them inside StoryPad.
 
 - question: "Is StoryPad open source?"
-  answer: >
+  answer: |-
     Yes! StoryPad is open source, which means how it keeps your data is fully transparent. While many apps keep things hidden, StoryPad is open - so you always know your data is safe and private. You can visit our GitHub to learn more.

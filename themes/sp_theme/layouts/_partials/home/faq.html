@@ -9,7 +9,8 @@
       <details class="w-full group text-left p-4 border border-t-0 dark:border-neutral-500
         {{ if eq $index 0 }}rounded-t-xl border-t-1{{ end }}
         {{ if eq $index (sub (len site.Data.questions) 1) }}rounded-b-xl{{ end }}">
-        <summary class="list-none cursor-pointer flex flex-row items-center justify-between gap-4">
+        <summary
+          class="list-none cursor-pointer flex flex-row items-center justify-between gap-4 text-neutral-900 dark:text-neutral-100 font-medium hover:text-neutral-700 dark:hover:text-neutral-200">
           <span class="text-left">{{ add $index 1 }}. {{ .question }}</span>
           <span class="group-open:rotate-45 transition-transform duration-200 group-open:scale-110">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -18,7 +19,8 @@
             </svg>
           </span>
         </summary>
-        <p class="mt-2 text-neutral-500">{{ .answer }}</p>
+        <div class="mt-2 text-neutral-700 dark:text-neutral-300 prose prose-sm dark:prose-invert max-w-none">{{ .answer
+          | markdownify }}</div>
       </details>
       {{ end }}
     </div>
