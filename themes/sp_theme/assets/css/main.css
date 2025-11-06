@@ -42,3 +42,9 @@ h6 {
 .animate-shake-vertical {
   animation: shake-vertical 0.1s linear 0s 2;
 }
+
+/* Link overflow handling - allow links to break and wrap */
+article a {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
