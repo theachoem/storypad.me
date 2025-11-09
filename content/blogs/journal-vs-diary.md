@@ -1,7 +1,8 @@
 ---
-title: "Diary vs. Journal: What’s the Difference, Really?"
+title: "Diary vs. Journal: What's the Difference, Really?"
 date: "2025-06-08"
 draft: false
+description: "Discover the key differences between diaries and journals. Learn which one is right for you and how StoryPad helps you write both beautifully and meaningfully."
 ---
 
 You’ve likely heard the terms "diary" and "journal" tossed around as if they’re the same thing, but as someone who’s spent years writing and reflecting, I can tell you they’re more like cousins than twins. Each has its own flavor and purpose, and knowing the difference can help you pick the right one for capturing your thoughts or memories.

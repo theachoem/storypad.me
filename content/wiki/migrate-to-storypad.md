@@ -1,6 +1,7 @@
 ---
 title: Migrate from Spooky to StoryPad
 date: "2025-02-27"
+description: "Step-by-step guide to migrate your journals from Spooky to StoryPad. Learn how to export, backup, and import your data safely."
 keywords:
   - spooky
   - storypad

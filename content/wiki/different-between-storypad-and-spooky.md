@@ -1,6 +1,7 @@
 ---
 title: What's the Difference Between StoryPad & Spooky?
 date: "2025-02-27"
+description: "Learn the differences between StoryPad and Spooky. Understand why StoryPad is the better choice for your journaling and get help migrating from Spooky."
 keywords:
   - storypad
   - spooky

@@ -2,6 +2,7 @@
 date: "2025-03-12"
 draft: false
 title: "Spooky Privacy Policy"
+description: "Spooky privacy policy - Learn how we protect your data and handle your information when using our diary and journaling app."
 keywords:
   - storypad
   - timeline diary

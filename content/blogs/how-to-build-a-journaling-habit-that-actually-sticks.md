@@ -2,6 +2,7 @@
 title: "How to Build a Journaling Habit That Actually Sticks"
 date: "2025-06-08"
 draft: false
+description: "Discover proven strategies to build a journaling habit that lasts. Learn from real users how to make journaling stick and use StoryPad to transform your daily routine."
 ---
 
 I’ve started and quit journaling more times than I can count. Life gets busy, and that notebook gathers dust-or worse, I forget where I parked my phone app. But after years of trial and error, I’ve cracked the code on making journaling stick, and X users are sharing their own hacks too. Here’s how to build a journaling habit that lasts, plus how my app, StoryPad, makes it stupidly easy.

@@ -1,5 +1,8 @@
 User-agent: *
 
+# https://storypad.me/cdn-cgi/l/email-protection
+Disallow: /cdn-cgi/
+
 # Allow main public content
 Allow: /
 Allow: /blogs/
@@ -10,9 +13,6 @@ Allow: /term-of-use/
 Allow: /engineering/
 Allow: /wiki/
 Allow: /contributions/
-
-# Block everything else
-Disallow: /
 
 # Sitemap
 Sitemap: https://storypad.me/sitemap.xml
