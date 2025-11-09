@@ -1,18 +1,4 @@
 User-agent: *
-
-# Allow main public content
 Allow: /
-Allow: /blogs/
-Allow: /changelogs/
-Allow: /add-ons/
-Allow: /privacy-policy/
-Allow: /term-of-use/
-Allow: /engineering/
-Allow: /wiki/
-Allow: /contributions/
 
-# Block everything else
-Disallow: /
-
-# Sitemap
 Sitemap: {{ "sitemap.xml" | absURL }}
