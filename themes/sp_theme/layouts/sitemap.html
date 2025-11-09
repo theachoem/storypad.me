@@ -14,10 +14,12 @@
     {{ $sectionPages = (where $sectionPages "Kind" "page") }}
 
     {{ if $sectionPages }}
-    <div>
+    <div id="{{ $section }}">
       <h2 class="text-lg font-semibold mb-4 text-neutral-900 dark:text-neutral-100 capitalize"
         style="font-family: var(--font-quicksand);">
-        {{ humanize $section }}
+        <a href="#{{ $section }}">
+          {{ humanize $section }}
+        </a>
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -64,14 +66,15 @@
     {{ $rootPages := (where $.Site.AllPages "Section" "") }}
     {{ $rootPages = (where $rootPages "Draft" false) }}
     {{ $rootPages = (where $rootPages "Kind" "page") }}
-    {{ $rootPages = (where $rootPages "Title" "!=" "Add-ons") }}
     {{ $rootPages = (where $rootPages "Title" "!=" "Categories") }}
     {{ $rootPages = (where $rootPages "Title" "!=" "Tags") }}
 
     {{ if $rootPages }}
-    <div>
+    <div id="pages">
       <h2 class="text-lg font-semibold mb-4 text-neutral-900 dark:text-neutral-100">
-        Pages
+        <a href="#pages">
+          Pages
+        </a>
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

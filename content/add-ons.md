@@ -1,13 +1,32 @@
 ---
 date: "2025-07-03"
 draft: false
-title: "Add-ons"
+title: "StoryPad Add-ons"
 description: "Enhance your journaling with optional add-ons — the only way StoryPad earns money while staying ad-free."
 ---
 
 StoryPad is built with love to help you capture your story, and we're committed to keeping it **simple, open, and ad-free**. These optional add-ons are the **only way** the app earns money, and every purchase helps us keep improving StoryPad for you.
 
 Each add-on is a **one-time purchase** — buy once, keep forever. No subscriptions. No hidden fees. Just simple tools to enhance your journaling experience.
+
+## 🎙️ Voice & Audio Journaling — $1.99
+
+Capture your thoughts with your voice.
+
+Sometimes the best moments can't wait for typing. With Voice & Audio Journaling, you can record your thoughts, feelings, and stories directly into your journal. Your voice carries emotion and tone that words alone can't capture—hear your own voice months or years later and relive those moments exactly as you felt them.
+
+**What you get:**
+
+- Record voice notes directly in your stories
+- Auto-organize recordings with story tags
+- Telegram-style player with speed control (1x, 1.5x, 2x)
+- Browse all voice notes in a dedicated Library tab
+- Seamless backup to Google Drive
+- Perfect for capturing moments when typing isn't practical
+
+Perfect for when inspiration strikes and you need to capture it fast, or for those late-night reflections you want to preserve in your own voice.
+
+---
 
 ## 🎵 Relaxing Sounds — $1.99
 

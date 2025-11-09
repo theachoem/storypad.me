@@ -68,6 +68,13 @@ Reflect on how far you've come and respond to your past self, right from your ti
 - Back up or import your stories offline
 - Share your words in text or markdown, whether it's on X, Facebook, or just with a friend
 
+## 📱 Extra Add-Ons (optional)
+
+- **Voice & Audio Journaling** - Record your thoughts with voice notes, auto-organized by tags, with seamless Google Drive backup.
+- **Relaxing Sounds** - Gentle background sounds to create the perfect writing mood.
+- **Templates** - Reusable journaling templates for daily prompts or reflections.
+- **Period Calendar** - Track your cycle directly in your journal with visual indicators, cycle history across months, and quick entry creation. Your data stays secure and private on your device.
+
 ## 🌍 Accessible for All
 
 - Available in 20+ languages

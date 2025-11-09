@@ -16,6 +16,10 @@
   }
 }
 
+html {
+  scroll-padding-top: 80px;
+}
+
 body {
   font-family: var(--font-quicksand);
 }
