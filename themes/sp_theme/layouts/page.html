@@ -31,6 +31,31 @@
     {{ $content | safeHTML }}
   </article>
 
+  <!-- Reddit Embed (for changelog pages) -->
+  {{ if and (eq .Section "changelogs") .Params.embed_content }}
+  <div class="mt-8">
+    {{ .Params.embed_content | safeHTML }}
+  </div>
+
+  <script>
+    // Make Reddit embed iframe full width
+    function resizeRedditEmbed() {
+      const iframes = document.querySelectorAll('iframe[src*="reddit.com"]');
+      iframes.forEach(iframe => {
+        iframe.style.width = '100%';
+        iframe.removeAttribute('width');
+      });
+    }
+
+    // Run on load and when Reddit embed script finishes
+    window.addEventListener('load', resizeRedditEmbed);
+
+    // Also try after a short delay for Reddit's async loading
+    setTimeout(resizeRedditEmbed, 500);
+    setTimeout(resizeRedditEmbed, 1000);
+  </script>
+  {{ end }}
+
   <!-- Navigation to other changelog versions (only for changelog pages) -->
   {{ if eq .Section "changelogs" }}
   {{ $currentSection := .Section }}
