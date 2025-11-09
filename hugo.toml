@@ -6,6 +6,7 @@ theme = 'sp_theme'
 
 enableRobotsTXT = true
 removePathAccents = true
+publishFuture = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

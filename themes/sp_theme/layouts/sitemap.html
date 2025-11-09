@@ -21,7 +21,7 @@
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {{ range sort $sectionPages "Title" }}
+        {{ range (sort $sectionPages "Date").Reverse }}
         {{ if and .Title .RelPermalink }}
         <a href="{{ .RelPermalink }}" class="block">
           <article class="
@@ -75,7 +75,7 @@
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {{ range sort $rootPages "Title" }}
+        {{ range (sort $rootPages "Date").Reverse }}
         {{ if and .Title .RelPermalink }}
         <a href="{{ .RelPermalink }}" class="block">
           <article class="
