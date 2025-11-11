@@ -2,8 +2,8 @@
   image: "usecases/morning_intention.jpg"
   scrollable: 'yes'
 
-- title: "Have an ideas / thoughts?"
-  image: "usecases/thought.jpg"
+- title: "Voice Journal?"
+  image: "usecases/voice_journal.jpg"
 
 - title: "Reflect on Your Mental Health?"
   image: "usecases/mental_health.jpg"
