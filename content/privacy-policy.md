@@ -4,7 +4,7 @@ draft: false
 title: "Privacy Policy"
 ---
 
-Welcome to StoryPad (“we,” “our,” or “us”). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect information when you use our app, available at [storypad.me](http://storypad.me/).
+Welcome to StoryPad (“we,” “our,” or “us”). Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect information when you use our app, available at [storypad.me](https://storypad.me/).
 
 ## 1. Information We Collect
 
