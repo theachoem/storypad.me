@@ -2,6 +2,11 @@
   image: "usecases/morning_intention.jpg"
   scrollable: 'yes'
 
+- title: "Photo Journal?"
+  images:
+  - "usecases/photo_journal1.jpg"
+  - "usecases/photo_journal2.jpg"
+
 - title: "Voice Journal?"
   image: "usecases/voice_journal.jpg"
 
@@ -10,6 +15,10 @@
 
 - title: "Organize Notes & To-Dos"
   image: "usecases/todo.jpg"
+  scrollable: 'yes'
+
+- title: "Track Your Moods?"
+  image: "usecases/mood_tracker.jpg"
   scrollable: 'yes'
 
 - title: "Plan Your Next Trip?"
@@ -22,13 +31,6 @@
   - "usecases/story1.jpg"
   - "usecases/story2.jpg"
   - "usecases/story3.jpg"
-
-- title: "Pen a Novel or Poem?"
-  image: "usecases/poem.jpg"
-
-- title: "Track Your Moods?"
-  image: "usecases/mood_tracker.jpg"
-  scrollable: 'yes'
 
 - title: "All in one Timeline"
   image: "usecases/home.jpg"
