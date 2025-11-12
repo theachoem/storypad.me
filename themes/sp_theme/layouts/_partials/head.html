@@ -3,6 +3,12 @@
 <meta name="description" content="{{ .Description }}">
 <meta name="keywords" content={{ delimit .Keywords " " }} />
 
+<!-- Preload critical resources -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap">
+
 <title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
 <meta property="og:title"
@@ -28,7 +34,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href='{{ "/favicon-16x16.png" | relURL }}'>
 <link rel="manifest" href='{{ "/site.webmanifest" | relURL }}'>
 
-<script type="module">
+<!-- Firebase Analytics - async to prevent render blocking -->
+<script type="module" async>
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
