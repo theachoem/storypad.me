@@ -26,6 +26,7 @@
 
 <link rel="canonical" href="{{ strings.TrimRight " ?" (.Permalink | strings.TrimSuffix "?" ) }}">
 
+{{ partialCached "head/schema.html" . }}
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
 
