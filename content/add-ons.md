@@ -9,7 +9,7 @@ StoryPad is built with love to help you capture your story, and we're committed 
 
 Each add-on is a **one-time purchase** — buy once, keep forever. No subscriptions. No hidden fees. Just simple tools to enhance your journaling experience.
 
-## 🎙️ Voice & Audio Journaling — $1.99
+## 🎙️ Voice & Audio Journaling - $1.99
 
 Capture your thoughts with your voice.
 
@@ -24,11 +24,19 @@ Sometimes the best moments can't wait for typing. With Voice & Audio Journaling,
 - Seamless backup to Google Drive
 - Perfect for capturing moments when typing isn't practical
 
+**Things to Know:**
+
+- Record as long as you want — no time limits per recording
+- Add as many recordings as you want per entry
+- Audio files are saved in .m4a format
+- Storage space depends on your Google Drive quota, not the app
+- Works the same on iOS and Android
+
 Perfect for when inspiration strikes and you need to capture it fast, or for those late-night reflections you want to preserve in your own voice.
 
 ---
 
-## 🎵 Relaxing Sounds — $1.99
+## 🎵 Relaxing Sounds - $1.99
 
 Set the perfect mood before you write or read.
 
@@ -44,7 +52,7 @@ Perfect for those moments when you want to disconnect from the noise and connect
 
 ---
 
-## 📝 Templates — $1.99
+## 📝 Templates - $1.99
 
 Create your own daily writing templates.
 
@@ -56,11 +64,17 @@ Stop staring at a blank page. With Templates, you can design custom prompts and 
 - Fill them out quickly each day
 - Keep your entries consistent and organized
 
+**Things to Know:**
+
+- Create unlimited templates — no limits
+- Reuse templates as many times as you want
+- View all entries that used a specific template in one place
+
 Perfect if you're building a habit, tracking progress, or just want a little structure to guide your writing.
 
 ---
 
-## 📅 Period Calendar — $1.99
+## 📅 Period Calendar - $1.99
 
 Track your cycle with ease, right in your journal.
 
@@ -79,15 +93,16 @@ Perfect for maintaining a consistent record of your cycle while keeping all your
 
 ## Why It Matters
 
-StoryPad doesn't run ads. We don't sell your data. We don't have a subscription model. These add-ons are our way of keeping the app sustainable while giving you tools that genuinely enhance your experience.
+StoryPad doesn't run ads. We don't sell your data. We don't have a subscription model. These add-ons are the **only way** we fund development — and they're worth it.
 
-Every purchase — even just $1.99 — helps us:
+When you buy an add-on, you're directly funding:
 
-- Keep the app free and accessible
-- Continue building features you've asked for
-- Stay independent and focused on what matters: your story
+- The next features you've asked for
+- Continuous improvements and bug fixes
+- Server costs to keep your data safe and backed up
+- Independent development, free from corporate pressure
 
-If you've found value in StoryPad, **consider grabbing an add-on**. You'll get something useful, and you'll be directly supporting the app's future. 💛
+Every purchase keeps StoryPad independent, sustainable, and focused on what matters: your story. 💛
 
 ---
 
