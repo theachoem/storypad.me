@@ -31,9 +31,7 @@
       {{ range $index, $element := site.Data.usecases }}
       {{ $bg_color := index $classes (mod $index (len $classes)) }}
 
-      <div
-        data-action="toggle-active"
-        class="
+      <div data-action="toggle-active" class="
         /* Positioning */ relative
         /* Size */ min-w-[320px] w-[320px] h-[420px]
         /* Layout */ group items-center px-6 pt-6 mt-10 lg:mt-0
@@ -54,8 +52,7 @@
             {{ range $i, $img := .images }}
             <img src='{{ $img | relURL }}' alt="{{ $element.title }}"
               class="snap-start flex-shrink-0 w-full h-auto backdrop-blur" {{/* Put backdrop blur fix the image blur
-              issue */}} data-last="{{ if eq (add $i 1) $total }}yes{{else}}no{{end}}"
-              data-action="carousel-scroll" />
+              issue */}} data-last="{{ if eq (add $i 1) $total }}yes{{else}}no{{end}}" data-action="carousel-scroll" />
             {{ end }}
           </div>
 
@@ -124,18 +121,24 @@
 
 
         {{ if eq (add $index 1) $usecasesLength }}
-        <img src='{{ "emotions/flushed-face-64x64-1395564.png" | relURL }}' alt="Flushed face" class="
+        <picture>
+          <source srcset='{{ "emotions/flushed-face-64x64-1395564.webp" | relURL }}' type="image/webp">
+          <img src='{{ "emotions/flushed-face-64x64-1395564.png" | relURL }}' alt="Flushed face" class="
             /* Pointer Events */ pointer-events-none
             /* Style */ shadow-2xl rotate-0 group-hover:-rotate-6 [.group.active_&]:-rotate-6
             /* Positioning */ absolute rounded-full top-8 -left-4 translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
             /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
             /* Transition */ transition-all duration-300">
-        <img src='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.png" | relURL }}' alt="Smiling face" class="
+        </picture>
+        <picture>
+          <source srcset='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.webp" | relURL }}' type="image/webp">
+          <img src='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.png" | relURL }}' alt="Smiling face" class="
             /* Pointer Events */ pointer-events-none
             /* Style */ shadow-2xl rotate-0 group-hover:rotate-12 [.group.active_&]:rotate-12
             /* Positioning */ absolute rounded-full bottom-24 -right-4 -translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
             /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
             /* Transition */ transition-all duration-300">
+        </picture>
         {{ end }}
       </div>
       {{ end }}
