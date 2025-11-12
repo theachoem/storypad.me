@@ -1,0 +1,183 @@
+# StoryPad - AI Assistant Guide
+
+## Product Overview
+
+StoryPad is a privacy-first, open source journal and diary app that lets you capture your life story on a continuous timeline. Unlike traditional journal apps with folders and tabs, StoryPad organizes everything chronologically in one flowing timeline.
+
+**Core Mission:** Help people capture and preserve their stories with simplicity, privacy, and beautiful design—without ads or hidden fees.
+
+**Platforms:** iOS (App Store) and Android (Google Play)
+
+**Availability:** Open source on GitHub with 20+ language support
+
+**Project Started:** March 8, 2021
+
+**Initial commit:** https://github.com/juniorise/storypad/commit/87c7516047b4d4af59be8eac13821552df39257b
+
+## Key Features
+
+### Core Journaling
+
+- **Timeline View** – Everything organized chronologically, no folders or tabs needed
+- **Rich Text Editing** – Bold, italic, lists, checkboxes, colors, 1300+ Google Fonts
+- **Multi-Page Entries** – Create long-form content, stories, or daily prompts across multiple pages
+- **Photo Memories** – Add multiple photos per entry with custom layouts
+- **Tags & Organization** – Tag stories, star favorites, and search easily
+
+### Personal Insights
+
+- **Throwback Memories** – See what you wrote on this day in previous years
+- **Feelings & Moods Tracker** – 45+ emotions with calendar view and history
+- **Reflection & Discovery** – Relive moments and track your emotional journey
+
+### Privacy & Security
+
+- **Privacy First** – Data stays on your device
+- **Authentication** – PIN, Face ID, or fingerprint lock
+- **Secure Backup** – Private Google Drive sync (encrypted)
+- **Offline Export** – Full backups exportable locally in multiple formats
+
+### Customization
+
+- **20+ Color Themes** – Dark/light mode support
+- **Font Customization** – Choose from extensive font library
+- **Layout Options** – Personalize your journaling experience
+
+### Optional Add-ons (One-Time Purchase)
+
+All add-ons are $1.99 one-time purchases with no subscriptions:
+
+1. **Voice Journal** – Record voice notes directly in stories, auto-organize by tags, Telegram-style player with speed control
+2. **Relaxing Sounds** – Curated collection of calming background sounds for focus, calm, or reflection
+3. **Period Calendar** – Track your cycle and create related story entries with insights
+4. **Templates** – Create custom daily writing templates to prompt reflection and consistency
+
+### Export & Sharing
+
+- **Multiple Formats** – Export as text, markdown, or full backup
+- **Share Selectively** – Share individual stories while keeping your journal private
+- **Data Portability** – Your data belongs to you
+
+## Product Strategy
+
+### Revenue Model
+
+- **Ad-Free** – No advertisements anywhere
+- **Optional Add-ons** – Only $1.99, one-time purchase, no subscriptions
+- **Transparent** – Users understand exactly where money goes
+
+### Target Audience
+
+StoryPad serves multiple user personas:
+
+1. **Reflective Writers** – People who journal to process emotions and thoughts
+2. **Memory Keepers** – Those documenting life events and milestones
+3. **Creative Writers** – Users practicing writing or building story collections
+4. **Mindfulness Practitioners** – Daily reflectors and trackers
+5. **Privacy-Conscious Users** – Those who want data control and no ads
+
+### Differentiation
+
+- **Timeline Over Folders** – Natural, chronological organization
+- **Open Source** – Full transparency for privacy advocates
+- **Beautiful Design** – Minimalist, focused UX without clutter
+- **Privacy by Default** – Not a feature afterthought, but core principle
+- **Simple Monetization** – Users know exactly what they're paying for
+
+## Technical Architecture
+
+### Technology Stack
+
+- **Framework:** Flutter (cross-platform iOS/Android)
+- **State Management:** Provider + ChangeNotifier
+- **Architecture Pattern:** MVVM (Model-View-ViewModel)
+- **Local Database:** ObjectBox (fast, efficient, mobile-optimized)
+- **Backend:** Firebase (analytics, remote config, crashlytics)
+- **Backup:** Google Drive integration
+
+### Key Design Principles
+
+- **Simplicity** – Code is understandable and maintainable
+- **MVVM Pattern** – Clear separation of View, ViewModel, and Model
+- **Layered State Management:**
+  - Global State: Managed by ProviderScope (app lifecycle)
+  - View State: Managed by ViewModelProvider (page lifecycle)
+  - Widget State: Managed by Stateful widgets (component lifecycle)
+
+## Developer Information
+
+### Development Setup
+
+Required tools:
+
+- Java 21 (LTS) for Android
+- Ruby 3.3.5 for iOS
+- Flutter 3.29.0
+
+For detailed setup: See `docs/development/setup_asdf.md` in the repository.
+
+### Project Structure
+
+```
+lib/              # Main Flutter app code
+docs/             # Developer documentation
+  - architecture/ # System design and decisions
+  - development/  # Setup and configuration
+  - features/     # User guides and implementation details
+  - product/      # Product strategy and metrics
+  - ui/            # UI components and guidelines
+landing/          # Landing page (Hugo)
+  - content/      # Markdown pages
+  - data/         # YAML data files (questions, reviews, use cases)
+android/          # Android-specific code
+ios/              # iOS-specific code
+test/             # Unit tests
+```
+
+### Contributing
+
+StoryPad welcomes open source contributions:
+
+- See `CONTRIBUTING.md` for guidelines
+- Check `docs/` for architecture and patterns
+- Join the community for localization efforts
+
+## Resources for Learning More
+
+### Landing Page Sections
+
+- `/landing/content/add-ons.md` – Detailed add-on descriptions
+- `/landing/content/blogs/` – User guides and journaling tips
+- `/landing/content/wiki/` – FAQ and product comparison
+
+### Documentation Structure
+
+- `docs/architecture/` – System design, backup system, file organization
+- `docs/features/` – Individual feature implementation guides
+- `docs/product/` – Marketing strategy, user personas, metrics
+- `docs/development/` – Platform-specific configuration
+
+### Social & Community
+
+- GitHub: Open source community and issue tracking
+- Available on App Store and Google Play
+- 20+ language community translations
+
+## Key Messaging
+
+**Headline:** "Timeline Diary – Not Another Journal App"
+
+**Description:** A beautiful, privacy-first, open source journal app that captures your life on a continuous timeline. No folders. No tabs. No ads. Just your story, perfectly preserved.
+
+**Value Propositions:**
+
+1. ✨ **Beautiful & Simple** – Distraction-free journaling experience
+2. 🔒 **Private & Secure** – Your data, your control, on your device
+3. 📖 **Timeline Story** – Watch your life unfold naturally
+4. 💎 **Fair Pricing** – Optional add-ons, no subscriptions, no ads
+5. 🌍 **Open & Transparent** – Open source, community-driven
+
+---
+
+Last Updated: November 2025
+For technical details and API usage: See `/docs/README.md`

@@ -1,6 +1,6 @@
 ---
 title: StoryPad - Timeline Diary | Open Source
-date: "2023-01-01"
+date: "2021-03-08"
 draft: false
 description: Not another journal app. A timeline for your life. StoryPad lets you capture everything - notes, thoughts, emotions, workouts, travels - on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized.
 keywords:
