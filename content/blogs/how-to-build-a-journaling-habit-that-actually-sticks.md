@@ -1,6 +1,6 @@
 ---
 title: "How to Build a Journaling Habit That Actually Sticks"
-date: "2025-06-08"
+date: "2025-12-01T14:19:47Z"
 draft: false
 description: "Discover proven strategies to build a journaling habit that lasts. Learn from real users how to make journaling stick and use StoryPad to transform your daily routine."
 ---

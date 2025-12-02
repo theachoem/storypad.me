@@ -1,6 +1,6 @@
 ---
 title: "Diary vs. Journal: What's the Difference, Really?"
-date: "2025-06-08"
+date: "2025-12-01T16:58:11Z"
 draft: false
 description: "Discover the key differences between diaries and journals. Learn which one is right for you and how StoryPad helps you write both beautifully and meaningfully."
 ---

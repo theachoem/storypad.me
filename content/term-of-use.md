@@ -1,5 +1,5 @@
 ---
-date: "2025-07-01"
+date: "2025-12-01T10:15:33Z"
 draft: false
 title: "Terms of Use"
 ---

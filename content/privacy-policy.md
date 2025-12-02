@@ -1,5 +1,5 @@
 ---
-date: "2025-07-01"
+date: "2025-12-01T16:42:18Z"
 draft: false
 title: "Privacy Policy"
 ---

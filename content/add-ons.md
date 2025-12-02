@@ -1,19 +1,19 @@
 ---
-date: "2025-07-03"
+date: "2025-12-01T09:17:32Z"
 draft: false
 title: "StoryPad Add-ons"
-description: "Enhance your journaling with optional add-ons — the only way StoryPad earns money while staying ad-free."
+description: "Enhance your journaling with optional add-ons - the only way StoryPad earns money while staying ad-free."
 ---
 
 StoryPad is built with love to help you capture your story, and we're committed to keeping it **simple, open, and ad-free**. These optional add-ons are the **only way** the app earns money, and every purchase helps us keep improving StoryPad for you.
 
-Each add-on is a **one-time purchase** — buy once, keep forever. No subscriptions. No hidden fees. Just simple tools to enhance your journaling experience.
+Each add-on is a **one-time purchase** - buy once, keep forever. No subscriptions. No hidden fees. Just simple tools to enhance your journaling experience.
 
-## 🎙️ Voice & Audio Journaling - $1.99
+## 🎙️ Voice & Audio Journaling
 
 Capture your thoughts with your voice.
 
-Sometimes the best moments can't wait for typing. With Voice & Audio Journaling, you can record your thoughts, feelings, and stories directly into your journal. Your voice carries emotion and tone that words alone can't capture—hear your own voice months or years later and relive those moments exactly as you felt them.
+Sometimes the best moments can't wait for typing. With Voice & Audio Journaling, you can record your thoughts, feelings, and stories directly into your journal. Your voice carries emotion and tone that words alone can't capture-hear your own voice months or years later and relive those moments exactly as you felt them.
 
 **What you get:**
 
@@ -26,7 +26,7 @@ Sometimes the best moments can't wait for typing. With Voice & Audio Journaling,
 
 **Things to Know:**
 
-- Record as long as you want — no time limits per recording
+- Record as long as you want - no time limits per recording
 - Add as many recordings as you want per entry
 - Audio files are saved in .m4a format
 - Storage space depends on your Google Drive quota, not the app
@@ -34,13 +34,11 @@ Sometimes the best moments can't wait for typing. With Voice & Audio Journaling,
 
 Perfect for when inspiration strikes and you need to capture it fast, or for those late-night reflections you want to preserve in your own voice.
 
----
-
-## 🎵 Relaxing Sounds - $1.99
+## 🎵 Relaxing Sounds
 
 Set the perfect mood before you write or read.
 
-Whether you need focus, calm, or just a little background ambiance, Relaxing Sounds brings gentle audio to your journaling routine. Think rain on a window, soft waves, or a crackling fireplace — whatever helps you get into the right headspace to reflect, create, and write.
+Whether you need focus, calm, or just a little background ambiance, Relaxing Sounds brings gentle audio to your journaling routine. Think rain on a window, soft waves, or a crackling fireplace - whatever helps you get into the right headspace to reflect, create, and write.
 
 **What you get:**
 
@@ -50,13 +48,11 @@ Whether you need focus, calm, or just a little background ambiance, Relaxing Sou
 
 Perfect for those moments when you want to disconnect from the noise and connect with your thoughts.
 
----
-
-## 📝 Templates - $1.99
+## 📝 Templates
 
 Create your own daily writing templates.
 
-Stop staring at a blank page. With Templates, you can design custom prompts and structured layouts that fit your journaling style — whether it's gratitude lists, weekly reflections, goal tracking, or creative prompts you revisit every day.
+Stop staring at a blank page. With Templates, you can design custom prompts and structured layouts that fit your journaling style - whether it's gratitude lists, weekly reflections, goal tracking, or creative prompts you revisit every day.
 
 **What you get:**
 
@@ -66,15 +62,13 @@ Stop staring at a blank page. With Templates, you can design custom prompts and 
 
 **Things to Know:**
 
-- Create unlimited templates — no limits
+- Create unlimited templates - no limits
 - Reuse templates as many times as you want
 - View all entries that used a specific template in one place
 
 Perfect if you're building a habit, tracking progress, or just want a little structure to guide your writing.
 
----
-
-## 📅 Period Calendar - $1.99
+## 📅 Period Calendar
 
 Track your cycle with ease, right in your journal.
 
@@ -89,11 +83,9 @@ Never lose track of your period again. The Period Calendar integrates seamlessly
 
 Perfect for maintaining a consistent record of your cycle while keeping all your personal notes in one place.
 
----
-
 ## Why It Matters
 
-StoryPad doesn't run ads. We don't sell your data. We don't have a subscription model. These add-ons are the **only way** we fund development — and they're worth it.
+StoryPad doesn't run ads. We don't sell your data. We don't have a subscription model. These add-ons are the **only way** we fund development - and they're worth it.
 
 When you buy an add-on, you're directly funding:
 
@@ -104,7 +96,5 @@ When you buy an add-on, you're directly funding:
 
 Every purchase keeps StoryPad independent, sustainable, and focused on what matters: your story. 💛
 
----
-
-> **Buy once, keep forever — no subscriptions.**  
+> **Buy once, keep forever - no subscriptions.**  
 > Thanks for supporting StoryPad and helping keep it simple, open, and ad-free!

@@ -1,6 +1,6 @@
 ---
 title: "Lessons Learned: Why `Purchases.getProducts` Returned Empty in RevenueCat"
-date: "2025-09-25"
+date: "2025-12-01T14:26:53Z"
 draft: false
 keywords:
   - revenuecat

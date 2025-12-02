@@ -1,6 +1,6 @@
 ---
 title: "StoryPad Key Features"
-date: "2025-06-16"
+date: "2025-12-01T12:44:28Z"
 draft: false
 description: "Explore StoryPad's powerful features for journaling, writing, and capturing your life on a beautiful continuous timeline. Fully customizable and privacy-focused."
 ---

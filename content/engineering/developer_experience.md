@@ -1,6 +1,6 @@
 ---
 title: "Sharing my open-source diary app with 80k+ downloads: 5 years of learning & mindset changes (Flutter)"
-date: "2025-03-02"
+date: "2025-12-01T10:51:36Z"
 draft: false
 keywords:
   - storypad

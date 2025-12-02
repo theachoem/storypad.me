@@ -1,6 +1,6 @@
 ---
 title: "How to Write Your Life Story: A Simple Guide to Telling It Your Way"
-date: "2025-06-08"
+date: "2025-12-01T09:31:52Z"
 draft: false
 description: "Learn how to write your life story with our simple, practical guide. Discover the best approach to capturing your memories and telling your story with StoryPad."
 ---

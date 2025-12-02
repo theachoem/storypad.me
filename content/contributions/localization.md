@@ -1,6 +1,6 @@
 ---
 title: "Localization"
-date: "2025-02-27"
+date: "2025-12-01T07:45:18Z"
 draft: false
 keywords:
   - storypad
