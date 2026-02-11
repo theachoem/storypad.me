@@ -31,8 +31,7 @@
     {{ $content | safeHTML }}
   </article>
 
-  <!-- Reddit Embed (for changelog pages) -->
-  {{ if and (eq .Section "changelogs") .Params.embed_content }}
+  <!-- Reddit Embed -->
   <div class="mt-8">
     {{ .Params.embed_content | safeHTML }}
   </div>
@@ -54,7 +53,6 @@
     setTimeout(resizeRedditEmbed, 500);
     setTimeout(resizeRedditEmbed, 1000);
   </script>
-  {{ end }}
 
   <!-- Navigation to other changelog versions (only for changelog pages) -->
   {{ if eq .Section "changelogs" }}

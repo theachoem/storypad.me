@@ -15,6 +15,13 @@ keywords:
   - daily notes
   - story sharing
   - private journal
+# make this multi line string
+embed_content: >
+  <blockquote class="reddit-embed-bq" style="height:316px" data-embed-height="316">
+  <a href="https://www.reddit.com/r/FlutterDev/comments/1j1zd48/sharing_my_opensource_diary_app_with_80k/">Sharing my open-source diary app with 80k+ downloads: 5 years of learning &amp; mindset changes</a><br> by
+  <a href="https://www.reddit.com/user/Basic-Actuator7263/">u/Basic-Actuator7263</a> in
+  <a href="https://www.reddit.com/r/FlutterDev/">FlutterDev</a>
+  </blockquote><script async="" src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 ---
 
 Hi everyone, today I want to introduce my open-source diary app with 80k+ downloads & share my experience in learning & making the app for the last 5 years.
@@ -43,8 +50,3 @@ It’s not perfect, but I’m eager to hear your feedback and continue improving
 [https://github.com/theachoem/storypad](https://github.com/theachoem/storypad)
 
 Please give repo a star if you like it! 😊
-
----
-
-Original Reddit Post:
-[https://www.reddit.com/r/FlutterDev/comments/1j1zd48/sharing_my_opensource_diary_app_with_80k](https://www.reddit.com/r/FlutterDev/comments/1j1zd48/sharing_my_opensource_diary_app_with_80k/)
