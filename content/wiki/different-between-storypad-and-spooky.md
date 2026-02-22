@@ -22,7 +22,7 @@ Spooky was originally created as a more advanced replacement for **StoryPad**, b
 To continue receiving the **latest features and updates**, we recommend migrating your data to **StoryPad**. The migration process is **100% safe**, and your data will remain intact.
 
 You can follow our step-by-step guide here:
-[Migrate to StoryPad](/wiki/migrate-to-storypad)
+[Migrate to StoryPad](/wiki/migrate-to-storypad/)
 
 If you need any assistance, feel free to reach out!
 
