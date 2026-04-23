@@ -11,6 +11,13 @@
   HUGO_ENV = "production"
 
 [[redirects]]
+  from = "/*"
+  query = {ref = ":ref"}
+  to = "/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "https://www.storypad.me/*"
   to = "https://storypad.me/:splat"
   status = 301
