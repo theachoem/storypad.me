@@ -1,0 +1,7 @@
+{
+  "name": "storypad",
+  "compatibility_date": "2026-04-29",
+  "assets": {
+    "directory": "public",
+  },
+}
