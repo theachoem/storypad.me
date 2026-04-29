@@ -21,22 +21,24 @@
 			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone" target="_blank"
 				rel="noopener noreferrer"
 				class="google-play-button dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<picture>
+				<picture class="block h-[48px] w-[168px]">
 					<source srcset='{{ "app-store-button.webp" | relURL }}' type="image/webp" />
-					<img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" class="h-[48px]" />
+					<img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" width="336" height="96"
+						class="h-[48px] w-auto" />
 				</picture>
 			</a>
 			<a href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank"
 				rel="noopener noreferrer"
 				class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<picture>
+				<picture class="block h-[48px] w-[162px]">
 					<source srcset='{{ "google-play-button.webp" | relURL }}' type="image/webp" />
-					<img src='{{ "google-play-button.png" | relURL }}' alt="google-play" class="h-[48px]" />
+					<img src='{{ "google-play-button.png" | relURL }}' alt="google-play" width="324" height="96"
+						class="h-[48px] w-auto" />
 				</picture>
 			</a>
 		</div>
 
-		<picture>
+		<picture class="block w-full aspect-[1048/761]">
 			<source srcset='{{ "cover_2.webp" | relURL }}' type="image/webp" />
 			<img src='{{ "cover_2.png" | relURL }}' alt="cover_2.png" width="1048" height="761"
 				class="cursor-pointer block w-full h-auto" data-action="shake-animation" />
