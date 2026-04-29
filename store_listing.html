@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryPad Store Listing - Screenshot Mockups</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background: #f5f3f0;
+      padding: 40px 20px;
+      color: #2c2c2c;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    .header p {
+      font-size: 1.1em;
+      color: #666;
+    }
+
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+      margin-bottom: 80px;
+    }
+
+    .screenshot-set {
+      margin-bottom: 80px;
+    }
+
+    .screenshot-set-title {
+      font-size: 1.8em;
+      font-weight: 600;
+      margin-bottom: 30px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid #d4a574;
+      color: #1a1a1a;
+    }
+
+    .screenshot-item {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .phone-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 19.5;
+      background: #000;
+      border-radius: 50px;
+      padding: 12px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .phone-frame::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 30px;
+      background: #000;
+      border-radius: 0 0 25px 25px;
+      z-index: 100;
+    }
+
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 45px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .screen-content {
+      flex: 1;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 20px 20px;
+      position: relative;
+    }
+
+    .headline {
+      font-size: 1.4em;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 10px;
+      color: #1a1a1a;
+    }
+
+    .caption {
+      font-size: 0.9em;
+      color: #666;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    /* Screenshot #1: Timeline Hook */
+    .timeline-hero {
+      background: linear-gradient(135deg, #f5f1ed 0%, #ede9e5 100%);
+    }
+
+    .timeline-entry {
+      background: white;
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .entry-date {
+      font-size: 0.75em;
+      color: #999;
+      font-weight: 500;
+    }
+
+    .entry-text {
+      font-size: 0.9em;
+      color: #333;
+      margin: 5px 0;
+      line-height: 1.4;
+    }
+
+    .entry-photo {
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(135deg, #d4a574 0%, #c4956b 100%);
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    .throwback-badge {
+      display: inline-block;
+      background: #e8d5c4;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.7em;
+      font-weight: 600;
+      color: #8b6f47;
+      margin-top: 6px;
+    }
+
+    .social-proof {
+      display: flex;
+      gap: 8px;
+      margin-top: 15px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo-badge {
+      font-size: 0.65em;
+      font-weight: 600;
+      background: #fff;
+      padding: 3px 6px;
+      border-radius: 3px;
+      color: #666;
+      border: 1px solid #ddd;
+    }
+
+    /* Screenshot #2: Customization Variants */
+    .customization-wrapper {
+      display: flex;
+      gap: 8px;
+      height: 200px;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 10px 5px;
+    }
+
+    .font-variant {
+      flex: 1;
+      height: 100%;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-size: 0.85em;
+      font-weight: 600;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .font-variant-1 {
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      font-family: 'Courier New', monospace;
+    }
+
+    .font-variant-2 {
+      background: linear-gradient(135deg, #e8d5c4 0%, #d4a574 100%);
+      color: #2c2c2c;
+      font-family: Georgia, serif;
+    }
+
+    .font-variant-3 {
+      background: linear-gradient(135deg, #a8bfc9 0%, #8fa8b8 100%);
+      font-family: 'Apple Symbols', sans-serif;
+    }
+
+    .font-name {
+      font-size: 0.7em;
+      opacity: 0.9;
+      margin-top: 8px;
+    }
+
+    /* Screenshot #3: Privacy Lock */
+    .privacy-lock {
+      background: linear-gradient(135deg, rgba(44, 44, 44, 0.3) 0%, rgba(26, 26, 26, 0.5) 100%);
+      backdrop-filter: blur(10px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .lock-icon {
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .lock-text {
+      text-align: center;
+      color: white;
+      font-weight: 600;
+      font-size: 0.95em;
+    }
+
+    .badge-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+      justify-content: center;
+    }
+
+    .badge {
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 6px 10px;
+      border-radius: 20px;
+      font-size: 0.7em;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* Screenshot #4: Multi-page & Albums */
+    .multipage-wrapper {
+      display: flex;
+      gap: 10px;
+      height: 200px;
+      padding: 10px 5px;
+    }
+
+    .page-preview {
+      flex: 1;
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .page-text {
+      background: white;
+      flex: 1;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 0.7em;
+      color: #333;
+      line-height: 1.3;
+      border: 1px solid #e0e0e0;
+    }
+
+    .page-photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .photo-thumb {
+      aspect-ratio: 1;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #d4a574 0%, #e8d5c4 100%);
+    }
+
+    .page-label {
+      font-size: 0.65em;
+      color: #999;
+      margin-top: 6px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    /* Screenshot #5: Moods & Sounds */
+    .moods-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 15px;
+    }
+
+    .entry-preview {
+      background: white;
+      border-radius: 12px;
+      padding: 12px;
+      border: 1px solid #e0e0e0;
+      flex: 1;
+    }
+
+    .entry-preview-text {
+      font-size: 0.8em;
+      color: #333;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .mood-picker {
+      background: linear-gradient(135deg, #f5f1ed 0%, #ede9e5 100%);
+      border-radius: 12px;
+      padding: 12px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .mood-option {
+      background: white;
+      border-radius: 8px;
+      padding: 8px;
+      text-align: center;
+      border: 2px solid transparent;
+      cursor: pointer;
+      font-size: 0.8em;
+      transition: all 0.2s;
+    }
+
+    .mood-option.selected {
+      border-color: #d4a574;
+      background: #f9f6f2;
+    }
+
+    .mood-emoji {
+      font-size: 1.5em;
+      margin-bottom: 4px;
+    }
+
+    .mood-name {
+      font-size: 0.65em;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .sound-player {
+      background: linear-gradient(135deg, #8fa8b8 0%, #7a96a6 100%);
+      border-radius: 12px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: white;
+    }
+
+    .play-icon {
+      width: 32px;
+      height: 32px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9em;
+    }
+
+    .sound-info {
+      font-size: 0.8em;
+    }
+
+    /* Screenshot #6: Period Calendar */
+    .calendar-wrapper {
+      padding: 15px;
+    }
+
+    .calendar-header {
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9em;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .calendar-day {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-size: 0.7em;
+      background: #f5f1ed;
+      color: #999;
+    }
+
+    .calendar-day.period {
+      background: linear-gradient(135deg, #f8d7d7 0%, #f0c4c4 100%);
+      color: #c95555;
+      font-weight: 600;
+    }
+
+    .calendar-day.today {
+      background: linear-gradient(135deg, #d4a574 0%, #c4956b 100%);
+      color: white;
+      font-weight: 600;
+    }
+
+    .calendar-legend {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      font-size: 0.7em;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 3px;
+    }
+
+    /* Screenshot #7: Pro Features */
+    .pro-features {
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pro-headline {
+      font-size: 1.3em;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .features-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .feature-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-size: 0.85em;
+    }
+
+    .feature-check {
+      width: 20px;
+      height: 20px;
+      background: #d4a574;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8em;
+      font-weight: 700;
+      color: #1a1a1a;
+      flex-shrink: 0;
+    }
+
+    .quote {
+      background: rgba(212, 165, 116, 0.2);
+      border-left: 3px solid #d4a574;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 0.8em;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    /* Screenshot metadata */
+    .screenshot-meta {
+      padding-top: 10px;
+    }
+
+    .screenshot-number {
+      font-size: 0.8em;
+      color: #999;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    .screenshot-headline {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 5px;
+    }
+
+    .screenshot-description {
+      font-size: 0.85em;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    /* A/B Variants */
+    .ab-comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .variant-label {
+      font-size: 0.9em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #d4a574;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .screenshot-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .ab-comparison {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .screenshot-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 1.8em;
+      }
+    }
+
+    .note-box {
+      background: #fef6f0;
+      border-left: 4px solid #d4a574;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 30px 0;
+      font-size: 0.9em;
+      color: #666;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>StoryPad Store Listing</h1>
+      <p>Screenshot Mockups: "Life, Unfolded" Strategy</p>
+    </div>
+
+    <div class="note-box">
+      <strong>💡 Design Strategy:</strong> Moving from "feature list" to "mood board" aesthetic. Capturing the 2026
+      premium minimal vibe with white space, typography focus, and authentic life moments.
+    </div>
+
+    <!-- Primary Screenshot Set -->
+    <div class="screenshot-set">
+      <h2 class="screenshot-set-title">Primary Screenshots (All 7)</h2>
+      <div class="screenshot-grid">
+        <!-- 1. Timeline Hook -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content timeline-hero">
+                <div class="headline">Life doesn't happen in folders.</div>
+                <div class="caption">Your story flows naturally on a single, continuous timeline.</div>
+
+                <div class="timeline-entry">
+                  <div class="entry-date">March 15, 2026</div>
+                  <div class="entry-photo"></div>
+                  <div class="entry-text">That sunset at the coast was everything...</div>
+                </div>
+
+                <div class="timeline-entry">
+                  <div class="entry-date">March 12, 2026</div>
+                  <div class="entry-text">New job starts Monday. Feeling ready. 😌</div>
+                  <div class="throwback-badge">⏮ Throwback: March 2025</div>
+                </div>
+
+                <div class="social-proof">
+                  <span class="logo-badge">🏆 MakeUseOf</span>
+                  <span class="logo-badge">⭐ It's FOSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 1/7</div>
+            <div class="screenshot-headline">The Hook: Timeline Feed</div>
+            <div class="screenshot-description">Showcases the core philosophy—continuous, folder-free timeline with
+              high-res moments and throwback cards.</div>
+          </div>
+        </div>
+
+        <!-- 2. Customization -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content" style="background: white; padding-top: 40px;">
+                <div class="headline">Your digital sanctuary.</div>
+                <div class="caption">Design your space with 1300+ fonts and customizable aesthetics.</div>
+
+                <div class="customization-wrapper">
+                  <div class="font-variant font-variant-1">
+                    <div>MINIMAL</div>
+                    <div class="font-name">CODE</div>
+                  </div>
+                  <div class="font-variant font-variant-2">
+                    <div>Elegant</div>
+                    <div class="font-name">SERIF</div>
+                  </div>
+                  <div class="font-variant font-variant-3">
+                    <div>MODERN</div>
+                    <div class="font-name">SANS</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 2/7</div>
+            <div class="screenshot-headline">The Vibe: Customization</div>
+            <div class="screenshot-description">Three variants of the same entry showing font and color customization
+              options.</div>
+          </div>
+        </div>
+
+        <!-- 3. Privacy Lock -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content privacy-lock">
+                <div class="lock-icon">🔒</div>
+                <div class="headline" style="color: white; margin: 0;">For your eyes only.</div>
+                <div class="caption" style="color: rgba(255,255,255,0.8); margin: 0;">End-to-end encryption. Your data
+                  stays on your device and your private cloud.</div>
+
+                <div class="badge-row">
+                  <div class="badge">🔓 Open Source</div>
+                  <div class="badge">💾 Local-First</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 3/7</div>
+            <div class="screenshot-headline">The Privacy: Secure Lock</div>
+            <div class="screenshot-description">PIN/FaceID lock screen highlighting privacy-first approach with Open
+              Source and Local-First badges.</div>
+          </div>
+        </div>
+
+        <!-- 4. Multi-page & Albums -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content" style="background: white; padding-top: 40px;">
+                <div class="headline">More than just a diary.</div>
+                <div class="caption">Capture every detail with multi-page stories and rich photo albums.</div>
+
+                <div class="multipage-wrapper">
+                  <div class="page-preview">
+                    <div class="page-text">
+                      A long-form story about that weekend trip. Every detail matters when you're capturing your life...
+                    </div>
+                    <div class="page-label">Page 1</div>
+                  </div>
+                  <div class="page-preview">
+                    <div class="page-photos">
+                      <div class="photo-thumb"></div>
+                      <div class="photo-thumb"></div>
+                      <div class="photo-thumb"></div>
+                      <div class="photo-thumb"></div>
+                    </div>
+                    <div class="page-label">Page 2 — Photos</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 4/7</div>
+            <div class="screenshot-headline">The Depth: Multi-page & Albums</div>
+            <div class="screenshot-description">Split view showing long-form story on one page and photo album on
+              another.</div>
+          </div>
+        </div>
+
+        <!-- 5. Moods & Sounds -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content" style="background: white; padding-top: 40px;">
+                <div class="headline">Write with intention.</div>
+                <div class="caption">Track your emotions and set the mood with immersive, relaxing sounds.</div>
+
+                <div class="moods-wrapper">
+                  <div class="entry-preview">
+                    <div class="entry-preview-text">Feeling calm and reflective today. Everything feels possible...
+                    </div>
+                  </div>
+
+                  <div class="mood-picker">
+                    <div class="mood-option">
+                      <div class="mood-emoji">😌</div>
+                      <div class="mood-name">Calm</div>
+                    </div>
+                    <div class="mood-option selected">
+                      <div class="mood-emoji">😊</div>
+                      <div class="mood-name">Joy</div>
+                    </div>
+                    <div class="mood-option">
+                      <div class="mood-emoji">💭</div>
+                      <div class="mood-name">Thoughtful</div>
+                    </div>
+                  </div>
+
+                  <div class="sound-player">
+                    <div class="play-icon">▶</div>
+                    <div class="sound-info">
+                      <div style="font-weight: 600; font-size: 0.9em;">Forest Rain</div>
+                      <div style="font-size: 0.7em; opacity: 0.9;">🎵 Now playing</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 5/7</div>
+            <div class="screenshot-headline">The Zen: Moods & Sounds</div>
+            <div class="screenshot-description">Mood picker overlay with relaxing sounds player active at the bottom.
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Period Calendar -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content" style="background: white; padding-top: 40px;">
+                <div class="headline">Your life, fully integrated.</div>
+                <div class="caption">Private cycle tracking and smart tagging to organize your journey.</div>
+
+                <div class="calendar-wrapper">
+                  <div class="calendar-header">April 2026</div>
+                  <div class="calendar-grid">
+                    <div class="calendar-day">S</div>
+                    <div class="calendar-day">M</div>
+                    <div class="calendar-day">T</div>
+                    <div class="calendar-day">W</div>
+                    <div class="calendar-day">T</div>
+                    <div class="calendar-day">F</div>
+                    <div class="calendar-day">S</div>
+
+                    <div class="calendar-day">30</div>
+                    <div class="calendar-day">1</div>
+                    <div class="calendar-day">2</div>
+                    <div class="calendar-day">3</div>
+                    <div class="calendar-day">4</div>
+                    <div class="calendar-day">5</div>
+                    <div class="calendar-day">6</div>
+
+                    <div class="calendar-day">7</div>
+                    <div class="calendar-day">8</div>
+                    <div class="calendar-day period">9</div>
+                    <div class="calendar-day period">10</div>
+                    <div class="calendar-day period">11</div>
+                    <div class="calendar-day">12</div>
+                    <div class="calendar-day">13</div>
+
+                    <div class="calendar-day">14</div>
+                    <div class="calendar-day">15</div>
+                    <div class="calendar-day">16</div>
+                    <div class="calendar-day today">17</div>
+                    <div class="calendar-day">18</div>
+                    <div class="calendar-day">19</div>
+                    <div class="calendar-day">20</div>
+                  </div>
+                  <div class="calendar-legend">
+                    <div class="legend-item">
+                      <div class="legend-dot" style="background: #f0c4c4;"></div>
+                      <span>Period</span>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-dot" style="background: #d4a574;"></div>
+                      <span>Today</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 6/7</div>
+            <div class="screenshot-headline">The Whole Life: Period Calendar</div>
+            <div class="screenshot-description">Clean calendar view with period tracking and tag overlay system
+              integration.</div>
+          </div>
+        </div>
+
+        <!-- 7. Pro Features -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content pro-features">
+                <div class="pro-headline">A lifetime of memories.<br>No subscriptions.</div>
+
+                <div class="features-list">
+                  <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>Unlimited Photos</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>Voice Journaling</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>All 1300+ Fonts</div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-check">✓</div>
+                    <div>Relaxing Sounds</div>
+                  </div>
+                </div>
+
+                <div class="quote">
+                  "The one that finally stuck... I've been quietly obsessed ever since." — MakeUseOf
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Screenshot 7/7</div>
+            <div class="screenshot-headline">The Promise: Pro Features</div>
+            <div class="screenshot-description">One-time Pro purchase benefits checklist with MakeUseOf testimonial.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A/B Variant: Privacy Focus -->
+    <div class="screenshot-set">
+      <h2 class="screenshot-set-title">A/B Variant 1: Privacy-First Emphasis</h2>
+      <div class="note-box">
+        <strong>🎯 Strategy:</strong> Lead with privacy and security messaging. Perfect for privacy-conscious users and
+        FOSS enthusiasts.
+      </div>
+      <div class="screenshot-grid">
+        <!-- Modified Screenshot 1: Privacy Hook -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content privacy-lock" style="gap: 20px;">
+                <div style="font-size: 2.5em;">🛡️</div>
+                <div class="headline" style="color: white; margin: 0;">End-to-end encrypted<br>from day one.</div>
+                <div class="caption" style="color: rgba(255,255,255,0.8); margin: 0;">Your journal is yours alone. Open
+                  source, local-first, zero tracking.</div>
+
+                <div class="badge-row" style="margin-top: 20px;">
+                  <div class="badge">🔐 E2E Encrypted</div>
+                  <div class="badge">💾 Local-First</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Variant 1 — Screenshot 1/7</div>
+            <div class="screenshot-headline">Privacy-First Hook</div>
+            <div class="screenshot-description">Emphasizes security and privacy as the leading value proposition.</div>
+          </div>
+        </div>
+
+        <!-- Modified Screenshot 3: Open Source Focus -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content"
+                style="background: linear-gradient(135deg, #f0f4f8 0%, #eaeef2 100%); padding-top: 40px;">
+                <div class="headline">Built on trust.</div>
+                <div class="caption">Auditable code. No ads. No tracking. No surprises.</div>
+
+                <div style="background: white; border-radius: 12px; padding: 15px; margin-top: 15px;">
+                  <div style="text-align: center; font-weight: 600; font-size: 0.95em; margin-bottom: 12px;">Open Source
+                    @ GitHub</div>
+                  <div style="display: flex; gap: 8px; justify-content: center; align-items: center;">
+                    <div style="font-size: 1.2em;">⭐</div>
+                    <div style="font-size: 0.85em; color: #666;">
+                      <div style="font-weight: 600;">2.4K Stars</div>
+                      <div style="font-size: 0.8em;">Community verified</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  style="background: #e8f5e9; border-left: 3px solid #4caf50; padding: 10px; border-radius: 4px; margin-top: 12px; font-size: 0.8em; color: #2e7d32;">
+                  ✓ Fully auditable • ✓ No trackers • ✓ Your data, your rules
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Variant 1 — Screenshot 3/7</div>
+            <div class="screenshot-headline">Open Source Transparency</div>
+            <div class="screenshot-description">GitHub community validation and transparency messaging.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A/B Variant: Customization Focus -->
+    <div class="screenshot-set">
+      <h2 class="screenshot-set-title">A/B Variant 2: Customization & Aesthetics</h2>
+      <div class="note-box">
+        <strong>🎯 Strategy:</strong> Lead with design and personal expression. Perfect for creative users and design
+        enthusiasts who want their journal to be uniquely theirs.
+      </div>
+      <div class="screenshot-grid">
+        <!-- Modified Screenshot 1: Aesthetic Hook -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content"
+                style="background: linear-gradient(135deg, #f5e8d8 0%, #e8d5c4 100%); padding-top: 40px;">
+                <div class="headline">Your journal,<br>your aesthetic.</div>
+                <div class="caption">1300+ fonts. Infinite customization. Express yourself.</div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+                  <div
+                    style="background: white; border-radius: 8px; padding: 10px; font-family: Georgia, serif; color: #333; font-size: 0.95em; line-height: 1.5;">
+                    <em>"This morning felt different..."</em>
+                  </div>
+                  <div
+                    style="background: #2c2c2c; border-radius: 8px; padding: 10px; font-family: 'Courier New', monospace; color: #e0e0e0; font-size: 0.85em; line-height: 1.5;">
+                    > this morning felt different...
+                  </div>
+                  <div
+                    style="background: linear-gradient(135deg, #a8bfc9 0%, #8fa8b8 100%); border-radius: 8px; padding: 10px; color: white; font-size: 0.9em; line-height: 1.5;">
+                    This morning felt different...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Variant 2 — Screenshot 1/7</div>
+            <div class="screenshot-headline">Aesthetic Customization Hook</div>
+            <div class="screenshot-description">Three iterations of the same text showing font and design variety.</div>
+          </div>
+        </div>
+
+        <!-- Enhanced Customization Focus -->
+        <div class="screenshot-item">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="screen-content" style="background: white; padding-top: 40px;">
+                <div class="headline">Design your perfect space.</div>
+                <div class="caption">Typography, colors, themes—make it yours.</div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;">
+                  <div
+                    style="background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%); border-radius: 12px; padding: 12px; color: white; text-align: center; font-size: 0.85em;">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">🌙</div>
+                    <div style="font-weight: 600;">Minimal Dark</div>
+                  </div>
+                  <div
+                    style="background: linear-gradient(135deg, #fef6f0 0%, #f5e8d8 100%); border-radius: 12px; padding: 12px; color: #333; text-align: center; font-size: 0.85em;">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">☀️</div>
+                    <div style="font-weight: 600;">Warm Light</div>
+                  </div>
+                  <div
+                    style="background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-radius: 12px; padding: 12px; color: #1b5e20; text-align: center; font-size: 0.85em;">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">🌿</div>
+                    <div style="font-weight: 600;">Botanical</div>
+                  </div>
+                  <div
+                    style="background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%); border-radius: 12px; padding: 12px; color: #4a148c; text-align: center; font-size: 0.85em;">
+                    <div style="font-size: 1.5em; margin-bottom: 8px;">✨</div>
+                    <div style="font-weight: 600;">Twilight</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-meta">
+            <div class="screenshot-number">Variant 2 — Screenshot 2/7</div>
+            <div class="screenshot-headline">Theme Gallery</div>
+            <div class="screenshot-description">Preview of customizable themes and aesthetic options.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Notes -->
+    <div class="screenshot-set">
+      <h2 class="screenshot-set-title">Design Notes & Testing Guidance</h2>
+      <div style="display: grid; gap: 20px;">
+        <div class="note-box">
+          <strong>📐 Visual Hierarchy</strong><br>
+          Headlines use limited color palette (charcoal, sage, cream). Plenty of negative space allows the UI to
+          breathe. Typography variations communicate function without clutter.
+        </div>
+
+        <div class="note-box">
+          <strong>🎨 Color Palette (2026 Minimal Aesthetic)</strong><br>
+          Primary: Deep Charcoal (#2c2c2c), Sage Cream (#f5f1ed), Warm Tan (#d4a574)<br>
+          Secondary: Soft Blue (#8fa8b8), Rose (#f8d7d7), Forest Green (#4caf50)
+        </div>
+
+        <div class="note-box">
+          <strong>📱 Screenshot Order for Store Listing</strong><br>
+          1. Timeline (The Hook) — Introduces core value<br>
+          2. Customization OR Privacy (Choose A/B) — Your differentiation<br>
+          3. Privacy OR Customization (The other one) — Trust & features<br>
+          4. Multi-page (The Depth) — Depth of features<br>
+          5. Moods (The Zen) — Emotional connection<br>
+          6. Calendar (Whole Life) — Comprehensive integration<br>
+          7. Pro (The Promise) — Clear value & testimonial
+        </div>
+
+        <div class="note-box">
+          <strong>🎯 A/B Testing Recommendations</strong><br>
+          <strong>Variant 1 (Privacy-First):</strong> Best for iOS App Store (privacy-conscious audience) and FOSS
+          communities.<br>
+          <strong>Variant 2 (Customization):</strong> Best for Google Play (design/lifestyle audience) and creative
+          professionals.
+        </div>
+
+        <div class="note-box">
+          <strong>✅ Next Steps in Figma</strong><br>
+          1. High-resolution assets (3x for iOS, xxhdpi for Android)<br>
+          2. Smooth typography with system fonts (SF Pro, Roboto)<br>
+          3. Real screenshot overlays from current app<br>
+          4. Testimonial cards with avatars & verified badges<br>
+          5. Test both A/B variants with real user testers
+        </div>
+
+        <div class="note-box">
+          <strong>💡 MakeUseOf Quote Placement</strong><br>
+          Consider moving the MakeUseOf testimonial to Screenshot #2 (for Variant 1 Privacy focus) to emphasize
+          credibility early. Keeps Screenshot #7 focused on feature clarity.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

@@ -1,6 +1,8 @@
 - question: "Is StoryPad free to use?"
   answer: |-
-    Yes! All the core features you use now will **always be free, with no ads**. There are optional add-on features you can unlock for a one-time purchase, but the main journaling experience will always remain free and ad-free.
+    Yes. StoryPad is free to use with no ads, and all core journaling features are available in the free experience.
+
+    If you want extra premium features, you can unlock them with a **one-time purchase** (not a subscription).
 
 - question: "Do I need an account to use StoryPad?"
   answer: |-
@@ -28,7 +30,7 @@
 
 - question: "Is there a dark mode in StoryPad?"
   answer: |-
-    Yes, dark mode, light mode, 20+ background colors with dynamic color extraction from your wallpaper, and 1,300+ fonts from [Google Fonts](https://fonts.google.com). Your journal, your style.
+    Yes. StoryPad supports dark mode, light mode, 20+ background colors with dynamic color extraction from your wallpaper, background images (choose from serene environments, animals, and textures), and 1,300+ fonts from [Google Fonts](https://fonts.google.com). Your journal, your style.
 
 - question: "Does StoryPad auto-save?"
   answer: |-
@@ -46,11 +48,13 @@
 
 - question: "Can I export my stories locally in StoryPad?"
   answer: |-
-    Yes. You can back up all your stories locally to your device as a .json file (text only). This means you always have a copy - even without internet.
+    Yes. You can export your stories locally on your device in StoryPad format (.json), Markdown (compatible with Obsidian), or plain text (.txt).
 
-- question: "Are add-ons required in StoryPad?"
+    This means you always have a copy - even without internet.
+
+- question: "Do I need to make a one-time purchase in StoryPad?"
   answer: |-
-    No. Add-ons are **completely optional**. The core journaling experience is fully free - unlimited entries, multiple images per entry, 1,300+ fonts, 20+ colors, and all rich text editing. Add-ons are just extra features you can unlock if you want them.
+    No. A one-time purchase is **completely optional**. You can keep using StoryPad for free with core features. The one-time purchase is only for premium features.
 
 - question: "Are my stories safe with StoryPad?"
   answer: |-
