@@ -36,9 +36,10 @@ This repository contains the source code for the **StoryPad website** ([storypad
 
 ## About StoryPad
 
-StoryPad is an open-source timeline diary app with **80,000+ downloads** that lets you capture everything - notes, thoughts, emotions, workouts, travels - on a single continuous timeline. 
+StoryPad is an open-source timeline diary app with **80,000+ downloads** that lets you capture everything - notes, thoughts, emotions, workouts, travels - on a single continuous timeline.
 
 ### Key Features
+
 - **Timeline-based journaling** - No folders, no tabs, just your life beautifully organized
 - **Multi-platform** - Available on iOS and Android
 - **Open source** - Built with Flutter and available on GitHub
@@ -64,22 +65,26 @@ This website is built with:
 ### Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/theachoem/storypad.me.git
    cd storypad.me
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Extract Hugo binary** (if not already done)
+
    ```bash
    tar -xzf hugo.tar.gz
    ```
 
 4. **Start development server**
+
    ```bash
    ./hugo server --buildDrafts --buildFuture
    ```
@@ -115,11 +120,13 @@ The built site will be available in the `public/` directory.
 We welcome contributions to improve the StoryPad website! Here are ways you can help:
 
 ### Content Contributions
+
 - **Documentation improvements** - Help make our guides clearer
 - **Translation** - Contribute to our [localization efforts](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?usp=sharing)
 - **Blog posts** - Share your StoryPad experience
 
 ### Technical Contributions
+
 - **Bug fixes** - Help us fix website issues
 - **Feature improvements** - Enhance the website experience
 - **Performance optimizations** - Make the site faster
@@ -135,6 +142,7 @@ We welcome contributions to improve the StoryPad website! Here are ways you can 
 ### Reporting Issues
 
 Found a bug or have a suggestion? Please:
+
 - Check if the issue already exists in our [issue tracker](https://github.com/theachoem/storypad.me/issues)
 - For app-related issues, use the [main app repository](https://github.com/theachoem/storypad/issues)
 - For website issues, create an issue in this repository
