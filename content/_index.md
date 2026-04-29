@@ -1,6 +1,6 @@
 ---
 title: "StoryPad: Privacy-Focused Open Source Journal App"
-date: "2025-12-01T14:23:45Z"
+date: "2026-04-29"
 draft: false
 description: Not another journal app. A timeline for your life. StoryPad lets you capture everything - notes, thoughts, emotions, workouts, travels - on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized.
 keywords:

@@ -1,83 +1,75 @@
 ---
 title: "StoryPad Key Features"
-date: "2025-12-01T12:44:28Z"
+date: "2026-04-29"
 draft: false
-description: "Explore StoryPad's powerful features for journaling, writing, and capturing your life on a beautiful continuous timeline. Fully customizable and privacy-focused."
+description: "Discover StoryPad's latest key features for private, local-first journaling on a single continuous timeline."
 ---
 
-StoryPad is a journal app that lets you write and capture everything - notes, thoughts, emotions, workouts, travels, stories, novels, or poems — on a single continuous timeline. No folders. No tabs. Just your life, beautifully organized. Your story flows like life does: naturally.
+StoryPad is an open source, privacy-focused, local-first journal that lets you capture your life: notes, thoughts, emotions, and memories on a single, continuous timeline. No folders. No tabs. Just your life, beautifully organized.
 
-## 📝 Fully Customizable Writing
+### 📝 Fully Customizable Writing
 
 - Bold, italic, underline, strikethrough
 - Text color, background color, highlights
 - Quotes, checklists, ordered/unordered lists
 - Text alignment, indentation, links
-- Support for 1300+ Google Fonts, adjustable font size & weight
+- Support for multiple fonts, adjustable font sizes & weight
 
-## 🕓 Throwback Memories
+### 🕓 Throwback Memories
 
-Revisit what you wrote on this exact day - 1, 2, or even 3 years ago.
+Revisit what you wrote on this exact day - 1, 2, or even 3 years ago.\
 Reflect on how far you've come and respond to your past self, right from your timeline.
 
-> 📌 Throwbacks appear only if you've written something on this day in a previous year or a few years ago.
+📌 Throwbacks appear only if you've written something on this day in a previous year or a few years ago.
 
-## 📸 Photo Memories
+### 📸 Photo Memories
 
 - Add multiple photos per page
 - Align photos left, right, center, or full-width
 - Image previews included in export
 
-## 🗓 Feelings & Moods Tracking
+### 🗓 Mood & Activity Insights
 
-- Select from 45+ emotions to express how you feel
+- Express exactly how you feel using any emoji from your system keyboard
 - Track your mental well-being over time with mood history and calendar view
 
-## 📄 Multi-Page Entries
+### 📄 Multi-Page Entries
 
 - Add multiple pages inside 1 entry
 - With multiple layouts to fit your writing style
 - Great for journaling prompts, novels, long-form writing, and daily notes
 
-## 🔖 Tags, Stars & Search
+### 🔖 Organization & Search
 
-- Organize entries with custom tags
-- Star important stories
-- Search by title, tags, year, and more
+- Tag, bookmark, or pin important stories to the top.
+- Fast search by title, tag, year, or content.
 
-## 🔐 Privacy First
+### 🔐 Privacy First
 
 - Lock with PIN, FaceID, or fingerprint
 - Security question recovery
 - Everything stays on your device unless you choose to sync
 
-## ☁️ Backup & Sync
+### ☁️ Backup & Sync
 
 - Direct sync with your private Google Drive folder - only you can see it
 - Works offline anytime
 - One-tap local export for safe backup
 
-## 🎨 Make It Yours
+### 🎨 Make It Yours
 
-- 20+ color themes
-- Light & dark mode
-- Customize fonts and layouts to match your mood and style
+- Choose from serene environments, animals, and textures.
+- Personalized Fonts: Select and style 1,300+ Google Fonts.
+- Custom Themes: 20+ colors with automatic Light & Dark modes.
 
-## 📤 Export & Share Anywhere
+### 📤 Export & Portability
 
-- Back up or import your stories offline
-- Share your words in text or markdown, whether it's on X, Facebook, or just with a friend
+- Universal Formats: Export to Text, Markdown, or StoryPad format.
+- Obsidian Ready: Fully compatible with Obsidian and other markdown editors.
+- Offline Backup: Import or export your entire journal locally at any time.
+- Easy Sharing: Share stories directly to X, Facebook, or with friends.
 
-## 📱 Extra Add-Ons (optional)
-
-- **Voice & Audio Journaling** - Record your thoughts with voice notes, auto-organized by tags, with seamless Google Drive backup.
-- **Relaxing Sounds** - Gentle background sounds to create the perfect writing mood.
-- **Templates** - Reusable journaling templates for daily prompts or reflections.
-- **Period Calendar** - Track your cycle directly in your journal with visual indicators, cycle history across months, and quick entry creation. Your data stays secure and private on your device.
-
-## 🌍 Accessible for All
+### 🌍 Accessible for All
 
 - Available in 20+ languages
 - Open-source for full transparency
-
-> Make every day a story - with StoryPad
