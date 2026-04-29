@@ -136,6 +136,22 @@ Thanks!`;
 
 // Header functionality
 function initializeHeader() {
+  const header = document.querySelector("header");
+  if (header) {
+    const toggleHeaderBorder = () => {
+      const hasScrolledPastThreshold = window.scrollY > 100;
+      header.classList.toggle("border-b-1", hasScrolledPastThreshold);
+      header.classList.toggle("border-b-neutral-300", hasScrolledPastThreshold);
+      header.classList.toggle(
+        "dark:border-b-neutral-600",
+        hasScrolledPastThreshold,
+      );
+    };
+
+    toggleHeaderBorder();
+    window.addEventListener("scroll", toggleHeaderBorder, { passive: true });
+  }
+
   const themeToggle = document.querySelector("button#theme-toggle");
   if (themeToggle) {
     const isDarkInitially = document.documentElement.classList.contains("dark");
