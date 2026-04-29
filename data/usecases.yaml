@@ -4,8 +4,8 @@
 
 - title: "Photo Journal?"
   images:
-  - "usecases/photo_journal1.jpg"
-  - "usecases/photo_journal2.jpg"
+  - "usecases/photo_journal1_v2.jpg"
+  - "usecases/photo_journal2_v2.jpg"
 
 - title: "Voice Journal?"
   image: "usecases/voice_journal.jpg"
