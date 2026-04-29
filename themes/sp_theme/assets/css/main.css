@@ -4,6 +4,7 @@
 
 @import "tailwindcss";
 @source "hugo_stats.json";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --font-quicksand: "Quicksand", sans-serif;
@@ -45,6 +46,21 @@ h6 {
 
 .animate-shake-vertical {
   animation: shake-vertical 0.1s linear 0s 2;
+}
+
+@keyframes theme-icon-switch {
+  0% {
+    transform: rotate(-25deg) scale(0.75);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-theme-icon-switch {
+  animation: theme-icon-switch 180ms ease-out;
 }
 
 /* Link overflow handling - allow links to break and wrap */
