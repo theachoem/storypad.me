@@ -39,11 +39,13 @@ If your language is not listed, or you spot any translation glitches, feel free 
 
 Thank you for helping us make StoryPad better for users around the world!
 
-| Name                | Reference                                                                                                                                                    | Languages    |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| Seavleng Hong       | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABfzS65Lw)                                    | km           |
-| iljinjung           | [#355](https://github.com/theachoem/storypad/pull/355) [#349](https://github.com/theachoem/storypad/pull/349)                                                | ja-JP, ko-KR |
-| Nord Maier          | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABnpBt0Iw)                                    | zh-CN        |
-| ZloyWolf            | [#504](https://github.com/theachoem/storypad/pull/504)                                                                                                       | ru-RU        |
-| Hu Yubo             | [Suggestions](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?disco=AAABtDIyuDg)                                    | zh-CN        |
-| Stanislav Zinchenko | [Sent via Email](https://docs.google.com/spreadsheets/d/1R3XgV2d3GNrd6O2Mj9svKbVPISJlDm80/edit?usp=drive_link&ouid=111175409958121068961&rtpof=true&sd=true) | uk-UA        |
+| Name                | Languages                        |
+| ------------------- | -------------------------------- |
+| Seavleng Hong       | Khmer (km)                       |
+| iljinjung           | Japanese (ja-JP), Korean (ko-KR) |
+| Nord Maier          | Chinese (zh-CN)                  |
+| ZloyWolf            | Russian (ru-RU)                  |
+| Hu Yubo             | Chinese (zh-CN)                  |
+| Stanislav Zinchenko | Ukrainian (uk-UA)                |
+| Thea Choem          | English (en-US)                  |
+| Ege                 | Turkish (tr-TR)                  |
