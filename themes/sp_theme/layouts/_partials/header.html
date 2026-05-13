@@ -2,10 +2,12 @@
   <div class="flex flex-row justify-between p-4 max-w-7xl mx-auto px-6">
     <div class="flex flex-row gap-1 items-center">
       {{ if .IsHome }}
-      <h1 data-action="scroll-to-top" class="cursor-pointer" style="font-family: var(--font-quicksand)">{{ .Site.Title
-        }}</h1>
+      <div data-action="scroll-to-top" class="cursor-pointer" style="font-family: var(--font-quicksand)">{{
+        .Site.Title
+        }}</div>
       {{ else }}
-      <h1 style="font-family: var(--font-quicksand)"><a href='{{ "/" | relURL }}'>{{ .Site.Title }}</a></h1>
+      <div style="font-family: var(--font-quicksand)"><a href='{{ "/" | relURL }}'>{{ .Site.Title
+          }}</a></div>
       {{ end }}
 
       <button id="theme-toggle" type="button"
