@@ -24,9 +24,9 @@
 
 - question: "Can I insert multiple images in StoryPad?"
   answer: |-
-    Yes! Add as many images as you want per entry. Images are stored **without compression**, so your photos keep their original quality, including metadata like capture date and location.
+    Yes! Add as many images as you want per entry - they'll automatically combine into a beautiful album UI.
 
-    You can also align images (left, center, right) and resize them to fit your layout perfectly.
+    By default, images are compressed to save space while keeping almost the same quality. You can disable or re-enable compression anytime.
 
 - question: "Is there a dark mode in StoryPad?"
   answer: |-
@@ -55,6 +55,10 @@
 - question: "Do I need to make a one-time purchase in StoryPad?"
   answer: |-
     No. A one-time purchase is **completely optional**. You can keep using StoryPad for free with core features. The one-time purchase is only for premium features.
+
+- question: "If I buy the StoryPad Pro plan, do I get future updates for free?"
+  answer: |-
+    Yes! The Pro plan is a **lifetime deal** - a one-time purchase that unlocks all Pro features for good, including future updates and new premium features as they're released.
 
 - question: "Are my stories safe with StoryPad?"
   answer: |-
