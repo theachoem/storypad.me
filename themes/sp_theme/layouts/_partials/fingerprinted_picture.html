@@ -1,0 +1,12 @@
+{{/* Renders a <picture> with fingerprinted webp+png sources for cache-busting.
+Params: path (asset path w/o extension), alt, imgClass, pictureClass, width, height, dataAction */}}
+{{ with resources.Get (printf "%s.webp" .path) }}
+{{ $webp := . | fingerprint }}
+{{ with resources.Get (printf "%s.png" $.path) }}
+{{ $png := . | fingerprint }}
+<picture{{ with $.pictureClass }} class="{{ . }}"{{ end }}>
+	<source srcset='{{ $webp.RelPermalink }}' type="image/webp" />
+	<img src='{{ $png.RelPermalink }}' alt='{{ $.alt }}'{{ with $.width }} width="{{ . }}"{{ end }}{{ with $.height }} height="{{ . }}"{{ end }} class='{{ $.imgClass }}'{{ with $.dataAction }} data-action="{{ . }}"{{ end }} />
+</picture>
+{{ end }}
+{{ end }}

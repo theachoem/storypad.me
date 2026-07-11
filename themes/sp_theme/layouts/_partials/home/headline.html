@@ -1,9 +1,7 @@
 <section>
-	<div class="max-w-2xl mx-auto px-6 flex flex-col items-center text-center">
-		<picture>
-			<source srcset='{{ "logo_200x200.webp" | relURL }}' type="image/webp" />
-			<img src='{{ "logo_200x200.png" | relURL }}' alt="StoyPad logo_200x200" class="w-[120px] h-[120px]" />
-		</picture>
+	<div class="max-w-3xl mx-auto px-6 flex flex-col items-center text-center">
+		{{ partial "fingerprinted_picture.html" (dict "path" "logo_200x200" "alt" "StoyPad logo_200x200" "imgClass"
+		"w-[120px] h-[120px]") }}
 		<h1 class="font-headline text-4xl">
 			Not another journal app.<br />
 			<span class="font-quicksand text-4xl font-bold text-red-400">A timeline for your life.</span>
@@ -17,31 +15,38 @@
 			Just your life, beautifully organized.
 		</p>
 
-		<div class="flex flex-row gap-4 my-6">
-			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone" target="_blank"
-				rel="noopener noreferrer"
+		<div class="flex flex-row gap-4 mt-6 mb-8">
+			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone"
+				target="_blank" rel="noopener noreferrer"
 				class="google-play-button dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<picture class="block h-[48px] w-[168px]">
-					<source srcset='{{ "app-store-button.webp" | relURL }}' type="image/webp" />
-					<img src='{{ "app-store-button.png" | relURL }}' alt="app-store-button.png" width="336" height="96"
-						class="h-[48px] w-auto" />
-				</picture>
+				{{ partial "fingerprinted_picture.html" (dict "path" "app-store-button" "alt" "app-store-button.png"
+				"width" "336" "height" "96" "imgClass" "h-[48px] w-auto" "pictureClass" "block h-[48px] w-[168px]") }}
 			</a>
 			<a href="https://play.google.com/store/apps/details?id=com.tc.writestory" target="_blank"
 				rel="noopener noreferrer"
 				class="dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
-				<picture class="block h-[48px] w-[162px]">
-					<source srcset='{{ "google-play-button.webp" | relURL }}' type="image/webp" />
-					<img src='{{ "google-play-button.png" | relURL }}' alt="google-play" width="324" height="96"
-						class="h-[48px] w-auto" />
-				</picture>
+				{{ partial "fingerprinted_picture.html" (dict "path" "google-play-button" "alt" "google-play" "width"
+				"324" "height" "96" "imgClass" "h-[48px] w-auto" "pictureClass" "block h-[48px] w-[162px]") }}
 			</a>
 		</div>
 
-		<picture class="block w-full aspect-[1048/761]">
-			<source srcset='{{ "cover_2.webp" | relURL }}' type="image/webp" />
-			<img src='{{ "cover_2.png" | relURL }}' alt="cover_2.png" width="1048" height="761"
-				class="cursor-pointer block w-full h-auto" data-action="shake-animation" />
-		</picture>
+		<div class="home-cover-carousel relative block w-full aspect-[1000/657] rounded-lg border border-black dark:border-neutral-500 overflow-hidden"
+			data-action="cover-carousel">
+			{{ range $index, $n := (seq 1 4) }}
+			{{ with resources.Get (printf "images/cover_%d.jpg" $n) }}
+			{{ $cover := . | fingerprint }}
+			<img src='{{ $cover.RelPermalink }}' alt='{{ printf "cover_%d.jpg" $n }}' width="1000" height="657"
+				class="home-cover-carousel-slide absolute inset-0 block w-full h-full object-cover transition-opacity duration-700 ease-in-out {{ if eq $index 0 }}opacity-100{{ else }}opacity-0{{ end }}"
+				{{ if eq $index 0 }}data-action="shake-animation" {{ end }} />
+			{{ end }}
+			{{ end }}
+		</div>
+		<div class="home-cover-carousel-dots flex flex-row items-center justify-center gap-2 mt-6">
+			{{ range $index, $n := (seq 1 4) }}
+			<button type="button" aria-label='{{ printf "Show cover image %d" $n }}'
+				aria-current="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+				class="home-cover-carousel-dot h-2 rounded-full cursor-pointer transition-all duration-300 hover:bg-neutral-500 dark:hover:bg-neutral-400 {{ if eq $index 0 }}w-6 bg-neutral-800 dark:bg-neutral-200{{ else }}w-2 bg-neutral-300 dark:bg-neutral-600{{ end }}"></button>
+			{{ end }}
+		</div>
 	</div>
 </section>

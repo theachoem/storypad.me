@@ -12,13 +12,17 @@
       <a href="https://itsfoss.com/storypad-open-source-diary-app/" target="_blank" rel="noopener noreferrer"
         aria-label="Read StoryPad feature on It&apos;s FOSS"
         class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
-        <img src='{{ "featured/itsfoss.png" | relURL }}' alt="It&apos;s FOSS logo" class="h-14 w-auto object-contain" />
+        {{ with resources.Get "featured/itsfoss.png" }}
+        <img src='{{ (. | fingerprint).RelPermalink }}' alt="It&apos;s FOSS logo" class="h-14 w-auto object-contain" />
+        {{ end }}
       </a>
 
       <a href="https://www.makeuseof.com/storypad-open-source-android-journal-app-timeline/" target="_blank"
         rel="noopener noreferrer" aria-label="Read StoryPad feature on MakeUseOf"
         class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
-        <img src='{{ "featured/makeuseof.png" | relURL }}' alt="MakeUseOf logo" class="h-14 w-auto object-contain" />
+        {{ with resources.Get "featured/makeuseof.png" }}
+        <img src='{{ (. | fingerprint).RelPermalink }}' alt="MakeUseOf logo" class="h-14 w-auto object-contain" />
+        {{ end }}
       </a>
     </div>
   </div>

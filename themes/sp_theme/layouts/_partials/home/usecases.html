@@ -50,20 +50,24 @@
           {{ $total := len .images }}
           <div class="flex overflow-y-hidden overflow-x-auto snap-x snap-mandatory scroll-smooth scrollbar-hide">
             {{ range $i, $img := .images }}
-            <img src='{{ $img | relURL }}' alt="{{ $element.title }}"
+            {{ with resources.Get $img }}
+            <img src='{{ (. | fingerprint).RelPermalink }}' alt="{{ $element.title }}"
               class="snap-start flex-shrink-0 w-full h-auto backdrop-blur" {{/* Put backdrop blur fix the image blur
               issue */}} data-last="{{ if eq (add $i 1) $total }}yes{{else}}no{{end}}" data-action="carousel-scroll" />
+            {{ end }}
             {{ end }}
           </div>
 
           {{ else if .image }}
 
-          {{ if eq .scrollable "yes" }}
-          <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
+          {{ with resources.Get .image }}
+          {{ if eq $element.scrollable "yes" }}
+          <img src='{{ (. | fingerprint).RelPermalink }}' alt="{{ $element.title }}" class="w-full h-auto backdrop-blur"
             data-action="scroll-container" />
           {{ else }}
-          <img src='{{ .image | relURL }}' alt="{{ .title }}" class="w-full h-auto backdrop-blur"
+          <img src='{{ (. | fingerprint).RelPermalink }}' alt="{{ $element.title }}" class="w-full h-auto backdrop-blur"
             data-action="shake-animation" />
+          {{ end }}
           {{ end }}
 
           {{ end }}
@@ -121,23 +125,18 @@
 
 
         {{ if eq (add $index 1) $usecasesLength }}
-        <picture>
-          <source srcset='{{ "emotions/flushed-face-64x64-1395564.webp" | relURL }}' type="image/webp">
-          <img src='{{ "emotions/flushed-face-64x64-1395564.png" | relURL }}' alt="Flushed face" class="
+        {{ partial "fingerprinted_picture.html" (dict "path" "emotions/flushed-face-64x64-1395564" "alt" "Flushed face" "imgClass" `
             /* Pointer Events */ pointer-events-none
             /* Style */ shadow-2xl rotate-0 group-hover:-rotate-6 [.group.active_&]:-rotate-6
             /* Positioning */ absolute rounded-full top-8 -left-4 translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
-            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
-            /* Transition */ transition-all duration-300">
-        </picture>
-        <picture>
-          <source srcset='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.webp" | relURL }}' type="image/webp">
-          <img src='{{ "emotions/smiling-face-with-heart-eyes-64x64-1395589.png" | relURL }}' alt="Smiling face" class="
+            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100
+            /* Transition */ transition-all duration-300`) }}
+        {{ partial "fingerprinted_picture.html" (dict "path" "emotions/smiling-face-with-heart-eyes-64x64-1395589" "alt" "Smiling face" "imgClass" `
             /* Pointer Events */ pointer-events-none
             /* Style */ shadow-2xl rotate-0 group-hover:rotate-12 [.group.active_&]:rotate-12
             /* Positioning */ absolute rounded-full bottom-24 -right-4 -translate-1.5 group-hover:translate-0 [.group.active_&]:translate-0
-            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100  
-            /* Transition */ transition-all duration-300">
+            /* Visibility */ opacity-0 group-hover:opacity-100 [.group.active_&]:opacity-100
+            /* Transition */ transition-all duration-300`) }}
         </picture>
         {{ end }}
       </div>

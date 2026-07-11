@@ -285,6 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
   initializeFooter();
   initializeUseCaseCards();
   initializeHeadlineImage();
+  initializeCoverCarousel();
 });
 
 // Headline image functionality
@@ -299,6 +300,91 @@ function initializeHeadlineImage() {
       this.classList.add("animate-shake-vertical");
     });
   }
+}
+
+// Home cover carousel: auto-advances through slides, pauses on hover/touch,
+// and lets the user jump to a slide via the dots.
+function initializeCoverCarousel() {
+  const carousel = document.querySelector('[data-action="cover-carousel"]');
+  if (!carousel) return;
+
+  const slides = Array.from(
+    carousel.querySelectorAll(".home-cover-carousel-slide"),
+  );
+  const dotsContainer = document.querySelector(".home-cover-carousel-dots");
+  const dots = dotsContainer
+    ? Array.from(dotsContainer.querySelectorAll(".home-cover-carousel-dot"))
+    : [];
+
+  if (slides.length <= 1) return;
+
+  const AUTOPLAY_INTERVAL_MS = 4000;
+  let activeIndex = 0;
+  let timerId = null;
+
+  function goToSlide(nextIndex) {
+    slides[activeIndex].classList.remove("opacity-100");
+    slides[activeIndex].classList.add("opacity-0");
+    if (dots[activeIndex]) {
+      dots[activeIndex].classList.remove(
+        "w-6",
+        "bg-neutral-800",
+        "dark:bg-neutral-200",
+      );
+      dots[activeIndex].classList.add(
+        "w-2",
+        "bg-neutral-300",
+        "dark:bg-neutral-600",
+      );
+      dots[activeIndex].setAttribute("aria-current", "false");
+    }
+
+    activeIndex = nextIndex;
+
+    slides[activeIndex].classList.remove("opacity-0");
+    slides[activeIndex].classList.add("opacity-100");
+    if (dots[activeIndex]) {
+      dots[activeIndex].classList.remove(
+        "w-2",
+        "bg-neutral-300",
+        "dark:bg-neutral-600",
+      );
+      dots[activeIndex].classList.add(
+        "w-6",
+        "bg-neutral-800",
+        "dark:bg-neutral-200",
+      );
+      dots[activeIndex].setAttribute("aria-current", "true");
+    }
+  }
+
+  function startAutoplay() {
+    stopAutoplay();
+    timerId = setInterval(() => {
+      goToSlide((activeIndex + 1) % slides.length);
+    }, AUTOPLAY_INTERVAL_MS);
+  }
+
+  function stopAutoplay() {
+    if (timerId) {
+      clearInterval(timerId);
+      timerId = null;
+    }
+  }
+
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      if (index === activeIndex) return;
+      goToSlide(index);
+      startAutoplay();
+    });
+  });
+
+  carousel.addEventListener("mouseenter", stopAutoplay);
+  carousel.addEventListener("mouseleave", startAutoplay);
+  carousel.addEventListener("touchstart", stopAutoplay, { passive: true });
+
+  startAutoplay();
 }
 
 // Make functions globally available for any remaining inline handlers

@@ -19,14 +19,18 @@
 <meta property="og:title"
   content='{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}'>
 <meta property="og:description" content="{{ $desc }}">
-<meta property="og:image" content='{{ "/og_1200x630.jpg" | absURL }}'>
+{{ with resources.Get "og_1200x630.jpg" }}
+<meta property="og:image" content='{{ (. | fingerprint).Permalink }}'>
+{{ end }}
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:type" content="website" />
 
 <meta name="twitter:title"
   content='{{ if .IsHome }}{{ .Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}'>
 <meta name="twitter:description" content="{{ $desc }}">
-<meta name="twitter:image" content='{{ "/og_twitter_1200x675.jpg" | absURL }}'>
+{{ with resources.Get "og_twitter_1200x675.jpg" }}
+<meta name="twitter:image" content='{{ (. | fingerprint).Permalink }}'>
+{{ end }}
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="{{ .Permalink }}">
