@@ -21,9 +21,42 @@
           rel="noopener noreferrer">{{ .name
           }}</a>
         <p class="text-base my-2">{{ .review }}</p>
-        <p class="text-sm italic text-neutral-500">{{ .review_date }}</p>
+        <p class="text-sm italic text-neutral-500 js-review-date" data-review-date="{{ .review_date }}">{{ .review_date }}<span class="js-review-ago"></span></p>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var units = [
+      { name: "year", seconds: 31536000 },
+      { name: "month", seconds: 2592000 },
+      { name: "day", seconds: 86400 },
+      { name: "hour", seconds: 3600 },
+      { name: "minute", seconds: 60 },
+    ];
+
+    document.querySelectorAll(".js-review-date").forEach(function (el) {
+      var reviewDate = new Date(el.dataset.reviewDate);
+      if (isNaN(reviewDate.getTime())) return;
+
+      var seconds = (Date.now() - reviewDate.getTime()) / 1000;
+      if (seconds < 0 || seconds > 6 * units[1].seconds) return;
+
+      var agoEl = el.querySelector(".js-review-ago");
+      if (!agoEl) return;
+
+      for (var i = 0; i < units.length; i++) {
+        var interval = Math.floor(seconds / units[i].seconds);
+        if (interval >= 1) {
+          agoEl.textContent =
+            " · " + interval + " " + units[i].name + (interval > 1 ? "s" : "") + " ago";
+          return;
+        }
+      }
+      agoEl.textContent = " · just now";
+    });
+  })();
+</script>
