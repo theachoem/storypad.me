@@ -16,8 +16,8 @@
 		</p>
 
 		<div class="flex flex-row gap-4 mt-6 mb-8">
-			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone"
-				target="_blank" rel="noopener noreferrer"
+			<a href="https://apps.apple.com/us/app/storypad-write-your-story/id6744032172?platform=iphone" target="_blank"
+				rel="noopener noreferrer"
 				class="google-play-button dark:border dark:border-neutral-500 dark:rounded-md dark:overflow-hidden hover:-translate-y-0.5 transition-transform duration-100">
 				{{ partial "fingerprinted_picture.html" (dict "path" "app-store-button" "alt" "app-store-button.png"
 				"width" "336" "height" "96" "imgClass" "h-[48px] w-auto" "pictureClass" "block h-[48px] w-[168px]") }}
@@ -30,7 +30,8 @@
 			</a>
 		</div>
 
-		<div class="home-cover-carousel relative block w-full aspect-[1000/657] rounded-lg border border-black dark:border-neutral-500 overflow-hidden"
+		<div
+			class="home-cover-carousel relative block w-full aspect-[1000/657] rounded-lg border border-black dark:border-neutral-500 overflow-hidden touch-pan-y"
 			data-action="cover-carousel">
 			{{ range $index, $n := (seq 1 4) }}
 			{{ with resources.Get (printf "images/cover_%d.jpg" $n) }}
@@ -45,7 +46,7 @@
 			{{ range $index, $n := (seq 1 4) }}
 			<button type="button" aria-label='{{ printf "Show cover image %d" $n }}'
 				aria-current="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
-				class="home-cover-carousel-dot h-2 rounded-full cursor-pointer transition-all duration-300 hover:bg-neutral-500 dark:hover:bg-neutral-400 {{ if eq $index 0 }}w-6 bg-neutral-800 dark:bg-neutral-200{{ else }}w-2 bg-neutral-300 dark:bg-neutral-600{{ end }}"></button>
+				class="home-cover-carousel-dot h-1 rounded-full cursor-pointer transition-all duration-300 hover:bg-neutral-500 dark:hover:bg-neutral-400 {{ if eq $index 0 }}w-6 bg-neutral-800 dark:bg-neutral-200{{ else }}w-2 bg-neutral-300 dark:bg-neutral-600{{ end }}"></button>
 			{{ end }}
 		</div>
 	</div>

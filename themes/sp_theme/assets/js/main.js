@@ -382,7 +382,71 @@ function initializeCoverCarousel() {
 
   carousel.addEventListener("mouseenter", stopAutoplay);
   carousel.addEventListener("mouseleave", startAutoplay);
-  carousel.addEventListener("touchstart", stopAutoplay, { passive: true });
+
+  const SWIPE_THRESHOLD_PX = 40;
+
+  function swipeToSlide(deltaX) {
+    const nextIndex =
+      deltaX < 0
+        ? (activeIndex + 1) % slides.length
+        : (activeIndex - 1 + slides.length) % slides.length;
+    goToSlide(nextIndex);
+  }
+
+  // Pointer events unify mouse drag, touch swipe, and pen for a single
+  // implementation. touch-action (set in the markup) keeps vertical page
+  // scroll working on touchscreens while we own horizontal gestures.
+  let isDragging = false;
+  let dragStartX = 0;
+  let dragStartY = 0;
+
+  carousel.addEventListener("pointerdown", (event) => {
+    if (event.pointerType === "mouse" && event.button !== 0) return;
+    isDragging = true;
+    dragStartX = event.clientX;
+    dragStartY = event.clientY;
+    stopAutoplay();
+  });
+
+  carousel.addEventListener("pointerup", (event) => {
+    if (!isDragging) return;
+    isDragging = false;
+    const deltaX = event.clientX - dragStartX;
+    const deltaY = event.clientY - dragStartY;
+    if (
+      Math.abs(deltaX) >= SWIPE_THRESHOLD_PX &&
+      Math.abs(deltaX) > Math.abs(deltaY)
+    ) {
+      swipeToSlide(deltaX);
+    }
+    startAutoplay();
+  });
+
+  carousel.addEventListener("pointercancel", () => {
+    isDragging = false;
+    startAutoplay();
+  });
+
+  // Trackpad two-finger swipes arrive as wheel events with a dominant deltaX.
+  const WHEEL_COOLDOWN_MS = 600;
+  let wheelCooldown = false;
+
+  carousel.addEventListener(
+    "wheel",
+    (event) => {
+      if (Math.abs(event.deltaX) <= Math.abs(event.deltaY)) return;
+      if (wheelCooldown) return;
+      event.preventDefault();
+      wheelCooldown = true;
+      stopAutoplay();
+      swipeToSlide(event.deltaX);
+      setTimeout(() => {
+        wheelCooldown = false;
+        startAutoplay();
+      }, WHEEL_COOLDOWN_MS);
+    },
+    { passive: false },
+  );
 
   startAutoplay();
 }
