@@ -36,10 +36,6 @@
   answer: |-
     Yes! StoryPad auto-saves as you type. Even if you close the app or your phone shuts down, your data stays safe as a draft. You never lose work.
 
-- question: "Can I search my old entries in StoryPad?"
-  answer: |-
-    Yes! Search across all your entries from every year by **title** or **body** of stories. Better yet, you can filter by tags with counts displayed - so you instantly see which tags have the most entries or stories. Find your memories fast, no matter how far back they are.
-
 - question: "Can I use it on multiple devices in StoryPad?"
   answer: |-
     Yes. Your data is stored locally on each device for privacy. When you choose to back up or sync, StoryPad saves directly to [your private Google Drive](https://developers.google.com/workspace/drive/api/guides/appdata) - no cloud servers or accounts involved.
