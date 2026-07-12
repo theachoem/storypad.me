@@ -31,7 +31,7 @@
 		</div>
 
 		<div
-			class="home-cover-carousel relative block w-full aspect-[1000/657] rounded-lg border border-black dark:border-neutral-500 overflow-hidden touch-pan-y"
+			class="home-cover-carousel relative block w-full aspect-[1000/657] rounded-lg border border-black dark:border-neutral-500 overflow-hidden touch-pan-y cursor-pointer"
 			data-action="cover-carousel">
 			{{ range $index, $n := (seq 1 4) }}
 			{{ with resources.Get (printf "images/cover_%d.jpg" $n) }}

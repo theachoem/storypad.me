@@ -384,6 +384,7 @@ function initializeCoverCarousel() {
   carousel.addEventListener("mouseleave", startAutoplay);
 
   const SWIPE_THRESHOLD_PX = 40;
+  const TAP_THRESHOLD_PX = 10;
 
   function swipeToSlide(deltaX) {
     const nextIndex =
@@ -418,6 +419,12 @@ function initializeCoverCarousel() {
       Math.abs(deltaX) > Math.abs(deltaY)
     ) {
       swipeToSlide(deltaX);
+    } else if (
+      Math.abs(deltaX) <= TAP_THRESHOLD_PX &&
+      Math.abs(deltaY) <= TAP_THRESHOLD_PX
+    ) {
+      // Treat as a tap/click rather than a drag: advance to the next slide.
+      goToSlide((activeIndex + 1) % slides.length);
     }
     startAutoplay();
   });

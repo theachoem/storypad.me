@@ -19,6 +19,11 @@
 
 html {
   scroll-padding-top: 80px;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {
