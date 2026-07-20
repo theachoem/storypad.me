@@ -39,13 +39,14 @@ If your language is not listed, or you spot any translation glitches, feel free 
 
 Thank you for helping us make StoryPad better for users around the world!
 
-| Name                | Languages                        |
-| ------------------- | -------------------------------- |
-| Seavleng Hong       | Khmer (km)                       |
-| iljinjung           | Japanese (ja-JP), Korean (ko-KR) |
-| Nord Maier          | Chinese (zh-CN)                  |
-| ZloyWolf            | Russian (ru-RU)                  |
-| Hu Yubo             | Chinese (zh-CN)                  |
-| Stanislav Zinchenko | Ukrainian (uk-UA)                |
-| Thea Choem          | English (en-US)                  |
-| Ege                 | Turkish (tr-TR)                  |
+| Name                | Languages         |
+| ------------------- | ----------------- |
+| Seavleng Hong       | Khmer (km)        |
+| iljinjung           | Japanese (ja-JP)  |
+| iljinjung           | Korean (ko-KR)    |
+| sampple-korea       | Korean (ko-KR)    |
+| Nord Maier          | Chinese (zh-CN)   |
+| ZloyWolf            | Russian (ru-RU)   |
+| Hu Yubo             | Chinese (zh-CN)   |
+| Stanislav Zinchenko | Ukrainian (uk-UA) |
+| Ege                 | Turkish (tr-TR)   |
