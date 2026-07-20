@@ -1,7 +1,7 @@
 # StoryPad Website
 
 <p align="center">
-  <img src="static/logo_200x200.png" alt="StoryPad Logo" width="120" height="120">
+  <img src="assets/logo_200x200.png" alt="StoryPad Logo" width="120" height="120">
 </p>
 
 <p align="center">
