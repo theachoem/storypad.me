@@ -43,4 +43,4 @@ Once finished, your timeline will automatically refresh with your imported entri
 
 If you encounter any issues during the migration, check our comparison guide to understand how data structures differ between the two apps.
 
-> [**Why Are We Making This Change?** / Learn the difference between StoryPad and Spooky](https://www.google.com/search?q=/wiki/different-between-storypad-and-spooky)
+> [**Why Are We Making This Change?** / Learn the difference between StoryPad and Spooky](/wiki/different-between-storypad-and-spooky/)
