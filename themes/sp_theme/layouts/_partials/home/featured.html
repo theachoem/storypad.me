@@ -5,11 +5,21 @@
     </h2>
 
     <p class="text-base text-neutral-700 dark:text-neutral-300">
-      Featured by It&apos;s FOSS and MakeUseOf for our commitment to open-source and user privacy.
+      Featured by XDA, It&apos;s FOSS and MakeUseOf for our commitment to open-source and user privacy.
     </p>
 
     <div class="flex flex-row flex-wrap items-center justify-center gap-6 mt-2">
-      <a href="https://itsfoss.com/storypad-open-source-diary-app/" target="_blank" rel="noopener noreferrer"
+      <a href="https://www.xda-developers.com/open-source-app-turned-my-journal-into-a-timeline/?utm_source=storypad.me&utm_medium=referral&utm_campaign=featured"
+        target="_blank"
+        rel="noopener noreferrer" aria-label="Read StoryPad feature on XDA"
+        class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
+        {{ with resources.Get "featured/xda.png" }}
+        <img src='{{ (. | fingerprint).RelPermalink }}' alt="XDA logo" class="h-14 w-auto object-contain" />
+        {{ end }}
+      </a>
+
+      <a href="https://itsfoss.com/storypad-open-source-diary-app/?utm_source=storypad.me&utm_medium=referral&utm_campaign=featured"
+        target="_blank" rel="noopener noreferrer"
         aria-label="Read StoryPad feature on It&apos;s FOSS"
         class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
         {{ with resources.Get "featured/itsfoss.png" }}
@@ -17,7 +27,8 @@
         {{ end }}
       </a>
 
-      <a href="https://www.makeuseof.com/storypad-open-source-android-journal-app-timeline/" target="_blank"
+      <a href="https://www.makeuseof.com/storypad-open-source-android-journal-app-timeline/?utm_source=storypad.me&utm_medium=referral&utm_campaign=featured"
+        target="_blank"
         rel="noopener noreferrer" aria-label="Read StoryPad feature on MakeUseOf"
         class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
         {{ with resources.Get "featured/makeuseof.png" }}
