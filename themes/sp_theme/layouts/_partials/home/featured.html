@@ -11,9 +11,9 @@
     <div class="flex flex-row flex-wrap items-center justify-center gap-6 mt-2">
       <a href="https://www.xda-developers.com/open-source-app-turned-my-journal-into-a-timeline/" target="_blank"
         rel="noopener noreferrer" aria-label="Read StoryPad feature on XDA"
-        class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md">
+        class="transition-transform duration-200 hover:scale-105 focus-visible:outline-2 focus-visible:outline-offset-2 rounded-md mt-1">
         {{ with resources.Get "featured/xda.png" }}
-        <img src='{{ (. | fingerprint).RelPermalink }}' alt="XDA logo" class="h-14 w-auto object-contain" />
+        <img src='{{ (. | fingerprint).RelPermalink }}' alt="XDA logo" class="h-16 w-auto object-contain" />
         {{ end }}
       </a>
 

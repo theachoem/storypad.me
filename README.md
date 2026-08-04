@@ -99,6 +99,18 @@ This website is built with:
 
 The built site will be available in the `public/` directory.
 
+## Deployment (Cloudflare Workers)
+
+The site deploys to Cloudflare via [`wrangler.jsonc`](wrangler.jsonc), which points `assets.directory` at `public/` — a directory that only exists after a Hugo build (it's gitignored). Cloudflare's git-connected build only runs `npm clean-install` automatically; it does **not** infer a build command from `package.json`, so the deploy fails with `assets.directory does not exist` unless the project is configured explicitly.
+
+Reproduce this on a fresh Cloudflare Workers project (Workers & Pages → Create → connect the `storypad.me` repo):
+
+- **Root directory**: `/`
+- **Build command**: `npm run build` (runs the `build` script in `package.json`, i.e. `hugo --gc --minify`)
+- **Deploy command**: `npx wrangler deploy`
+
+Cloudflare's build environment installs tools listed in [`.tool-versions`](.tool-versions) via asdf — `hugo` must be declared there (in addition to `nodejs`) or the build command above will fail with "command not found".
+
 ## Project Structure
 
 ```
