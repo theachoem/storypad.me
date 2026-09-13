@@ -37,7 +37,7 @@
 			{{ with resources.Get (printf "images/cover_%d.jpg" $n) }}
 			{{ $cover := . | fingerprint }}
 			<img src='{{ $cover.RelPermalink }}' alt='{{ printf "cover_%d.jpg" $n }}' width="1000" height="657"
-				class="home-cover-carousel-slide absolute inset-0 block w-full h-full object-cover transition-opacity duration-700 ease-in-out {{ if eq $index 0 }}opacity-100{{ else }}opacity-0{{ end }}"
+				class="home-cover-carousel-slide absolute inset-0 block w-full h-full object-cover transition-opacity duration-500 ease-in-out {{ if eq $index 0 }}opacity-100{{ else }}opacity-0{{ end }}"
 				{{ if eq $index 0 }}data-action="shake-animation" {{ end }} />
 			{{ end }}
 			{{ end }}
