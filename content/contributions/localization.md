@@ -17,23 +17,15 @@ keywords:
   - private journal
 ---
 
-Our app currently supports the following languages, with translations provided by Google Translate:
+Our app currently supports the following languages, with translations kept in sync with the source (English) text automatically:
 
 > Arabic, German, English, Spanish (Latin America), Spanish (Spain), French, Hindi, Indonesian, Italian, Japanese, Khmer, Korean, Polish, Portuguese, Vietnamese, Chinese (Simplified) & Russian.
 
-If your language is not listed, or you spot any translation glitches, feel free to suggest improvements in our Google Sheet below:
-[Google Sheet](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?usp=sharing)
+Translation strings live in the [`app` repo](https://github.com/theachoem/storypad) under `translations/`, one JSON file per language.
 
 ## 💬 How Can I Help?
 
-1. Open the Google Sheet linked above.
-2. Find your language and suggest improvements, corrections, or better translations.
-3. If you see any translation errors or feel a translation can be better, add your suggestions!
-4. We’ll review the updates and apply them in the app with the next release.
-
-> **Important:**  
-> If you’d like to contribute a lot of changes or adding a new language, it really helps us if you make a copy (duplicate) of the sheet, add your updates there, then email your sheet link to [thea@storypad.me](mailto:thea@storypad.me) with a quick note about your changes or the language you added.  
-> This makes it much easier (and faster!) for us to review and include your contributions.
+If your language isn't listed, or you spot a translation glitch, [open an issue](https://github.com/theachoem/storypad/issues) or send a pull request against the relevant `translations/<locale>.json` file — that's the fastest way to get it fixed or added.
 
 ## 🙌 Contributors
 

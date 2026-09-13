@@ -134,7 +134,7 @@ We welcome contributions to improve the StoryPad website! Here are ways you can 
 ### Content Contributions
 
 - **Documentation improvements** - Help make our guides clearer
-- **Translation** - Contribute to our [localization efforts](https://docs.google.com/spreadsheets/d/1XcohOqNzrkMJnAmAuJssa0Rc7wftjfN2rrxb4GgcE9c/edit?usp=sharing)
+- **Translation** - Contribute to our [localization efforts](https://storypad.me/contributions/localization/)
 - **Blog posts** - Share your StoryPad experience
 
 ### Technical Contributions
