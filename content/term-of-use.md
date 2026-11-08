@@ -1,5 +1,5 @@
 ---
-date: "2025-12-01T10:15:33Z"
+date: "2026-11-08T17:00:00Z"
 draft: false
 title: "Terms of Use"
 ---
@@ -8,19 +8,19 @@ Welcome to StoryPad (“we,” “our,” or “us”). By using our app, you ag
 
 ## 1. Use of StoryPad
 
-StoryPad is a writing app that allows you to write, store, and back up personal entries and media directly to your Google Drive account.  
+StoryPad is a writing app that allows you to write, store, and back up personal entries and media directly to the backup service you choose (Google Drive, iCloud, Dropbox, or Nextcloud/WebDAV).  
 You may use StoryPad for your personal journaling and writing. You remain the owner of any content you create and may use it however you like, including selling or publishing it. However, you may not use the app itself for commercial purposes, resell it, or use it to provide a commercial service to others.
 
 ## 2. In-App Purchases
 
-StoryPad offers optional one-time in-app purchases (such as add-ons like relax sounds or templates). All payments are processed securely through the Google Play Store (and managed via RevenueCat). We do **not** collect or store your credit card or billing details.
+StoryPad offers optional one-time in-app purchases (such as add-ons like relax sounds or templates). All payments are processed securely through the Google Play Store or the Apple App Store, and managed via RevenueCat. We do **not** collect or store your credit card or billing details.
 
-Purchased add-ons are linked to your account anonymously (using a hash of your Google Drive backup email) so you can restore them across your devices.
+To let you restore purchases across your devices, they are linked to the account identifier of the backup service you connect (for example, your Google account ID, or your username and server address for Nextcloud). Without a connected service, an anonymous ID is used. See our [Privacy Policy](/privacy-policy) for details.
 
 ## 3. Your Content
 
 All entries, images, and data you create within StoryPad remain your personal content.  
-These are stored locally on your device and backed up directly to your private Google Drive AppData folder. We do not have access to read, edit, or delete your content.
+These are stored locally on your device and, if you choose, backed up directly to your own Google Drive, iCloud, Dropbox, or Nextcloud storage. We do not have access to read, edit, or delete your content.
 
 ## 4. Disclaimer
 
