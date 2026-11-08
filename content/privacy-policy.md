@@ -76,7 +76,7 @@ StoryPad's analytics is anonymous by design, for every event. We use it to learn
 
 - Anything you write: entry text, titles, search terms, tag names, or names of people you tag.
 - Your locations or coordinates.
-- Full links. When you open a link, only the site name is recorded (for example, `www.reddit.com`), never the rest of the address.
+- Which links you open. Opening a link is only counted, without the address or even the site name. The one exception is links to our own website (storypad.me), which only appear in the app itself.
 - Your name, email address, or any cloud account identifier.
 - Your device's advertising ID. StoryPad shows no ads, does not request the advertising ID permission on Android, turns off advertising ID collection, and never asks for tracking permission on iOS.
 
